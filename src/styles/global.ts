@@ -13,6 +13,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    font-size: 14px;
+    font-size: 10px;
   }
 `;

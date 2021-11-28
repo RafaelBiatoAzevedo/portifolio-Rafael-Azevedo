@@ -20,14 +20,23 @@ export const WrapperLogo = styled.div`
 `;
 
 export const WrapperText = styled.div`
-  flex: 3;
-`;
-
-export const WrapperImage = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   flex: 1;
 `;
 
-export const Image = styled.img`
+export const WrapperPicture = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+`;
+
+type TImage = {
+  isBorderRadius?: boolean;
+};
+
+export const Image = styled.img<TImage>`
   height: 100px;
-  border-radius: 50%;
+  border-radius: ${(p) => (p.isBorderRadius ? '50%' : '0%')};
 `;

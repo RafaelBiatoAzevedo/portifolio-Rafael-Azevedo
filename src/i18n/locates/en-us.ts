@@ -9,6 +9,11 @@ const objExport = {
       navSix: 'About me',
       navSeven: 'Contact me',
     },
+    Header: {
+      salute: 'Hello',
+      Im: "I'm",
+      profession: 'Software developer',
+    },
   },
 };
 

@@ -1,14 +1,13 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 import 'styled-components';
+import { ITheme } from '~/interfaces/ITheme';
 
-import { theme } from '../styles/theme';
+import { TColors } from './TColors';
 
 declare module 'styled-components' {
-  type Theme = typeof theme;
-
-  type ThemeColors = typeof theme.colors;
+  type ThemeColors = TColors;
 
   export type ColorScheme = keyof ThemeColors;
 
-  export interface DefaultTheme extends Theme {}
+  export interface DefaultTheme extends ITheme {}
 }

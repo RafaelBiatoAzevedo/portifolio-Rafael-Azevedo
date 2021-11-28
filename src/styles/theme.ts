@@ -6,6 +6,12 @@ export const themeDark = {
     text: '#595959',
   },
 
+  fontWeight: {
+    regular: '400',
+    medium: '700',
+    bold: '900',
+  },
+
   resolutions: {
     '4k': '3840px',
     fullHd: '1920px',
@@ -20,6 +26,12 @@ export const themeLight = {
     secondary: '#bdbd02',
 
     text: '#fff',
+  },
+
+  fontWeight: {
+    regular: '400',
+    medium: '700',
+    bold: '900',
   },
 
   resolutions: {

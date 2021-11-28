@@ -4,11 +4,11 @@ import { ThemeProvider } from 'styled-components';
 
 import { themeDark, themeLight } from '../styles/theme';
 
-import { useTheme } from './theme';
+import { useStyleTheme } from './theme';
 import { LanguageProvider } from './language';
 
 export const AppProvider: FC = ({ children }): JSX.Element => {
-  const { theme } = useTheme();
+  const { theme } = useStyleTheme();
 
   return (
     <ThemeProvider theme={theme === 'light' ? themeLight : themeDark}>

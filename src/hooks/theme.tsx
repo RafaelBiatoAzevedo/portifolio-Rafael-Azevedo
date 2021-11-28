@@ -9,8 +9,9 @@ const ContextTheme = createContext<IContextTheme>({} as IContextTheme);
 const ThemeStyleProvider: FC = ({ children }) => {
   const [theme, setTheme] = useState<TTheme>('dark');
 
-  const changeTheme = (type: TTheme): void => {
-    setTheme(type);
+  const changeTheme = (): void => {
+    if (theme === 'dark') setTheme('light');
+    else setTheme('dark');
   };
 
   const valueProvider = useMemo(() => ({ theme, changeTheme }), [theme]);
@@ -22,8 +23,8 @@ const ThemeStyleProvider: FC = ({ children }) => {
   );
 };
 
-const useTheme = (): IContextTheme => {
+const useStyleTheme = (): IContextTheme => {
   return useContext(ContextTheme);
 };
 
-export { ThemeStyleProvider, useTheme };
+export { ThemeStyleProvider, useStyleTheme };

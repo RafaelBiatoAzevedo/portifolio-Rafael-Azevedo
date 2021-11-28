@@ -7,7 +7,12 @@ const objExport = {
       navFour: 'Certificados',
       navFive: 'Experiências profissionais',
       navSix: 'Sobre mim',
-      navSeven: 'Meu Contato',
+      navSeven: 'Meu contato',
+    },
+    Header: {
+      salute: 'Ola',
+      Im: 'Eu sou',
+      profession: 'Desenvolvedor de software',
     },
   },
 };
