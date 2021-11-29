@@ -2,8 +2,19 @@ export const themeDark = {
   colors: {
     primary: '#181818',
     secondary: '#5925b2',
+    tertiary: '#595959',
 
-    text: '#595959',
+    html: '#f14e2b',
+    css: '#3100f4',
+    js: '#ebda31',
+    ts: '#2d77c6',
+    react: '#6dd3f2',
+    redux: '#7440b4',
+    node: '#80cb33',
+    styled: '#e7a2db',
+
+    moon: '#d4dee1',
+    sun: '#f49e12 ',
   },
 
   fontWeight: {
@@ -22,10 +33,21 @@ export const themeDark = {
 
 export const themeLight = {
   colors: {
-    primary: '#fff',
-    secondary: '#bdbd02',
+    primary: '#e3dbd7',
+    secondary: '#000',
+    tertiary: '#fff',
 
-    text: '#fff',
+    html: '#f14e2b',
+    css: '#3100f4',
+    js: '#ebda31',
+    ts: '#2d77c6',
+    react: '#6dd3f2',
+    redux: '#7440b4',
+    node: '#80cb33',
+    styled: '#e7a2db',
+
+    moon: '#d4dee1',
+    sun: '#f49e12 ',
   },
 
   fontWeight: {

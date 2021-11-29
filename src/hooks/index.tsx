@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { themeDark, themeLight } from '../styles/theme';
 
 import { useStyleTheme } from './theme';
+import { MenuProvider } from './menu';
 import { LanguageProvider } from './language';
 
 export const AppProvider: FC = ({ children }): JSX.Element => {
@@ -12,7 +13,9 @@ export const AppProvider: FC = ({ children }): JSX.Element => {
 
   return (
     <ThemeProvider theme={theme === 'light' ? themeLight : themeDark}>
-      <LanguageProvider>{children}</LanguageProvider>
+      <LanguageProvider>
+        <MenuProvider>{children}</MenuProvider>
+      </LanguageProvider>
     </ThemeProvider>
   );
 };

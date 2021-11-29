@@ -7,7 +7,7 @@ import { useTheme } from 'styled-components';
 import { useStyleTheme } from '~/hooks/theme';
 import { Text } from '~/components/Text';
 
-import { Wrapper } from './styles';
+import { Wrapper, Button, WrapperIcon } from './styles';
 
 export const StyleTheme: FC = (): JSX.Element => {
   const { colors } = useTheme();
@@ -19,9 +19,16 @@ export const StyleTheme: FC = (): JSX.Element => {
 
   return (
     <Wrapper onClick={handleChangeTheme}>
-      <Text title="" size="1.3rem" color={colors.secondary}>
-        {theme === 'dark' ? <BsFillMoonStarsFill /> : <BsFillSunFill />}
-      </Text>
+      <Button isOrder={theme === 'dark'} />
+      <WrapperIcon>
+        <Text
+          title=""
+          size="1.3rem"
+          color={theme === 'dark' ? colors.sun : colors.moon}
+        >
+          {theme === 'dark' ? <BsFillSunFill /> : <BsFillMoonStarsFill />}
+        </Text>
+      </WrapperIcon>
     </Wrapper>
   );
 };

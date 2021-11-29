@@ -6,6 +6,8 @@ import picture from '~/assets/images/picture.png';
 import logo from '~/assets/images/logoAzevedoDigital.png';
 
 import { MenuNav } from './components/MenuNav';
+import { LinksTechnologies } from './components/LinksTechnologies';
+import { LinksSocial } from './components/LinksSocial';
 
 import {
   WrapperHeader,
@@ -27,12 +29,13 @@ export const Header: FC = () => {
       <WrapperCenter>
         <WrapperLogo>
           <Image src={logo} alt="logo" />
+          <LinksTechnologies />
         </WrapperLogo>
         <WrapperText>
           <Text
             title={<Translator path="Header.salute" />}
             color={colors.secondary}
-            size="2rem"
+            size="2.3rem"
             weight={fontWeight.medium}
           >
             ,
@@ -40,13 +43,13 @@ export const Header: FC = () => {
           <Text
             title={<Translator path="Header.Im" />}
             color={colors.secondary}
-            size="2rem"
+            size="2.3rem"
             weight={fontWeight.medium}
           >
             <Text
               title="Rafael Azevedo"
-              color={colors.text}
-              size="2rem"
+              color={colors.tertiary}
+              size="2.3rem"
               weight={fontWeight.bold}
               mLeft="10px"
             />
@@ -55,12 +58,13 @@ export const Header: FC = () => {
           <Text
             title={<Translator path="Header.profession" />}
             color={colors.secondary}
-            size="2rem"
+            size="2.3rem"
             weight={fontWeight.medium}
           />
         </WrapperText>
         <WrapperPicture>
           <Image src={picture} alt="rafael" isBorderRadius />
+          <LinksSocial />
         </WrapperPicture>
       </WrapperCenter>
     </WrapperHeader>

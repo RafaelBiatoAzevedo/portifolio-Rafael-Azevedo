@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { Translator } from '~/components/Translator';
+import { navs } from '~/utils/paths';
 
 import { StyleTheme } from './components/StyleTheme';
 import { Nav } from './components/Nav';
@@ -12,13 +12,9 @@ export const MenuNav: FC = (): JSX.Element => {
   return (
     <Wrapper>
       <WrapperNavs>
-        <Nav title={<Translator path="MenuNav.navOne" />} />
-        <Nav title={<Translator path="MenuNav.navTwo" />} />
-        <Nav title={<Translator path="MenuNav.navThree" />} />
-        <Nav title={<Translator path="MenuNav.navFour" />} />
-        <Nav title={<Translator path="MenuNav.navFive" />} />
-        <Nav title={<Translator path="MenuNav.navSix" />} />
-        <Nav title={<Translator path="MenuNav.navSeven" />} />
+        {navs.map((nav) => (
+          <Nav key={nav.title} button={nav} />
+        ))}
       </WrapperNavs>
       <Language />
       <StyleTheme />

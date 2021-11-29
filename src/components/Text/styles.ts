@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 type TTextStyle = {
   color: string;
@@ -7,7 +7,6 @@ type TTextStyle = {
   paddingX: string;
   weight: string;
   mLeft: string;
-  isHover: boolean;
 };
 
 export const TextStyle = styled.p<TTextStyle>`
@@ -17,10 +16,4 @@ export const TextStyle = styled.p<TTextStyle>`
   padding: ${(p) => p.paddingY} ${(p) => p.paddingX};
   font-weight: ${(p) => p.weight};
   margin-left: ${(p) => p.mLeft};
-
-  ${(p) =>
-    p.isHover &&
-    css`
-      color: ${p.theme.colors.primary};
-    `}
 `;

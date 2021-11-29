@@ -1,4 +1,11 @@
-import { FC, createContext, useState, useContext, useMemo } from 'react';
+import {
+  FC,
+  createContext,
+  useState,
+  useContext,
+  useMemo,
+  useCallback,
+} from 'react';
 
 import { IContextTheme } from '~/interfaces/IContextTheme';
 
@@ -9,12 +16,15 @@ const ContextTheme = createContext<IContextTheme>({} as IContextTheme);
 const ThemeStyleProvider: FC = ({ children }) => {
   const [theme, setTheme] = useState<TTheme>('dark');
 
-  const changeTheme = (): void => {
+  const changeTheme = useCallback((): void => {
     if (theme === 'dark') setTheme('light');
     else setTheme('dark');
-  };
+  }, [theme]);
 
-  const valueProvider = useMemo(() => ({ theme, changeTheme }), [theme]);
+  const valueProvider = useMemo(
+    () => ({ theme, changeTheme }),
+    [theme, changeTheme]
+  );
 
   return (
     <ContextTheme.Provider value={valueProvider}>

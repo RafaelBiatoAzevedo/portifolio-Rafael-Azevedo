@@ -10,7 +10,6 @@ type TText = {
   paddingX?: string;
   weight?: string;
   mLeft?: string;
-  isHover?: boolean;
 };
 
 export const Text: FC<TText> = ({
@@ -22,7 +21,6 @@ export const Text: FC<TText> = ({
   paddingX = 'opx',
   weight = '400',
   mLeft = '0px',
-  isHover = false,
 }): JSX.Element => {
   return (
     <TextStyle
@@ -32,7 +30,6 @@ export const Text: FC<TText> = ({
       paddingX={paddingX}
       weight={weight}
       mLeft={mLeft}
-      isHover={isHover}
     >
       {title}
       {children}
@@ -47,5 +44,4 @@ Text.defaultProps = {
   paddingX: undefined,
   weight: undefined,
   mLeft: undefined,
-  isHover: undefined,
 };

@@ -13,6 +13,18 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    font-size: 10px;
+    font-size: 14px;
   }
+  
+  @media(max-width: ${(p) => p.theme.resolutions.medium}) {
+    html {
+      font-size: 10px;
+    }
+  }
+
+  @media(max-width: ${(p) => p.theme.resolutions.small}) {
+    html {
+      font-size: 8px;
+    }
+  } 
 `;
