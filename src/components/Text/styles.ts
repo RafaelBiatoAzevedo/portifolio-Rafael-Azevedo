@@ -10,6 +10,7 @@ type TTextStyle = {
 };
 
 export const TextStyle = styled.p<TTextStyle>`
+  align-items: center;
   display: flex;
   color: ${(p) => p.color};
   font-size: ${(p) => p.size};

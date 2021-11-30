@@ -8,6 +8,6 @@ export const Wrapper = styled.div`
 
 export const WrapperNavs = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 80%;
 `;

@@ -33,9 +33,9 @@ export const themeDark = {
 
 export const themeLight = {
   colors: {
-    primary: '#e3dbd7',
+    primary: '#6c6868',
     secondary: '#000',
-    tertiary: '#fff',
+    tertiary: '#5925b2',
 
     html: '#f14e2b',
     css: '#3100f4',

@@ -4,7 +4,6 @@ export const Wrapper = styled.div`
   background-color: ${(p) => p.theme.colors.primary};
   display: flex;
   flex-direction: column;
-  padding: 0 10px;
 
   gap: 5px;
 
@@ -12,10 +11,12 @@ export const Wrapper = styled.div`
 `;
 
 export const WrapperTitle = styled.div`
-  background-color: ${(p) => p.theme.colors.secondary};
+  background-color: ${(p) => p.theme.colors.tertiary};
   display: flex;
   justify-content: center;
   padding: 5px;
+
+  transform: skew(-20deg); /* Padrão */
 `;
 
 export const WrapperContent = styled.div`

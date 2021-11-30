@@ -4,21 +4,20 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
-  gap: 20px;
-
-  @media (max-width: ${(p) => p.theme.resolutions.medium}) {
-    gap: 10px;
-  }
+  width: 100%;
 `;
 
 export const Link = styled.a`
   align-items: center;
   display: flex;
   justify-content: center;
-
-  opacity: 0.7;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 2px;
 
   &:hover {
-    opacity: 1;
+    border: 1px solid ${(p) => p.theme.colors.tertiary};
+    -webkit-box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
+    box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
   }
 `;

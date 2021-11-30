@@ -23,6 +23,8 @@ export const WrapperLogo = styled.div`
   flex-direction: column;
 
   gap: 10px;
+
+  width: 24%;
 `;
 
 export const WrapperText = styled.div`
@@ -34,9 +36,9 @@ export const WrapperText = styled.div`
 `;
 
 export const WrapperPicture = styled.div`
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 
   gap: 10px;
 `;
@@ -47,7 +49,7 @@ type TImage = {
 
 export const Image = styled.img<TImage>`
   height: 150px;
-  border-radius: ${(p) => (p.isBorderRadius ? '50%' : '0%')};
+  border-radius: ${(p) => (p.isBorderRadius ? '50%' : '8px')};
 
   @media (max-width: ${(p) => p.theme.resolutions.medium}) {
     height: 100px;

@@ -61,7 +61,7 @@ export const LinksTechnologies: FC = (): JSX.Element => {
         </Text>
       </Link>
       <Link href="https://styled-components.com/" target="_blank">
-        <Text title="" color={colors.styled} size="2.5rem">
+        <Text title="" color={colors.styled} size="2rem">
           <SiStyledcomponents />
         </Text>
       </Link>

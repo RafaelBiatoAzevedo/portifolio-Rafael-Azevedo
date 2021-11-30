@@ -31,6 +31,7 @@ export const AsideLeft: FC = (): JSX.Element => {
           />
         </WrapperContent>
       ))}
+      <br />
       <WrapperTitle>
         <Text
           weight={fontWeight.bold}

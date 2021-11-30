@@ -17,9 +17,11 @@ export const Image = styled.img<TImage>`
   width: 35px;
 
   cursor: pointer;
-  opacity: ${(p) => (p.isActive ? '1' : '0.5')};
+  opacity: ${(p) => (p.isActive ? '1' : '0.4')};
 
   &:hover {
-    border: solid 1px ${(p) => p.theme.colors.secondary};
+    border: 1px solid ${(p) => p.theme.colors.tertiary};
+    -webkit-box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
+    box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
   }
 `;
