@@ -117,6 +117,7 @@ export const mainContent: TMainContent = {
 export const projects: TProject[] = [
   {
     icon: rafaExpressIcon,
+    link: 'https://rafaelbiatoazevedo.github.io/Site-Rafa-Express/',
     title: 'Projects.projectOne.title',
     type: 'Projects.projectOne.type',
     status: 'Projects.projectOne.status',
@@ -134,6 +135,7 @@ export const projects: TProject[] = [
   },
   {
     icon: brothersIcon,
+    link: 'https://rafaelbiatoazevedo.github.io/SiteBrothers/',
     title: 'Projects.projectTwo.title',
     type: 'Projects.projectTwo.type',
     status: 'Projects.projectTwo.status',
@@ -146,6 +148,7 @@ export const projects: TProject[] = [
   },
   {
     icon: triviaIcon,
+    link: 'https://rafaelbiatoazevedo.github.io/trivia-game/',
     title: 'Projects.projectThree.title',
     type: 'Projects.projectThree.type',
     status: 'Projects.projectThree.status',
@@ -163,6 +166,7 @@ export const projects: TProject[] = [
   },
   {
     icon: movieIcon,
+    link: 'https://rafaelbiatoazevedo.github.io/movie-cards-library/',
     title: 'Projects.projectFour.title',
     type: 'Projects.projectFour.type',
     status: 'Projects.projectFour.status',
