@@ -46,6 +46,7 @@ const objExport = {
       },
     },
     Projects: {
+      view: 'Visit WebSite',
       title: 'Projects',
       titleOne: 'Type',
       titleTwo: 'Status',
@@ -88,7 +89,7 @@ const objExport = {
     },
     Formation: {
       title: 'Formation',
-      titleOne: 'SYSTEMS ANALYSIS',
+      titleOne: 'Systems Analysis',
       titleTwo: 'Situation',
       situation: {
         situationOne: 'Studied until 7° semester',
@@ -102,7 +103,7 @@ const objExport = {
       courseOne: {
         title: 'Full Stack Web Development',
         situations: {
-          situationOne: '1 year',
+          situationOne: '1 year (1500 Hours)',
           situationTwo: 'Concluded in 2021',
         },
         contents: {

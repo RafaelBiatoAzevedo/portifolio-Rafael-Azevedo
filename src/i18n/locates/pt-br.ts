@@ -46,6 +46,7 @@ const objExport = {
       },
     },
     Projects: {
+      view: 'Visitar Site',
       title: 'Projetos',
       titleOne: 'Tipo',
       titleTwo: 'Status',
@@ -102,7 +103,7 @@ const objExport = {
       courseOne: {
         title: 'Desenvolvimento Web Full Stack',
         situations: {
-          situationOne: '1 Ano',
+          situationOne: '1 Ano (1500 Horas)',
           situationTwo: 'Concluído em 2021',
         },
         contents: {

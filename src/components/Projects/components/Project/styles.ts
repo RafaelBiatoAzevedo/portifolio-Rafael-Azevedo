@@ -35,7 +35,27 @@ export const WrapperTechonologies = styled.div`
   gap: 10px;
 `;
 
+export const Link = styled.a`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+
+  gap: 8px;
+  width: 25%;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding-bottom: 4px;
+
+  &:hover {
+    border: 1px solid ${(p) => p.theme.colors.tertiary};
+    -webkit-box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
+    box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
+  }
+`;
+
 export const Image = styled.img`
   border-radius: 4px;
-  width: 25%;
+  width: 100%;
 `;

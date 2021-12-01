@@ -11,6 +11,7 @@ import {
   WrapperTitle,
   WrapperContent,
   WrapperInfo,
+  Link,
   Image,
   WrapperTechonologies,
 } from './styles';
@@ -32,7 +33,13 @@ export const Project: FC<TProjectData> = ({ project }): JSX.Element => {
         />
       </WrapperTitle>
       <WrapperContent>
-        <Image src={project.icon} alt="project" />
+        <Link href={project.link} target="_blank">
+          <Image src={project.icon} alt="project" />
+          <Text
+            color={colors.secondary}
+            title={<Translator path="Projects.view" />}
+          />
+        </Link>
         <WrapperInfo>
           <Text
             title={<Translator path="Projects.titleOne" />}

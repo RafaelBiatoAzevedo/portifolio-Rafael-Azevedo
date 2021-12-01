@@ -11,7 +11,7 @@ export const WrapperFormation = styled.div`
   display: flex;
   flex-direction: column;
 
-  width: 55%;
+  width: 70%;
 `;
 
 export const WrapperTitle = styled.div`
