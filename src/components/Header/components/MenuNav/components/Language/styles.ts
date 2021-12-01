@@ -13,11 +13,14 @@ type TImage = {
 };
 
 export const Image = styled.img<TImage>`
-  height: 20px;
-  width: 35px;
+  height: 22px;
+  width: 37px;
 
   cursor: pointer;
   opacity: ${(p) => (p.isActive ? '1' : '0.4')};
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 2px;
 
   &:hover {
     border: 1px solid ${(p) => p.theme.colors.tertiary};

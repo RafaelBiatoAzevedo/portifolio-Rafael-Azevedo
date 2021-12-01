@@ -1,20 +1,38 @@
+import { SiHtml5, SiCss3, SiRedux } from 'react-icons/si';
 import { RiContactsFill } from 'react-icons/ri';
 import { MdOutlineWork, MdComputer } from 'react-icons/md';
 import { HiOutlineCode } from 'react-icons/hi';
 import { GiPapers } from 'react-icons/gi';
 import { FcManager } from 'react-icons/fc';
-import { FaUniversity, FaGraduationCap } from 'react-icons/fa';
+import { FaUniversity, FaGraduationCap, FaJs, FaReact } from 'react-icons/fa';
 import { BsPersonBoundingBox } from 'react-icons/bs';
 
+import { TProject } from '~/types/TProject';
 import { TNavs } from '~/types/TNavs';
 import { TMainContent } from '~/types/TMainContent';
 import { TExperience } from '~/types/TExperience';
+import { TCourse } from '~/types/TCourse';
 import { TCertificate } from '~/types/TCertificate';
+import { themeDark as themeCurrency } from '~/styles/theme';
+import { Projects } from '~/components/Projects';
 import { Formation } from '~/components/Formation';
 import { Experiences } from '~/components/Experiences';
+import { Courses } from '~/components/Courses';
 import { ContactMe } from '~/components/ContactMe';
 import { Certificates } from '~/components/Certificates';
 import { AboutMe } from '~/components/AboutMe';
+import triviaIcon from '~/assets/images/projects/triviaGameIcon.jpg';
+import rafaExpressIcon from '~/assets/images/projects/rafaExpressIcon.png';
+import movieIcon from '~/assets/images/projects/movieIcon.png';
+import brothersIcon from '~/assets/images/projects/brothersIcon.png';
+import trybeIcon from '~/assets/images/courses/trybeIcon.png';
+import senaiIcon from '~/assets/images/courses/senaiIcon.png';
+import pythonIcon from '~/assets/images/courses/pythonIcon.png';
+import microlinsIcon from '~/assets/images/courses/microlinsIcon.png';
+import linuxIcon from '~/assets/images/courses/linuxIcon.ico';
+import javaIcon from '~/assets/images/courses/javaIcon.png';
+import fiskIcon from '~/assets/images/courses/fiskIcon.svg';
+import computingIcon from '~/assets/images/courses/computingIcon.png';
 import fundamentalsIcon from '~/assets/images/certificates/Fundamentos.png';
 import frontEndIcon from '~/assets/images/certificates/FrontEnd.png';
 import backEndIcon from '~/assets/images/certificates/BackEnd.png';
@@ -62,7 +80,7 @@ export const mainContent: TMainContent = {
   projects: {
     title: 'Projects.title',
     icon: HiOutlineCode,
-    component: AboutMe,
+    component: Projects,
   },
   formation: {
     title: 'Formation.title',
@@ -72,7 +90,7 @@ export const mainContent: TMainContent = {
   courses: {
     title: 'Courses.title',
     icon: FaGraduationCap,
-    component: AboutMe,
+    component: Courses,
   },
   certificates: {
     title: 'Certificates.title',
@@ -95,6 +113,178 @@ export const mainContent: TMainContent = {
     component: ContactMe,
   },
 };
+
+export const projects: TProject[] = [
+  {
+    icon: rafaExpressIcon,
+    title: 'Projects.projectOne.title',
+    type: 'Projects.projectOne.type',
+    status: 'Projects.projectOne.status',
+    datas: [
+      'Projects.projectOne.datas.dataOne',
+      'Projects.projectOne.datas.dataTwo',
+    ],
+    technologies: [
+      { name: 'HTML 5', icon: SiHtml5, color: themeCurrency.colors.html },
+      { name: 'CSS 3', icon: SiCss3, color: themeCurrency.colors.css },
+      { name: 'javaScript', icon: FaJs, color: themeCurrency.colors.js },
+      { name: 'react', icon: FaReact, color: themeCurrency.colors.react },
+      { name: 'redux', icon: SiRedux, color: themeCurrency.colors.redux },
+    ],
+  },
+  {
+    icon: brothersIcon,
+    title: 'Projects.projectTwo.title',
+    type: 'Projects.projectTwo.type',
+    status: 'Projects.projectTwo.status',
+    datas: ['Projects.projectTwo.datas.dataOne'],
+    technologies: [
+      { name: 'HTML 5', icon: SiHtml5, color: themeCurrency.colors.html },
+      { name: 'CSS 3', icon: SiCss3, color: themeCurrency.colors.css },
+      { name: 'javaScript', icon: FaJs, color: themeCurrency.colors.js },
+    ],
+  },
+  {
+    icon: triviaIcon,
+    title: 'Projects.projectThree.title',
+    type: 'Projects.projectThree.type',
+    status: 'Projects.projectThree.status',
+    datas: [
+      'Projects.projectThree.datas.dataOne',
+      'Projects.projectThree.datas.dataTwo',
+    ],
+    technologies: [
+      { name: 'HTML 5', icon: SiHtml5, color: themeCurrency.colors.html },
+      { name: 'CSS 3', icon: SiCss3, color: themeCurrency.colors.css },
+      { name: 'javaScript', icon: FaJs, color: themeCurrency.colors.js },
+      { name: 'react', icon: FaReact, color: themeCurrency.colors.react },
+      { name: 'redux', icon: SiRedux, color: themeCurrency.colors.redux },
+    ],
+  },
+  {
+    icon: movieIcon,
+    title: 'Projects.projectFour.title',
+    type: 'Projects.projectFour.type',
+    status: 'Projects.projectFour.status',
+    datas: ['Projects.projectFour.datas.dataOne'],
+    technologies: [
+      { name: 'HTML 5', icon: SiHtml5, color: themeCurrency.colors.html },
+      { name: 'CSS 3', icon: SiCss3, color: themeCurrency.colors.css },
+      { name: 'javaScript', icon: FaJs, color: themeCurrency.colors.js },
+      { name: 'react', icon: FaReact, color: themeCurrency.colors.react },
+    ],
+  },
+];
+
+export const courses: TCourse[] = [
+  {
+    icon: trybeIcon,
+    title: 'Courses.courseOne.title',
+    situations: [
+      'Courses.courseOne.situations.situationOne',
+      'Courses.courseOne.situations.situationTwo',
+    ],
+    contents: [
+      'Courses.courseOne.contents.contentOne',
+      'Courses.courseOne.contents.contentTwo',
+      'Courses.courseOne.contents.contentThree',
+      'Courses.courseOne.contents.contentFour',
+    ],
+  },
+  {
+    icon: pythonIcon,
+    title: 'Courses.courseTwo.title',
+    situations: [
+      'Courses.courseTwo.situations.situationOne',
+      'Courses.courseTwo.situations.situationTwo',
+    ],
+    contents: [
+      'Courses.courseTwo.contents.contentOne',
+      'Courses.courseTwo.contents.contentTwo',
+      'Courses.courseTwo.contents.contentThree',
+    ],
+  },
+  {
+    icon: linuxIcon,
+    title: 'Courses.courseThree.title',
+    situations: [
+      'Courses.courseThree.situations.situationOne',
+      'Courses.courseThree.situations.situationTwo',
+    ],
+    contents: [
+      'Courses.courseThree.contents.contentOne',
+      'Courses.courseThree.contents.contentTwo',
+    ],
+  },
+  {
+    icon: javaIcon,
+    title: 'Courses.courseFour.title',
+    situations: [
+      'Courses.courseFour.situations.situationOne',
+      'Courses.courseFour.situations.situationTwo',
+    ],
+    contents: [
+      'Courses.courseFour.contents.contentOne',
+      'Courses.courseFour.contents.contentTwo',
+      'Courses.courseFour.contents.contentThree',
+    ],
+  },
+  {
+    icon: fiskIcon,
+    title: 'Courses.courseFive.title',
+    situations: [
+      'Courses.courseFive.situations.situationOne',
+      'Courses.courseFive.situations.situationTwo',
+    ],
+    contents: [
+      'Courses.courseFive.contents.contentOne',
+      'Courses.courseFive.contents.contentTwo',
+      'Courses.courseFive.contents.contentThree',
+      'Courses.courseFive.contents.contentFour',
+    ],
+  },
+  {
+    icon: senaiIcon,
+    title: 'Courses.courseSix.title',
+    situations: [
+      'Courses.courseSix.situations.situationOne',
+      'Courses.courseSix.situations.situationTwo',
+    ],
+    contents: [
+      'Courses.courseSix.contents.contentOne',
+      'Courses.courseSix.contents.contentTwo',
+      'Courses.courseSix.contents.contentThree',
+    ],
+  },
+  {
+    icon: microlinsIcon,
+    title: 'Courses.courseSeven.title',
+    situations: [
+      'Courses.courseSeven.situations.situationOne',
+      'Courses.courseSeven.situations.situationTwo',
+    ],
+    contents: [
+      'Courses.courseSeven.contents.contentOne',
+      'Courses.courseSeven.contents.contentTwo',
+      'Courses.courseSeven.contents.contentThree',
+      'Courses.courseSeven.contents.contentFour',
+      'Courses.courseSeven.contents.contentFive',
+    ],
+  },
+  {
+    icon: computingIcon,
+    title: 'Courses.courseEight.title',
+    situations: [
+      'Courses.courseEight.situations.situationOne',
+      'Courses.courseEight.situations.situationTwo',
+    ],
+    contents: [
+      'Courses.courseEight.contents.contentOne',
+      'Courses.courseEight.contents.contentTwo',
+      'Courses.courseEight.contents.contentThree',
+    ],
+  },
+];
 
 export const textAboutMe = [
   'AboutMe.textOne',

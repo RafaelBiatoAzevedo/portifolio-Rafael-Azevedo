@@ -13,7 +13,7 @@ import { IContextMenu } from '~/interfaces/IContextMenu';
 const ContextMenu = createContext<IContextMenu>({} as IContextMenu);
 
 const MenuProvider: FC = ({ children }): JSX.Element => {
-  const [menuSelected, setMenuSelected] = useState<TMenu>('aboutMe');
+  const [menuSelected, setMenuSelected] = useState<TMenu>('projects');
 
   const changeMenuSelected = useCallback((menu: TMenu) => {
     setMenuSelected(menu);

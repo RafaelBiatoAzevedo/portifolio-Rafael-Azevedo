@@ -37,6 +37,7 @@ export const WrapperInfo = styled.div`
 `;
 
 export const Image = styled.img`
+  border-radius: 4px;
   width: 100%;
 `;
 

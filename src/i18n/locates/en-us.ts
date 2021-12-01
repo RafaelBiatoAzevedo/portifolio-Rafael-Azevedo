@@ -45,6 +45,47 @@ const objExport = {
         ssEleven: 'Emotional inteligence',
       },
     },
+    Projects: {
+      title: 'Projects',
+      titleOne: 'Type',
+      titleTwo: 'Status',
+      titleThree: 'Data',
+      titleFour: 'Techonologies',
+      projectOne: {
+        title: 'Rafa Express',
+        type: 'E-Commerce',
+        status: 'In Development',
+        datas: {
+          dataOne: 'API - mercado livre',
+          dataTwo: 'API - correios',
+        },
+      },
+      projectTwo: {
+        title: 'Brothers',
+        type: 'Marketing',
+        status: 'Concluded',
+        datas: {
+          dataOne: 'Local Data',
+        },
+      },
+      projectThree: {
+        title: 'Trivia Game',
+        type: 'Game',
+        status: 'Concluded',
+        datas: {
+          dataOne: 'API - opentdb',
+          dataTwo: 'API - gravatar',
+        },
+      },
+      projectFour: {
+        title: 'Movie Cards Library',
+        type: 'CRUD',
+        status: 'Concluded',
+        datas: {
+          dataOne: 'Local Data',
+        },
+      },
+    },
     Formation: {
       title: 'Formation',
       titleOne: 'Systems Analysis',
@@ -52,6 +93,110 @@ const objExport = {
       situation: {
         situationOne: 'Studied until 7° semester',
         situationTwo: 'Locked from 2009',
+      },
+    },
+    Courses: {
+      title: 'Courses',
+      titleOne: 'Situation',
+      titleTwo: 'Content',
+      courseOne: {
+        title: 'Full Stack Web Development',
+        situations: {
+          situationOne: '1 year',
+          situationTwo: 'Concluded in 2021',
+        },
+        contents: {
+          contentOne: 'Web Development Fundamentals',
+          contentTwo: 'Front-End developmenmt',
+          contentThree: 'Back-End developmenmt',
+          contentFour: 'Computer science',
+        },
+      },
+      courseTwo: {
+        title: 'Python 3',
+        situations: {
+          situationOne: '120 Hours',
+          situationTwo: 'Concluded in 2020',
+        },
+        contents: {
+          contentOne: 'Module 1 - Fundamentals',
+          contentTwo: 'Module 2 - Control Structures',
+          contentThree: 'Module 3 - Composite structures',
+        },
+      },
+      courseThree: {
+        title: 'Linux',
+        situations: {
+          situationOne: '40 Hours',
+          situationTwo: 'Concluded in 2020',
+        },
+        contents: {
+          contentOne: 'Distros installations',
+          contentTwo: 'Commands terminal',
+        },
+      },
+      courseFour: {
+        title: 'Java',
+        situations: {
+          situationOne: '120 Hours',
+          situationTwo: 'Concluded in 2018',
+        },
+        contents: {
+          contentOne: 'Java Basic',
+          contentTwo: 'Module 1 - POO',
+          contentThree: 'Module 2 - POO',
+        },
+      },
+      courseFive: {
+        title: 'English',
+        situations: {
+          situationOne: 'Advanced',
+          situationTwo: 'Concluded in 2006',
+        },
+        contents: {
+          contentOne: 'Wrate',
+          contentTwo: 'Read',
+          contentThree: 'Speak',
+          contentFour: 'Listen',
+        },
+      },
+      courseSix: {
+        title: 'Eletrical and Mechanical',
+        situations: {
+          situationOne: '600 Hours',
+          situationTwo: 'Concluded in 2003',
+        },
+        contents: {
+          contentOne: 'Electrical and mechanical fundamentals',
+          contentTwo: 'Electrical and mechanical practical',
+          contentThree: 'Electrical and mechanical maintenance',
+        },
+      },
+      courseSeven: {
+        title: 'Computer maintenance',
+        situations: {
+          situationOne: '160 Hours',
+          situationTwo: 'Concluded in 2001',
+        },
+        contents: {
+          contentOne: 'Checking for hardware and software',
+          contentTwo: 'Solve problems and errors',
+          contentThree: 'Update of parts and peripherals (upgrade)',
+          contentFour: 'Backup and recovery of files and data',
+          contentFive: 'Installation and configuration of networks',
+        },
+      },
+      courseEight: {
+        title: 'Computing',
+        situations: {
+          situationOne: 'Advanced',
+          situationTwo: 'Concluded in 1999',
+        },
+        contents: {
+          contentOne: 'Windowns advanced',
+          contentTwo: 'Office advenced',
+          contentThree: 'Draw advanced',
+        },
       },
     },
     Certificates: {

@@ -45,6 +45,47 @@ const objExport = {
         ssEleven: 'Inteligência emocional',
       },
     },
+    Projects: {
+      title: 'Projetos',
+      titleOne: 'Tipo',
+      titleTwo: 'Status',
+      titleThree: 'Dados',
+      titleFour: 'Tecnologias',
+      projectOne: {
+        title: 'Rafa Express',
+        type: 'Comercio eletrônico',
+        status: 'Em Desenvolvimento',
+        datas: {
+          dataOne: 'API - mercado livre',
+          dataTwo: 'API - correios',
+        },
+      },
+      projectTwo: {
+        title: 'Brothers',
+        type: 'Propaganda',
+        status: 'Concluído',
+        datas: {
+          dataOne: 'Dados locais',
+        },
+      },
+      projectThree: {
+        title: 'Trivia Game',
+        type: 'Jogo',
+        status: 'Concluído',
+        datas: {
+          dataOne: 'API - opentdb',
+          dataTwo: 'API - gravatar',
+        },
+      },
+      projectFour: {
+        title: 'Biblioteca de cartões de filme',
+        type: 'CRUD',
+        status: 'Concluído',
+        datas: {
+          dataOne: 'Dados locais',
+        },
+      },
+    },
     Formation: {
       title: 'Formação',
       titleOne: 'Análise de Sistemas',
@@ -53,6 +94,9 @@ const objExport = {
         situationOne: 'Estudado até 7° semestre',
         situationTwo: 'Trancado desde 2009',
       },
+    },
+    Courses: {
+      title: 'Cursos',
     },
     Certificates: {
       title: 'Certificados',
