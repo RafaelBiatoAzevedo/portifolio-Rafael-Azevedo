@@ -89,14 +89,115 @@ const objExport = {
     Formation: {
       title: 'Formação',
       titleOne: 'Análise de Sistemas',
-      titleTwo: 'Situation',
+      titleTwo: 'Situação',
       situation: {
-        situationOne: 'Estudado até 7° semestre',
+        situationOne: 'Cursado até 7° semestre',
         situationTwo: 'Trancado desde 2009',
       },
     },
     Courses: {
       title: 'Cursos',
+      titleOne: 'Situação',
+      titleTwo: 'Conteúdo',
+      courseOne: {
+        title: 'Desenvolvimento Web Full Stack',
+        situations: {
+          situationOne: '1 Ano',
+          situationTwo: 'Concluído em 2021',
+        },
+        contents: {
+          contentOne: 'Fundamentos do Desenvolvimento Web',
+          contentTwo: 'Desenvolvimento Front-End',
+          contentThree: 'Desenvolvimento Back-End',
+          contentFour: 'Ciência da Computação',
+        },
+      },
+      courseTwo: {
+        title: 'Python 3',
+        situations: {
+          situationOne: '120 Horas',
+          situationTwo: 'Concluído em 2020',
+        },
+        contents: {
+          contentOne: 'Módulo 1 - Fundamentos',
+          contentTwo: 'Módulo 2 - Estruturas de controle',
+          contentThree: 'Módulo 3 - Estruturas compostas',
+        },
+      },
+      courseThree: {
+        title: 'Linux',
+        situations: {
+          situationOne: '40 Horas',
+          situationTwo: 'Cocluído em 2020',
+        },
+        contents: {
+          contentOne: 'Instalação de distros',
+          contentTwo: 'Comandos do terminal',
+        },
+      },
+      courseFour: {
+        title: 'Java',
+        situations: {
+          situationOne: '120 Horas',
+          situationTwo: 'Concluído em 2018',
+        },
+        contents: {
+          contentOne: 'Java Básico',
+          contentTwo: 'Módulo 1 - POO',
+          contentThree: 'Módulo 2 - POO',
+        },
+      },
+      courseFive: {
+        title: 'Ingês',
+        situations: {
+          situationOne: 'Avançado',
+          situationTwo: 'Concluído em 2006',
+        },
+        contents: {
+          contentOne: 'Escrever',
+          contentTwo: 'Ler',
+          contentThree: 'Falar',
+          contentFour: 'Escutar',
+        },
+      },
+      courseSix: {
+        title: 'Eletrica e Mecânica',
+        situations: {
+          situationOne: '600 Horas',
+          situationTwo: 'Concluído em 2003',
+        },
+        contents: {
+          contentOne: 'Fundamentos de Eletrica e Mecânica',
+          contentTwo: 'Prática de Eletrica e Mecânica',
+          contentThree: 'Manutenção de Eletrica e Mecânica',
+        },
+      },
+      courseSeven: {
+        title: 'Manutenção de computadores',
+        situations: {
+          situationOne: '160 Horas',
+          situationTwo: 'Concluído em 2001',
+        },
+        contents: {
+          contentOne: 'Verificação de hardware e software',
+          contentTwo: 'Resolver problemas e erros',
+          contentThree: 'Troca de peças e periféricos (upgrade)',
+          contentFour: 'Backup e recuperação de arquivos e sistema',
+          contentFive: 'Instalação e configuração de redes',
+        },
+      },
+      courseEight: {
+        title: 'Informática',
+        situations: {
+          situationOne: 'Avançada',
+          situationTwo: 'Concluído 1999',
+        },
+        contents: {
+          contentOne: 'Windowns avançado',
+          contentTwo: 'Office avançado',
+          contentThree: 'Desenho avançado',
+        },
+      },
     },
     Certificates: {
       title: 'Certificados',
@@ -188,6 +289,9 @@ const objExport = {
     },
     ContactMe: {
       title: 'Meu contato',
+    },
+    Footer: {
+      message: 'Soluções personalizadas em Aplicativos e Sites.',
     },
   },
 };

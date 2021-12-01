@@ -88,7 +88,7 @@ const objExport = {
     },
     Formation: {
       title: 'Formation',
-      titleOne: 'Systems Analysis',
+      titleOne: 'SYSTEMS ANALYSIS',
       titleTwo: 'Situation',
       situation: {
         situationOne: 'Studied until 7° semester',
@@ -290,6 +290,9 @@ const objExport = {
     },
     ContactMe: {
       title: 'Contact me',
+    },
+    Footer: {
+      message: 'Customized solutions in Applications and Websites.',
     },
   },
 };
