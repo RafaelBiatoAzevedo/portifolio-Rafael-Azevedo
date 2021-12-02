@@ -135,7 +135,7 @@ export const projects: TProject[] = [
   },
   {
     icon: brothersIcon,
-    link: 'https://rafaelbiatoazevedo.github.io/SiteBrothers/',
+    link: 'https://brothers-reparos-geral.netlify.app/',
     title: 'Projects.projectTwo.title',
     type: 'Projects.projectTwo.type',
     status: 'Projects.projectTwo.status',
