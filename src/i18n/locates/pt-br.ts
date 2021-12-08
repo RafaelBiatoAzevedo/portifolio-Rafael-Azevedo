@@ -53,6 +53,14 @@ const objExport = {
       titleThree: 'Dados',
       titleFour: 'Tecnologias',
       projectOne: {
+        title: 'Mundo Star Wars',
+        type: 'Informação',
+        status: 'Em Desenvolvimento',
+        datas: {
+          dataOne: 'API - swapi.dev/api',
+        },
+      },
+      projectTwo: {
         title: 'Rafa Express',
         type: 'Comercio eletrônico',
         status: 'Em Desenvolvimento',
@@ -61,7 +69,7 @@ const objExport = {
           dataTwo: 'API - correios',
         },
       },
-      projectTwo: {
+      projectThree: {
         title: 'Brothers',
         type: 'Propaganda',
         status: 'Concluído',
@@ -69,7 +77,7 @@ const objExport = {
           dataOne: 'Dados locais',
         },
       },
-      projectThree: {
+      projectFour: {
         title: 'Trivia Game',
         type: 'Jogo',
         status: 'Concluído',
@@ -78,7 +86,7 @@ const objExport = {
           dataTwo: 'API - gravatar',
         },
       },
-      projectFour: {
+      projectFive: {
         title: 'Biblioteca de cartões de filme',
         type: 'CRUD',
         status: 'Concluído',
