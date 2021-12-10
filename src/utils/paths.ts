@@ -40,8 +40,10 @@ import linuxIcon from '~/assets/images/courses/linuxIcon.ico';
 import javaIcon from '~/assets/images/courses/javaIcon.png';
 import fiskIcon from '~/assets/images/courses/fiskIcon.svg';
 import computingIcon from '~/assets/images/courses/computingIcon.png';
+import trybeCertificateIcon from '~/assets/images/certificates/trybeCertificate.png';
 import fundamentalsIcon from '~/assets/images/certificates/Fundamentos.png';
 import frontEndIcon from '~/assets/images/certificates/FrontEnd.png';
+import computerScienceIcon from '~/assets/images/certificates/computerScience.png';
 import backEndIcon from '~/assets/images/certificates/BackEnd.png';
 
 export const hardSkills = [
@@ -130,6 +132,8 @@ export const projects: TProject[] = [
     status: 'Projects.projectOne.status',
     datas: ['Projects.projectOne.datas.dataOne'],
     technologies: [
+      { name: 'HTML 5', icon: SiHtml5, color: themeCurrency.colors.html },
+      { name: 'CSS 3', icon: SiCss3, color: themeCurrency.colors.css },
       { name: 'javaScript', icon: FaJs, color: themeCurrency.colors.js },
       { name: 'react', icon: FaReact, color: themeCurrency.colors.react },
       {
@@ -361,6 +365,34 @@ export const experiences: TExperience[] = [
 ];
 
 export const certificates: TCertificate[] = [
+  {
+    icon: trybeCertificateIcon,
+    linkPdf: 'https://pdf.credential.net/szcmvf3o_1639172967011.pdf',
+    linkCredentials:
+      'https://www.credential.net/b41dae45-7403-476c-93a6-f11209ef4474#gs.iinvc3',
+    title: 'Certificates.certificateFive.title',
+    contents: [
+      'Certificates.certificateFive.contentOne',
+      'Certificates.certificateFive.contentTwo',
+      'Certificates.certificateFive.contentThree',
+      'Certificates.certificateFive.contentFive',
+    ],
+  },
+  {
+    icon: computerScienceIcon,
+    linkPdf: 'https://pdf.credential.net/dxnb9vel_1639171634335.pdf',
+    linkCredentials:
+      'https://www.credential.net/2c4b6b78-67b2-4a93-b11a-f7a09e0104d4#gs.iina37',
+    title: 'Certificates.certificateFour.title',
+    contents: [
+      'Certificates.certificateFour.contentOne',
+      'Certificates.certificateFour.contentTwo',
+      'Certificates.certificateFour.contentThree',
+      'Certificates.certificateFour.contentFour',
+      'Certificates.certificateFour.contentFive',
+      'Certificates.certificateFour.contentSix',
+    ],
+  },
   {
     icon: backEndIcon,
     linkPdf: 'https://pdf.credential.net/y08cw7hr_1638262792880.pdf',

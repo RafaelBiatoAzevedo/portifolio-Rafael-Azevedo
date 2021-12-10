@@ -26,5 +26,5 @@ export const GlobalStyle = createGlobalStyle`
     html {
       font-size: 8px;
     }
-  } 
+  }
 `;

@@ -250,6 +250,23 @@ const objExport = {
         contentEleven: 'Arquitetura SOLID e ORM',
         contentTwelve: 'Sockets',
       },
+      certificateFour: {
+        title: 'Ciência da Computação',
+        contentOne: 'Introdução à Python',
+        contentTwo: 'Programação Orientada a Objetos (POO)',
+        contentThree: 'Redes e Raspagem de dados ',
+        contentFour: 'Algoritmos',
+        contentFive: 'Estritura de Dados I: Arrays, Hashmaps e Sets',
+        contentSix: 'Estrutura de Dados II: Listas, Filas and Pilhas',
+      },
+      certificateFive: {
+        title: 'Desenvolvimento Web',
+        contentOne: 'Fundamentos do Desenvolvimento Web',
+        contentTwo: 'Desenvolvimento Front-End',
+        contentThree: 'Desenvolvimento Back-End',
+        contentFour: 'Ciência da Computação',
+        contentFive: 'Soft Skills',
+      },
     },
     Experiences: {
       title: 'Experiências profissionais',
