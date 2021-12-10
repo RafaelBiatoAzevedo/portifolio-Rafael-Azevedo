@@ -250,6 +250,23 @@ const objExport = {
         contentEleven: 'Architecture SOLID and ORM',
         contentTwelve: 'Sockets',
       },
+      certificateFour: {
+        title: 'Computer Science',
+        contentOne: 'Introduction to Python',
+        contentTwo: 'Object-oriented programming',
+        contentThree: 'Networks and Data Scraping',
+        contentFour: 'Algorithms',
+        contentFive: 'Data Structure I: Arrays, Hashmaps and Sets',
+        contentSix: 'Data Structure II: Lists, Queues and Stacks',
+      },
+      certificateFive: {
+        title: 'Web Development',
+        contentOne: 'Web Development Fundamentals',
+        contentTwo: 'Front-End Development',
+        contentThree: 'Back-End Development',
+        contentFour: 'Computer Science',
+        contentFive: 'Soft Skills',
+      },
     },
     Experiences: {
       title: 'Professional experiences',
