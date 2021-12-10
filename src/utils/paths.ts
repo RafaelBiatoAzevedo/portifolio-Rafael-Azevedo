@@ -1,4 +1,10 @@
-import { SiHtml5, SiCss3, SiRedux } from 'react-icons/si';
+import {
+  SiHtml5,
+  SiCss3,
+  SiRedux,
+  SiStyledcomponents,
+  SiTypescript,
+} from 'react-icons/si';
 import { RiContactsFill } from 'react-icons/ri';
 import { MdOutlineWork, MdComputer } from 'react-icons/md';
 import { HiOutlineCode } from 'react-icons/hi';
@@ -24,6 +30,7 @@ import { AboutMe } from '~/components/AboutMe';
 import triviaIcon from '~/assets/images/projects/triviaGameIcon.jpg';
 import rafaExpressIcon from '~/assets/images/projects/rafaExpressIcon.png';
 import movieIcon from '~/assets/images/projects/movieIcon.png';
+import worldStarWrasIcon from '~/assets/images/projects/darthVadenIcon.png';
 import brothersIcon from '~/assets/images/projects/brothersIcon.png';
 import trybeIcon from '~/assets/images/courses/trybeIcon.png';
 import senaiIcon from '~/assets/images/courses/senaiIcon.png';
@@ -116,14 +123,36 @@ export const mainContent: TMainContent = {
 
 export const projects: TProject[] = [
   {
-    icon: rafaExpressIcon,
-    link: 'https://rafaelbiatoazevedo.github.io/Site-Rafa-Express/',
+    icon: worldStarWrasIcon,
+    link: 'https://world-starwars.netlify.app/',
     title: 'Projects.projectOne.title',
     type: 'Projects.projectOne.type',
     status: 'Projects.projectOne.status',
+    datas: ['Projects.projectOne.datas.dataOne'],
+    technologies: [
+      { name: 'javaScript', icon: FaJs, color: themeCurrency.colors.js },
+      { name: 'react', icon: FaReact, color: themeCurrency.colors.react },
+      {
+        name: 'typeScript',
+        icon: SiTypescript,
+        color: themeCurrency.colors.ts,
+      },
+      {
+        name: 'styled-components',
+        icon: SiStyledcomponents,
+        color: themeCurrency.colors.styled,
+      },
+    ],
+  },
+  {
+    icon: rafaExpressIcon,
+    link: 'https://rafaelbiatoazevedo.github.io/Site-Rafa-Express/',
+    title: 'Projects.projectTwo.title',
+    type: 'Projects.projectTwo.type',
+    status: 'Projects.projectTwo.status',
     datas: [
-      'Projects.projectOne.datas.dataOne',
-      'Projects.projectOne.datas.dataTwo',
+      'Projects.projectTwo.datas.dataOne',
+      'Projects.projectTwo.datas.dataTwo',
     ],
     technologies: [
       { name: 'HTML 5', icon: SiHtml5, color: themeCurrency.colors.html },
@@ -136,10 +165,10 @@ export const projects: TProject[] = [
   {
     icon: brothersIcon,
     link: 'https://brothers-reparos-geral.netlify.app/',
-    title: 'Projects.projectTwo.title',
-    type: 'Projects.projectTwo.type',
-    status: 'Projects.projectTwo.status',
-    datas: ['Projects.projectTwo.datas.dataOne'],
+    title: 'Projects.projectThree.title',
+    type: 'Projects.projectThree.type',
+    status: 'Projects.projectThree.status',
+    datas: ['Projects.projectThree.datas.dataOne'],
     technologies: [
       { name: 'HTML 5', icon: SiHtml5, color: themeCurrency.colors.html },
       { name: 'CSS 3', icon: SiCss3, color: themeCurrency.colors.css },
@@ -149,12 +178,12 @@ export const projects: TProject[] = [
   {
     icon: triviaIcon,
     link: 'https://rafaelbiatoazevedo.github.io/trivia-game/',
-    title: 'Projects.projectThree.title',
-    type: 'Projects.projectThree.type',
-    status: 'Projects.projectThree.status',
+    title: 'Projects.projectFour.title',
+    type: 'Projects.projectFour.type',
+    status: 'Projects.projectFour.status',
     datas: [
-      'Projects.projectThree.datas.dataOne',
-      'Projects.projectThree.datas.dataTwo',
+      'Projects.projectFour.datas.dataOne',
+      'Projects.projectFour.datas.dataTwo',
     ],
     technologies: [
       { name: 'HTML 5', icon: SiHtml5, color: themeCurrency.colors.html },
@@ -167,10 +196,10 @@ export const projects: TProject[] = [
   {
     icon: movieIcon,
     link: 'https://rafaelbiatoazevedo.github.io/movie-cards-library/',
-    title: 'Projects.projectFour.title',
-    type: 'Projects.projectFour.type',
-    status: 'Projects.projectFour.status',
-    datas: ['Projects.projectFour.datas.dataOne'],
+    title: 'Projects.projectFive.title',
+    type: 'Projects.projectFive.type',
+    status: 'Projects.projectFive.status',
+    datas: ['Projects.projectFive.datas.dataOne'],
     technologies: [
       { name: 'HTML 5', icon: SiHtml5, color: themeCurrency.colors.html },
       { name: 'CSS 3', icon: SiCss3, color: themeCurrency.colors.css },
