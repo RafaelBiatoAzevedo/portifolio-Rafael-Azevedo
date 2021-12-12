@@ -8,6 +8,8 @@ import { Language } from './components/Language';
 
 import { Wrapper, WrapperNavs } from './styles';
 
+import { MenuHumburguer } from '../MenuHumburguer';
+
 export const MenuNav: FC = (): JSX.Element => {
   return (
     <Wrapper>
@@ -16,6 +18,7 @@ export const MenuNav: FC = (): JSX.Element => {
           <Nav key={nav.title} button={nav} />
         ))}
       </WrapperNavs>
+      <MenuHumburguer />
       <Language />
       <StyleTheme />
     </Wrapper>

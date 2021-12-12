@@ -9,6 +9,7 @@ export const Wrapper = styled.footer`
   background-color: ${(p) => p.theme.colors.primary};
   gap: 20px;
   padding: 3rem 0;
+  text-align: center;
 `;
 export const WrapperTop = styled.div`
   display: flex;

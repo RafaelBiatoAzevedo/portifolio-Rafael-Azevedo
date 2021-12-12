@@ -28,6 +28,8 @@ export const themeDark = {
     fullHd: '1920px',
     medium: '1440px',
     small: '1280px',
+    tablet: '800px',
+    celphone: '500px',
   },
 };
 
@@ -61,5 +63,7 @@ export const themeLight = {
     fullHd: '1920px',
     medium: '1440px',
     small: '1280px',
+    tablet: '800px',
+    celphone: '500px',
   },
 };

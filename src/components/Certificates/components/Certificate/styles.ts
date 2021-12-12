@@ -46,6 +46,7 @@ export const Link = styled.a`
   display: flex;
   justify-content: center;
   text-decoration: none;
+  text-align: center;
 
   border: 1px solid transparent;
   border-radius: 3px;

@@ -8,6 +8,10 @@ export const Wrapper = styled.div`
   gap: 5px;
 
   width: 24%;
+
+  @media (max-width: ${(p) => p.theme.resolutions.small}) {
+    width: 26%;
+  }
 `;
 
 export const WrapperTitle = styled.div`
@@ -16,7 +20,7 @@ export const WrapperTitle = styled.div`
   justify-content: center;
   padding: 5px;
 
-  transform: skew(-20deg); /* Padrão */
+  transform: skew(-20deg);
 `;
 
 export const WrapperContent = styled.div`
