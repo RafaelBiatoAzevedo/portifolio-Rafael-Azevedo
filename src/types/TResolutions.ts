@@ -3,4 +3,6 @@ export type TResolutions = {
   fullHd: string;
   medium: string;
   small: string;
+  tablet: string;
+  celphone: string;
 };

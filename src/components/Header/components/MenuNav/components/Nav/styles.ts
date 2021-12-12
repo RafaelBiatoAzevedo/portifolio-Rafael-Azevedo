@@ -5,6 +5,7 @@ type TWrapper = {
 };
 
 export const Wrapper = styled.div<TWrapper>`
+  text-align: center;
   cursor: pointer;
   padding: 5px 10px;
   border-radius: 20px;

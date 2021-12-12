@@ -7,7 +7,12 @@ export const Wrapper = styled.div`
 `;
 
 export const WrapperNavs = styled.div`
+  align-items: center;
   display: flex;
   justify-content: space-between;
   width: 80%;
+
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    display: none;
+  }
 `;

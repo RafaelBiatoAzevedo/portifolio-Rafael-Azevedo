@@ -9,6 +9,10 @@ export const WrapperHeader = styled.header`
   gap: 10px;
 
   width: 100%;
+
+  @media (max-width: ${(p) => p.theme.resolutions.small}) {
+    padding: 10px;
+  }
 `;
 
 export const WrapperCenter = styled.div`
@@ -25,6 +29,10 @@ export const WrapperLogo = styled.div`
   gap: 10px;
 
   width: 24%;
+
+  @media (max-width: ${(p) => p.theme.resolutions.small}) {
+    width: 26%;
+  }
 `;
 
 export const WrapperText = styled.div`
@@ -33,6 +41,10 @@ export const WrapperText = styled.div`
   flex-direction: column;
   padding-left: 20%;
   flex: 1;
+
+  @media (max-width: ${(p) => p.theme.resolutions.small}) {
+    padding-left: 10%;
+  }
 `;
 
 export const WrapperPicture = styled.div`

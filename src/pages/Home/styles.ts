@@ -12,4 +12,8 @@ export const Main = styled.main`
   gap: 40px;
   padding: 10px 30px;
   width: 100%;
+
+  @media (max-width: ${(p) => p.theme.resolutions.small}) {
+    padding: 10px;
+  }
 `;
