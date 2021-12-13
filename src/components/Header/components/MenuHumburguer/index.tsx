@@ -34,11 +34,11 @@ export const MenuHumburguer: FC = (): JSX.Element => {
         isActive={isActive}
         isButton
         color={colors.secondary}
-        size="3rem"
+        size="4rem"
       >
         <HiOutlineViewList />
       </Icon>
-      <Icon color={colors.secondary} size="2rem">
+      <Icon color={colors.secondary} size="2.2rem">
         <MdKeyboardArrowRight />
       </Icon>
       <Text
