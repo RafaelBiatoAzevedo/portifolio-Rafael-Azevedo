@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
 export const WrapperLInks = styled.div`
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 20px;
   width: 100%;
 `;

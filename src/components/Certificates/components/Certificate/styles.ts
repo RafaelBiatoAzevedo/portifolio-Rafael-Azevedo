@@ -29,6 +29,11 @@ export const WrapperContent = styled.div`
 
   padding: 20px;
   gap: 30px;
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    padding: 10px;
+    gap: 15px;
+  }
 `;
 
 export const WrapperInfo = styled.div`
