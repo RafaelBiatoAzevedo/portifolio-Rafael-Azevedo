@@ -4,6 +4,8 @@ export const Wrapper = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
+
+  gap: 10px;
 `;
 
 export const WrapperNavs = styled.div`

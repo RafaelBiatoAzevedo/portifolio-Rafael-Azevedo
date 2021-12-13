@@ -40,6 +40,7 @@ export const Link = styled.a`
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  text-align: center;
 
   gap: 8px;
   width: 25%;

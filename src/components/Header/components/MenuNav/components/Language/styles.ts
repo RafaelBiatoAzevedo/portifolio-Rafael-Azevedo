@@ -6,6 +6,10 @@ export const Wrapper = styled.div`
   justify-content: center;
 
   gap: 10px;
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    gap: 5px;
+  }
 `;
 
 type TImage = {

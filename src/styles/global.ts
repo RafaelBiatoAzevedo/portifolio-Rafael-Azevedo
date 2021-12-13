@@ -27,4 +27,9 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 8px;
     }
   }
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    html {
+      font-size: 6px;
+    }
 `;
