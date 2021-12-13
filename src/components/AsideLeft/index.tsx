@@ -63,14 +63,15 @@ export const AsideLeft: FC = (): JSX.Element => {
             />
           ))}
           <WrapperShow isShow={isShowHS} size="250px">
-            {hardSkills.map((hs) => (
-              <Text
-                weight={fontWeight.medium}
-                color={colors.primary}
-                title={<Translator path={hs} />}
-                size="1.8rem"
-              />
-            ))}
+            {isShowHS &&
+              hardSkills.map((hs) => (
+                <Text
+                  weight={fontWeight.medium}
+                  color={colors.primary}
+                  title={<Translator path={hs} />}
+                  size="1.8rem"
+                />
+              ))}
           </WrapperShow>
         </ButtonShow>
         <ButtonShow onClick={handleChangeShowSS}>
@@ -96,14 +97,15 @@ export const AsideLeft: FC = (): JSX.Element => {
             />
           ))}
           <WrapperShow isShow={isShowSS} size="180px">
-            {softSkills.map((hs) => (
-              <Text
-                weight={fontWeight.medium}
-                color={colors.primary}
-                title={<Translator path={hs} />}
-                size="1.8rem"
-              />
-            ))}
+            {isShowSS &&
+              softSkills.map((hs) => (
+                <Text
+                  weight={fontWeight.medium}
+                  color={colors.primary}
+                  title={<Translator path={hs} />}
+                  size="1.8rem"
+                />
+              ))}
           </WrapperShow>
         </ButtonShow>
       </WrapperResponsive>
