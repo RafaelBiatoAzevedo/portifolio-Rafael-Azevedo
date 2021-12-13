@@ -17,5 +17,6 @@ export const Main = styled.main`
 
   @media (max-width: ${(p) => p.theme.resolutions.small}) {
     padding: 10px;
+    gap: 10px;
   }
 `;
