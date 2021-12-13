@@ -11,6 +11,11 @@ export const Wrapper = styled.div`
 
   height: 25px;
   width: 50px;
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    height: 20px;
+    width: 40px;
+  }
 `;
 
 type TButton = {
@@ -34,6 +39,11 @@ export const Button = styled.button<TButton>`
     css`
       order: 1;
     `}
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    height: 20px;
+    width: 20px;
+  }
 `;
 
 export const WrapperIcon = styled.div`

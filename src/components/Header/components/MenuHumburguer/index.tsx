@@ -48,12 +48,16 @@ export const MenuHumburguer: FC = (): JSX.Element => {
           />
         }
         color={colors.tertiary}
-        size="2rem"
+        size="1.5rem"
       />
       <WrapperDropDown isVisible={isActive}>
         {navs.map((nav) => (
           <Option onClick={() => handleChangeMenu(nav.name)}>
-            <Text title={<Translator path={nav.title} />} size="2rem" />
+            <Text
+              title={<Translator path={nav.title} />}
+              size="2rem"
+              color={colors.primary}
+            />
           </Option>
         ))}
       </WrapperDropDown>

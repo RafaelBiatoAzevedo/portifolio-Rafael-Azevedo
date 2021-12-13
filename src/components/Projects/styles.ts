@@ -7,4 +7,8 @@ export const Wrapper = styled.div`
 
   padding: 20px 0 20px 60px;
   gap: 20px;
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    padding: 10px;
+  }
 `;

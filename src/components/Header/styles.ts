@@ -25,7 +25,6 @@ export const WrapperLogo = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  border: solid red;
 
   gap: 10px;
 
