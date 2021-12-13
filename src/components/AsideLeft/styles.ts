@@ -12,6 +12,10 @@ export const Wrapper = styled.div`
   @media (max-width: ${(p) => p.theme.resolutions.small}) {
     width: 26%;
   }
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    display: none;
+  }
 `;
 
 export const WrapperTitle = styled.div`

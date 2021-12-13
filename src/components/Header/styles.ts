@@ -25,6 +25,7 @@ export const WrapperLogo = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+  border: solid red;
 
   gap: 10px;
 
@@ -32,6 +33,14 @@ export const WrapperLogo = styled.div`
 
   @media (max-width: ${(p) => p.theme.resolutions.small}) {
     width: 26%;
+  }
+
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    width: auto;
+  }
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    display: none;
   }
 `;
 
@@ -44,6 +53,14 @@ export const WrapperText = styled.div`
 
   @media (max-width: ${(p) => p.theme.resolutions.small}) {
     padding-left: 10%;
+  }
+
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    padding-left: 1%;
+  }
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    padding-left: 0;
   }
 `;
 

@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   flex-direction: column;
 
   padding: 20px 0 20px 60px;
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    padding: 10px;
+  }
 `;
 
 export const WrapperFormation = styled.div`
@@ -12,6 +16,10 @@ export const WrapperFormation = styled.div`
   flex-direction: column;
 
   width: 70%;
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    width: 100%;
+  }
 `;
 
 export const WrapperTitle = styled.div`
