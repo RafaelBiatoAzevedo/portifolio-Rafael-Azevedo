@@ -29,4 +29,8 @@ export const WrapperInfo = styled.div`
 
 export const Image = styled.img`
   width: 15%;
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    width: 25%;
+  }
 `;

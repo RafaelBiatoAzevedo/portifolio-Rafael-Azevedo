@@ -29,7 +29,7 @@ export const themeDark = {
     medium: '1440px',
     small: '1280px',
     tablet: '800px',
-    celphone: '500px',
+    celphone: '600px',
   },
 };
 
@@ -64,6 +64,6 @@ export const themeLight = {
     medium: '1440px',
     small: '1280px',
     tablet: '800px',
-    celphone: '500px',
+    celphone: '600px',
   },
 };
