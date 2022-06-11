@@ -16,17 +16,17 @@ export const LinksSocial: FC = (): JSX.Element => {
         href="https://www.linkedin.com/in/rafael-azevedo-530889195/"
         target="_blank"
       >
-        <Text title="" color={colors.tertiary} size="2.5rem">
+        <Text title="" color={colors.tertiary} size="3rem">
           <FaLinkedin />
         </Text>
       </Link>
       <Link href="https://github.com/RafaelBiatoAzevedo" target="_blank">
-        <Text title="" color={colors.tertiary} size="2.5rem">
+        <Text title="" color={colors.tertiary} size="3rem">
           <FaGithub />
         </Text>
       </Link>
       <Link href="https://www.instagram.com/?hl=pt-br" target="_blank">
-        <Text title="" color={colors.tertiary} size="2.5rem">
+        <Text title="" color={colors.tertiary} size="3rem">
           <FaInstagram />
         </Text>
       </Link>

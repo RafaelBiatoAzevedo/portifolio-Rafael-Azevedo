@@ -4,15 +4,10 @@ export const WrapperHeader = styled.header`
   display: flex;
   flex-direction: column;
   background-color: ${(p) => p.theme.colors.primary};
-  padding: 10px 30px;
 
   gap: 10px;
 
   width: 100%;
-
-  @media (max-width: ${(p) => p.theme.resolutions.small}) {
-    padding: 10px;
-  }
 `;
 
 export const WrapperCenter = styled.div`

@@ -1,18 +1,20 @@
 import { FC } from 'react';
 
+import { TopMenu } from '~/components/TopMenu';
+import { Start } from '~/components/Start';
+import { SoftSkills } from '~/components/SoftSkills';
 import { MainContent } from '~/components/MainContent';
-import { Header } from '~/components/Header';
 import { Footer } from '~/components/Footer';
-import { AsideLeft } from '~/components/AsideLeft';
 
 import { Body, Main } from './styles';
 
 export const Home: FC = (): JSX.Element => {
   return (
     <Body>
-      <Header />
+      <TopMenu />
+      <Start />
+      <SoftSkills />
       <Main>
-        <AsideLeft />
         <MainContent />
       </Main>
       <Footer />
