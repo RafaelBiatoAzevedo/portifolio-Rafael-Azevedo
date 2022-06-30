@@ -31,9 +31,6 @@ export const Skills: FC<ISKillsProps> = ({
             {createElement(iconOne)}
             <Text title="+" size="3rem" />
             {createElement(iconsTwo)}
-            {/* <GiBrain />
-            <Text title="+" size="3rem" />
-            <AiFillHeart /> */}
           </div>
         </WrapperTitle>
         <div>
