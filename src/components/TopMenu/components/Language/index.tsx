@@ -20,13 +20,13 @@ export const Language: FC = () => {
         onClick={() => handleChangeLanguage('pt-BR')}
         isActive={language === 'pt-BR'}
         src={brazilFlag}
-        alt="brazil"
+        alt="brazilFlag"
       />
       <Image
         onClick={() => handleChangeLanguage('en-US')}
         isActive={language === 'en-US'}
         src={usaFlag}
-        alt="brazil"
+        alt="usaFlag"
       />
     </Wrapper>
   );

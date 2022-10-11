@@ -2,6 +2,8 @@ import { createElement, FC } from 'react';
 
 import { IconType } from 'react-icons/lib';
 
+import { useTheme } from 'styled-components';
+
 import { Wrapper, WrapperText, WrapperTitle } from './styles';
 
 import { Translator } from '../Translator';
@@ -22,19 +24,39 @@ export const Skills: FC<ISKillsProps> = ({
   message,
   skills,
 }): JSX.Element => {
+  const { colors } = useTheme();
   return (
-    <Wrapper>
+    <Wrapper
+      backgroudColor={title === 'Soft Skills' ? '#444444' : colors.primary}
+    >
       <WrapperText>
         <WrapperTitle>
-          <Text title={title} size="3rem" weight="600" />
+          <Text
+            title={title}
+            size="3rem"
+            weight="600"
+            color={title === 'Hard Skills' ? '#444444' : colors.primary}
+          />
           <div>
-            {createElement(iconOne)}
-            <Text title="+" size="3rem" />
-            {createElement(iconsTwo)}
+            {createElement(iconOne, {
+              color: title === 'Hard Skills' ? '#444444' : colors.primary,
+            })}
+            <Text
+              title="+"
+              size="3rem"
+              color={title === 'Hard Skills' ? '#444444' : colors.primary}
+            />
+            {createElement(iconsTwo, {
+              color: title === 'Hard Skills' ? '#444444' : colors.primary,
+            })}
           </div>
         </WrapperTitle>
         <div>
-          <Text title={message} size="1.6rem" />
+          <Text
+            title={message}
+            size="1.6rem"
+            color={title === 'Hard Skills' ? '#444444' : colors.primary}
+          />
         </div>
       </WrapperText>
       <div>

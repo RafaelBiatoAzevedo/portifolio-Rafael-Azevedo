@@ -14,6 +14,10 @@ const objExport = {
       Im: "I'm",
       profession: 'Software developer',
     },
+    Start: {
+      messageOne: '',
+      messageTwo: '',
+    },
     AsideLeft: {
       hardSkills: {
         title: 'Hard Skills',
@@ -23,7 +27,7 @@ const objExport = {
         hsFour: 'Java, JavaScript, Python and C++',
         hsFive: 'TypeScript',
         hsSix: 'React and React Native',
-        hsSeven: 'Redux and Hooks',
+        hsSeven: 'Redux and Context',
         hsEight: 'MySql and MongoDB',
         hsNine: 'Git and GitHub',
         hsTen: 'Agile Methods',

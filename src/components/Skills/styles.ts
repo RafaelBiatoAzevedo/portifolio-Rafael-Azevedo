@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+type TWrapperProps = {
+  backgroudColor: string;
+};
+
+export const Wrapper = styled.div<TWrapperProps>`
   display: flex;
-  background-color: #444444;
+  background-color: ${(p) => p.backgroudColor};
   padding: 6rem 3rem;
 
   > div:last-child {

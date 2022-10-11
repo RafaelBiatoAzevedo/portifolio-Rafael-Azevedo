@@ -39,7 +39,7 @@ export const Nav: FC<TNav> = ({ button }): JSX.Element => {
             ? colors.tertiary
             : colors.secondary
         }
-        size="1.3rem"
+        size="1.1rem"
         weight={fontWeight.medium}
       />
     </Wrapper>

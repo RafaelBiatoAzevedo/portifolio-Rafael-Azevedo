@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 
   gap: 1rem;
-  padding: 3rem;
+  padding: 2rem;
 `;
 
 export const WrapperNavs = styled.div`

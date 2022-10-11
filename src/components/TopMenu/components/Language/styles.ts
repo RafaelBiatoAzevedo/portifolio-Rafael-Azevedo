@@ -21,7 +21,7 @@ export const Image = styled.img<TImage>`
   width: 37px;
 
   cursor: pointer;
-  opacity: ${(p) => (p.isActive ? '1' : '0.4')};
+  opacity: ${(p) => (p.isActive ? '1' : '0.3')};
   border: 1px solid transparent;
   border-radius: 2px;
   padding: 2px;
