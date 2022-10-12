@@ -140,7 +140,7 @@ export const mainContent: TMainContent = {
 export const projects: TProject[] = [
   {
     icon: worldStarWrasIcon,
-    link: 'https://world-starwars.netlify.app/',
+    link: 'https://worldstarwars.netlify.app/',
     title: 'Projects.projectOne.title',
     type: 'Projects.projectOne.type',
     status: 'Projects.projectOne.status',
@@ -182,7 +182,7 @@ export const projects: TProject[] = [
   },
   {
     icon: brothersIcon,
-    link: 'https://brothers-reparos-geral.netlify.app/',
+    link: 'https://brothersreparosgeral.netlify.app/',
     title: 'Projects.projectThree.title',
     type: 'Projects.projectThree.type',
     status: 'Projects.projectThree.status',
@@ -195,7 +195,7 @@ export const projects: TProject[] = [
   },
   {
     icon: triviaIcon,
-    link: 'https://rafaelbiatoazevedo.github.io/trivia-game/',
+    link: 'https://playtriviagame.netlify.app/',
     title: 'Projects.projectFour.title',
     type: 'Projects.projectFour.type',
     status: 'Projects.projectFour.status',

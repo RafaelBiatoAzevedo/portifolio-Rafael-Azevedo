@@ -6,14 +6,14 @@ import { useTheme } from 'styled-components';
 
 import { Wrapper, Content } from './styles';
 
-import { Text } from '../Text';
 import { Button } from '../Button';
 
 interface ICaroucelProps {
-  items: string[];
+  items: any[];
+  renderComponent: (item: any) => JSX.Element;
 }
 
-export const Caroucel: FC<ICaroucelProps> = ({ items }) => {
+export const Caroucel: FC<ICaroucelProps> = ({ items, renderComponent }) => {
   const { colors } = useTheme();
   const [index, setIndex] = useState<number>(0);
 
@@ -43,13 +43,12 @@ export const Caroucel: FC<ICaroucelProps> = ({ items }) => {
         icon={<HiChevronLeft color={colors.onBackgroundPrimary} size="3rem" />}
       />
       <Content>
-        <Text title={items[index]} size="20rem" />
-        <Text title={items[index + 1]} size="20rem" />
-        <Text title={items[index + 2]} size="20rem" />
+        {renderComponent(items[index])}
+        {renderComponent(items[index + 1])}
+        {renderComponent(items[index + 2])}
       </Content>
       <Button
         onClick={() => nextIndex()}
-        backgroundColor={colors.backgroundPrimary}
         isHoverBackgroundColor={colors.backgroundTopMenu}
         borderRadius="100px"
         height="4rem"

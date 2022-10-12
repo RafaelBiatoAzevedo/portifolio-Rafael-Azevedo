@@ -22,7 +22,10 @@ export const Projects: FC = (): JSX.Element => {
         color={colors.onBackgroundSecondary}
         weight="bold"
       />
-      <Caroucel items={['1', '2', '3', '4', '5', '6', '7', '8', '9']} />
+      <Caroucel
+        items={projects}
+        renderComponent={(item) => <Project project={item} />}
+      />
       {/* {projects.map((project) => (
         <Project key={project.title} project={project} />
       ))} */}

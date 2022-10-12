@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  background-color: ${(p) => p.theme.colors.backgroundPrimary};
+  padding: ${(p) => p.theme.spacing.lg};
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-
-  width: 100%;
+  width: 30%;
 `;
 
 export const WrapperTitle = styled.div`
@@ -17,8 +19,9 @@ export const WrapperTitle = styled.div`
 export const WrapperContent = styled.div`
   align-items: center;
   display: flex;
+  justify-content: space-between;
 
-  padding: 20px;
+  padding: ${(p) => p.theme.spacing.sm};
   gap: 30px;
 
   @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
@@ -48,7 +51,7 @@ export const Link = styled.a`
   text-align: center;
 
   gap: 8px;
-  width: 25%;
+  width: 35%;
 
   border: 1px solid transparent;
   border-radius: 4px;
