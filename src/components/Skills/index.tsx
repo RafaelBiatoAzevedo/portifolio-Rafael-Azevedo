@@ -4,7 +4,13 @@ import { IconType } from 'react-icons/lib';
 
 import { useTheme } from 'styled-components';
 
-import { Wrapper, WrapperText, WrapperTitle } from './styles';
+import {
+  Link,
+  Wrapper,
+  WrapperLinks,
+  WrapperText,
+  WrapperTitle,
+} from './styles';
 
 import { Translator } from '../Translator';
 import { Text } from '../Text';
@@ -26,14 +32,18 @@ export const Skills: FC<ISKillsProps> = ({
 }): JSX.Element => {
   const { colors } = useTheme();
 
-  const colorOnBackgroung = useMemo(() => {
-    if (title === 'Hard Skills') return '#444444';
-    return colors.primary;
-  }, [title, colors.primary]);
+  const onBackgroungColor = useMemo(() => {
+    if (title === 'Soft Skills') return colors.onBackgroundSecondary;
+    return colors.onBackgroundPrimary;
+  }, [title, colors]);
 
   return (
     <Wrapper
-      backgroudColor={title === 'Soft Skills' ? '#444444' : colors.primary}
+      backgroudColor={
+        title === 'Soft Skills'
+          ? colors.onBackgroundPrimary
+          : colors.onBackgroundSecondary
+      }
     >
       <WrapperText>
         <WrapperTitle>
@@ -41,15 +51,15 @@ export const Skills: FC<ISKillsProps> = ({
             title={title}
             size="3rem"
             weight="600"
-            color={colorOnBackgroung}
+            color={onBackgroungColor}
           />
           <div>
             {createElement(iconOne, {
-              color: colorOnBackgroung,
+              color: onBackgroungColor,
             })}
-            <Text title="+" size="3rem" color={colorOnBackgroung} />
+            <Text title="+" size="3rem" color={onBackgroungColor} />
             {createElement(iconsTwo, {
-              color: colorOnBackgroung,
+              color: onBackgroungColor,
             })}
           </div>
         </WrapperTitle>
@@ -57,9 +67,32 @@ export const Skills: FC<ISKillsProps> = ({
           <Text
             title={<Translator path={pathMessage} />}
             size="1.6rem"
-            color={colorOnBackgroung}
+            color={onBackgroungColor}
           />
         </div>
+        <WrapperLinks>
+          {title === 'Hard Skills' && (
+            <Link href="https://www.puc-campinas.edu.br/" target="blank">
+              <Text
+                title="PUC-CAMPINAS"
+                color="#0e4194"
+                size="1.5rem"
+                weight="bold"
+              />
+            </Link>
+          )}
+          {title === 'Hard Skills' && (
+            <Text
+              title="-"
+              size="1.5rem"
+              color={onBackgroungColor}
+              weight="bold"
+            />
+          )}
+          <Link href="https://www.betrybe.com/" target="blank">
+            <Text title="TRYBE" color="#1db702" weight="bold" size="1.5rem" />
+          </Link>
+        </WrapperLinks>
       </WrapperText>
       <div>
         {skills.map((skill) => (

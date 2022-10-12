@@ -37,7 +37,7 @@ export const Nav: FC<TNav> = ({ button }): JSX.Element => {
             ? colors.primary
             : button.name === menuSelected
             ? colors.secondary
-            : colors.tertiary
+            : colors.onBackgroundTopMenu
         }
         size="1.1rem"
         weight={fontWeight.bold}

@@ -2,13 +2,14 @@ const objExport = {
   translations: {
     MenuNav: {
       navOne: 'Start',
-      navTwo: 'Projects',
-      navThree: 'Courses',
-      navFour: 'Certificates',
+      navTwo: 'Skills',
+      navThree: 'Projects',
+      navFour: 'Courses',
       navFive: 'Formation',
       navSix: 'About me',
       navSeven: 'Contact me',
       navEigth: 'Professional experiencies',
+      navNine: 'Certificates',
     },
     Header: {
       salute: 'Hello',

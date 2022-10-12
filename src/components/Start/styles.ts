@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   align-items: stretch;
-  background-color: #0e0e0e;
+  background-color: ${(p) => p.theme.colors.backgroundPrimary};
   display: flex;
   justify-content: center;
-  padding: 6rem 3rem;
-  padding-top: 10rem;
+  padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
+  margin-top: ${(p) => p.theme.spacing.xxl};
 
   gap: 3rem;
 `;
@@ -28,6 +28,6 @@ export const WrapperImage = styled.div`
 
   > img {
     border-radius: 100%;
-    width: 24rem;
+    width: 22rem;
   }
 `;

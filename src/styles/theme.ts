@@ -1,8 +1,22 @@
 export const themeDark = {
   colors: {
     primary: '#181818',
+    onPrimary: '#595959',
+
     secondary: '#5925b2',
+    onSecondary: '',
+
     tertiary: '#595959',
+    onTertiary: '#181818',
+
+    backgroundTopMenu: '#000',
+    onBackgroundTopMenu: '#595959',
+
+    backgroundPrimary: '#181818',
+    onBackgroundPrimary: '#444444',
+
+    backgroundSecondary: '#444444',
+    onBackgroundSecondary: '#181818',
 
     html: '#f14e2b',
     css: '#3100f4',
@@ -21,6 +35,11 @@ export const themeDark = {
     xxs: '2px',
     xs: '4px',
     sm: '8px',
+    md: '16px',
+    lm: '24px',
+    lg: '32px',
+    xl: '48px',
+    xxl: '64px',
   },
 
   fontWeight: {
@@ -41,9 +60,23 @@ export const themeDark = {
 
 export const themeLight = {
   colors: {
-    primary: '#6c6868',
-    secondary: '#000',
-    tertiary: '#5925b2',
+    primary: '#181818',
+    onPrimary: '#595959',
+
+    secondary: '#5925b2',
+    onSecondary: '',
+
+    tertiary: '#595959',
+    onTertiary: '',
+
+    backgroundTopMenu: '#000',
+    onBackgroundTopMenu: '#595959',
+
+    backgroundPrimary: '',
+    onBackgroundPrimary: '',
+
+    backgroundSecondary: '#444444',
+    onBackgroundSecondary: '',
 
     html: '#f14e2b',
     css: '#3100f4',
@@ -62,6 +95,11 @@ export const themeLight = {
     xxs: '2px',
     xs: '4px',
     sm: '8px',
+    md: '16px',
+    lm: '24px',
+    lg: '32px',
+    xl: '48px',
+    xxl: '64px',
   },
 
   fontWeight: {

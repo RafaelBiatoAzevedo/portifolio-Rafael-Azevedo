@@ -79,18 +79,24 @@ export const softSkills = [
 
 export const navs: TNavs[] = [
   { title: 'MenuNav.navOne', name: 'start' },
-  { title: 'MenuNav.navTwo', name: 'projects' },
-  { title: 'MenuNav.navThree', name: 'courses' },
-  { title: 'MenuNav.navFour', name: 'certificates' },
+  { title: 'MenuNav.navTwo', name: 'skills' },
+  { title: 'MenuNav.navThree', name: 'projects' },
+  { title: 'MenuNav.navFour', name: 'courses' },
   { title: 'MenuNav.navFive', name: 'formation' },
   { title: 'MenuNav.navSix', name: 'aboutMe' },
   { title: 'MenuNav.navSeven', name: 'contactMe' },
   { title: 'MenuNav.navEigth', name: 'experiences' },
+  { title: 'MenuNav.navNine', name: 'certificates' },
 ];
 
 export const mainContent: TMainContent = {
   start: {
     title: 'Start.title',
+    icon: HiOutlineCode,
+    component: Fragment,
+  },
+  skills: {
+    title: 'Skills.title',
     icon: HiOutlineCode,
     component: Fragment,
   },
@@ -134,7 +140,7 @@ export const mainContent: TMainContent = {
 export const projects: TProject[] = [
   {
     icon: worldStarWrasIcon,
-    link: 'https://world-starwars.netlify.app/',
+    link: 'https://worldstarwars.netlify.app/',
     title: 'Projects.projectOne.title',
     type: 'Projects.projectOne.type',
     status: 'Projects.projectOne.status',
@@ -176,7 +182,7 @@ export const projects: TProject[] = [
   },
   {
     icon: brothersIcon,
-    link: 'https://brothers-reparos-geral.netlify.app/',
+    link: 'https://brothersreparosgeral.netlify.app/',
     title: 'Projects.projectThree.title',
     type: 'Projects.projectThree.type',
     status: 'Projects.projectThree.status',
@@ -189,7 +195,7 @@ export const projects: TProject[] = [
   },
   {
     icon: triviaIcon,
-    link: 'https://rafaelbiatoazevedo.github.io/trivia-game/',
+    link: 'https://playtriviagame.netlify.app/',
     title: 'Projects.projectFour.title',
     type: 'Projects.projectFour.type',
     status: 'Projects.projectFour.status',

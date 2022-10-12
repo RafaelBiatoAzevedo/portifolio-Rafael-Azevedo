@@ -18,7 +18,7 @@ export const Start: FC = () => {
         <div>
           <Text
             title={<Translator path="Header.salute" />}
-            color={colors.secondary}
+            color={colors.onBackgroundPrimary}
             size="4rem"
             weight={fontWeight.medium}
           >
@@ -26,13 +26,13 @@ export const Start: FC = () => {
           </Text>
           <Text
             title={<Translator path="Header.Im" />}
-            color={colors.secondary}
+            color={colors.onBackgroundPrimary}
             size="3.5rem"
             weight={fontWeight.medium}
           >
             <Text
               title="Rafael Azevedo"
-              color={colors.tertiary}
+              color={colors.secondary}
               size="3.5rem"
               weight={fontWeight.bold}
               mLeft="10px"
@@ -41,7 +41,7 @@ export const Start: FC = () => {
           </Text>
           <Text
             title={<Translator path="Header.profession" />}
-            color={colors.secondary}
+            color={colors.onBackgroundPrimary}
             size="3.5rem"
             weight={fontWeight.medium}
           />
@@ -49,12 +49,12 @@ export const Start: FC = () => {
         <div>
           <Text
             title={<Translator path="Start.messageOne" />}
-            color={colors.tertiary}
+            color={colors.onBackgroundPrimary}
             size="2rem"
           />
           <Text
             title={<Translator path="Start.messageTwo" />}
-            color={colors.tertiary}
+            color={colors.onBackgroundPrimary}
             size="2rem"
           />
         </div>
