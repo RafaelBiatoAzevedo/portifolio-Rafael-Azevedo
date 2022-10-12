@@ -2,11 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
-  gap: 25px;
-
-  @media (max-width: ${(p) => p.theme.resolutions.medium}) {
-    gap: 15px;
-  }
+  gap: 3rem;
 `;
 
 export const Link = styled.a`
@@ -14,8 +10,8 @@ export const Link = styled.a`
   display: flex;
   justify-content: center;
   border: 1px solid transparent;
-  border-radius: 2px;
-  padding: 2px;
+  border-radius: 0.3rem;
+  padding: 0.4rem;
 
   &:hover {
     border: 1px solid ${(p) => p.theme.colors.tertiary};

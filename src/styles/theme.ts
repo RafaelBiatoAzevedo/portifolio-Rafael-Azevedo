@@ -17,6 +17,12 @@ export const themeDark = {
     sun: '#f49e12 ',
   },
 
+  spacing: {
+    xxs: '2px',
+    xs: '4px',
+    sm: '8px',
+  },
+
   fontWeight: {
     regular: '400',
     medium: '700',
@@ -50,6 +56,12 @@ export const themeLight = {
 
     moon: '#d4dee1',
     sun: '#f49e12 ',
+  },
+
+  spacing: {
+    xxs: '2px',
+    xs: '4px',
+    sm: '8px',
   },
 
   fontWeight: {
