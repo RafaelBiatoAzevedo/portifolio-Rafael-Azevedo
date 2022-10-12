@@ -7,7 +7,7 @@ type TWrapperProps = {
 export const Wrapper = styled.div<TWrapperProps>`
   display: flex;
   background-color: ${(p) => p.backgroudColor};
-  padding: 6rem 3rem;
+  padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
 
   > div:last-child {
     display: flex;
@@ -45,4 +45,16 @@ export const WrapperTitle = styled.div`
     gap: 1rem;
     font-size: 3.5rem;
   }
+`;
+
+export const WrapperLinks = styled.div`
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: row;
+
+  gap: 1rem;
+`;
+
+export const Link = styled.a`
+  text-decoration: none;
 `;

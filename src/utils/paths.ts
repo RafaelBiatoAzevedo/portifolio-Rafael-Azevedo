@@ -79,18 +79,24 @@ export const softSkills = [
 
 export const navs: TNavs[] = [
   { title: 'MenuNav.navOne', name: 'start' },
-  { title: 'MenuNav.navTwo', name: 'projects' },
-  { title: 'MenuNav.navThree', name: 'courses' },
-  { title: 'MenuNav.navFour', name: 'certificates' },
+  { title: 'MenuNav.navTwo', name: 'skills' },
+  { title: 'MenuNav.navThree', name: 'projects' },
+  { title: 'MenuNav.navFour', name: 'courses' },
   { title: 'MenuNav.navFive', name: 'formation' },
   { title: 'MenuNav.navSix', name: 'aboutMe' },
   { title: 'MenuNav.navSeven', name: 'contactMe' },
   { title: 'MenuNav.navEigth', name: 'experiences' },
+  { title: 'MenuNav.navNine', name: 'certificates' },
 ];
 
 export const mainContent: TMainContent = {
   start: {
     title: 'Start.title',
+    icon: HiOutlineCode,
+    component: Fragment,
+  },
+  skills: {
+    title: 'Skills.title',
     icon: HiOutlineCode,
     component: Fragment,
   },

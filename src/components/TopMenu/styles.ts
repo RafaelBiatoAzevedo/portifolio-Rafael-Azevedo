@@ -2,12 +2,11 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   align-items: center;
-  background-color: #000;
+  background-color: ${(p) => p.theme.colors.backgroundTopMenu};
   display: flex;
   justify-content: space-between;
 
-  gap: 1rem;
-  padding: 2rem;
+  padding: ${(p) => p.theme.spacing.lm};
 
   position: fixed;
   width: 100%;

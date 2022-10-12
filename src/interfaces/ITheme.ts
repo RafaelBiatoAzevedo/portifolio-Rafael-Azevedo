@@ -1,7 +1,21 @@
 export type TColors = {
   primary: string;
+  onPrimary: string;
+
   secondary: string;
+  onSecondary: string;
+
   tertiary: string;
+  onTertiary: string;
+
+  backgroundTopMenu: string;
+  onBackgroundTopMenu: string;
+
+  backgroundPrimary: string;
+  onBackgroundPrimary: string;
+
+  backgroundSecondary: string;
+  onBackgroundSecondary: string;
 
   html: string;
   css: string;
@@ -35,6 +49,11 @@ type TSpacing = {
   xxs: string;
   xs: string;
   sm: string;
+  md: string;
+  lm: string;
+  lg: string;
+  xl: string;
+  xxl: string;
 };
 
 export interface ITheme {
