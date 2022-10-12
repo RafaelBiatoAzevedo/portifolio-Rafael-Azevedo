@@ -9,10 +9,9 @@ import { softSkills, hardSkills } from '~/utils/paths';
 import { TopMenu } from '~/components/TopMenu';
 import { Start } from '~/components/Start';
 import { Skills } from '~/components/Skills';
-import { MainContent } from '~/components/MainContent';
 import { Footer } from '~/components/Footer';
 
-import { Body, Main } from './styles';
+import { Body } from './styles';
 
 export const Home: FC = (): JSX.Element => {
   return (
@@ -23,19 +22,16 @@ export const Home: FC = (): JSX.Element => {
         title="Soft Skills"
         iconOne={GiBrain}
         iconsTwo={AiFillHeart}
-        message="Habilidades pessoais adquiridas ao longo da vida social e profissional, aperfeiçoadas no curso da TRYBE e praticadas diariamente."
+        pathMessage="SoftSkills.message"
         skills={softSkills}
       />
       <Skills
         title="Hard Skills"
         iconOne={BsTools}
         iconsTwo={IoSettingsSharp}
-        message="Habilidades pessoais adquiridas ao longo da vida social e profissional, aperfeiçoadas no curso da TRYBE e praticadas diariamente."
+        pathMessage="HardSkills.message"
         skills={hardSkills}
       />
-      <Main>
-        <MainContent />
-      </Main>
       <Footer />
     </Body>
   );

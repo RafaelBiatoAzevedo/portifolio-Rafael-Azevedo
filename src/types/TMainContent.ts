@@ -5,6 +5,7 @@ type TContent = {
 };
 
 export type TMainContent = {
+  start: TContent;
   projects: TContent;
   formation: TContent;
   courses: TContent;

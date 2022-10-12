@@ -1,3 +1,5 @@
+import { Fragment } from 'react';
+
 import {
   SiHtml5,
   SiCss3,
@@ -47,45 +49,51 @@ import computerScienceIcon from '~/assets/images/certificates/computerScience.pn
 import backEndIcon from '~/assets/images/certificates/BackEnd.png';
 
 export const hardSkills = [
-  'AsideLeft.hardSkills.hsOne',
-  'AsideLeft.hardSkills.hsTwo',
-  'AsideLeft.hardSkills.hsThree',
-  'AsideLeft.hardSkills.hsFour',
-  'AsideLeft.hardSkills.hsFive',
-  'AsideLeft.hardSkills.hsSix',
-  'AsideLeft.hardSkills.hsSeven',
-  'AsideLeft.hardSkills.hsEight',
-  'AsideLeft.hardSkills.hsNine',
-  'AsideLeft.hardSkills.hsTen',
-  'AsideLeft.hardSkills.hsEleven',
-  'AsideLeft.hardSkills.hsTwelve',
+  'HardSkills.hsOne',
+  'HardSkills.hsTwo',
+  'HardSkills.hsThree',
+  'HardSkills.hsFour',
+  'HardSkills.hsFive',
+  'HardSkills.hsSix',
+  'HardSkills.hsSeven',
+  'HardSkills.hsEight',
+  'HardSkills.hsNine',
+  'HardSkills.hsTen',
+  'HardSkills.hsEleven',
+  'HardSkills.hsTwelve',
 ];
 
 export const softSkills = [
-  'AsideLeft.softSkills.ssOne',
-  'AsideLeft.softSkills.ssTwo',
-  'AsideLeft.softSkills.ssThree',
-  'AsideLeft.softSkills.ssFour',
-  'AsideLeft.softSkills.ssFive',
-  'AsideLeft.softSkills.ssSix',
-  'AsideLeft.softSkills.ssSeven',
-  'AsideLeft.softSkills.ssEight',
-  'AsideLeft.softSkills.ssNine',
-  'AsideLeft.softSkills.ssTen',
-  'AsideLeft.softSkills.ssEleven',
+  'SoftSkills.ssOne',
+  'SoftSkills.ssTwo',
+  'SoftSkills.ssThree',
+  'SoftSkills.ssFour',
+  'SoftSkills.ssFive',
+  'SoftSkills.ssSix',
+  'SoftSkills.ssSeven',
+  'SoftSkills.ssEight',
+  'SoftSkills.ssNine',
+  'SoftSkills.ssTen',
+  'SoftSkills.ssEleven',
 ];
 
 export const navs: TNavs[] = [
-  { title: 'MenuNav.navOne', name: 'projects' },
-  { title: 'MenuNav.navTwo', name: 'formation' },
+  { title: 'MenuNav.navOne', name: 'start' },
+  { title: 'MenuNav.navTwo', name: 'projects' },
   { title: 'MenuNav.navThree', name: 'courses' },
   { title: 'MenuNav.navFour', name: 'certificates' },
-  { title: 'MenuNav.navFive', name: 'experiences' },
+  { title: 'MenuNav.navFive', name: 'formation' },
   { title: 'MenuNav.navSix', name: 'aboutMe' },
   { title: 'MenuNav.navSeven', name: 'contactMe' },
+  { title: 'MenuNav.navEigth', name: 'experiences' },
 ];
 
 export const mainContent: TMainContent = {
+  start: {
+    title: 'Start.title',
+    icon: HiOutlineCode,
+    component: Fragment,
+  },
   projects: {
     title: 'Projects.title',
     icon: HiOutlineCode,

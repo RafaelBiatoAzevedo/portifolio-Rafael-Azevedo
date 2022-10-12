@@ -11,13 +11,13 @@ export const Wrapper = styled.div<TWrapper>`
   border-radius: 20px;
 
   &:hover {
-    background-color: ${(p) => p.theme.colors.tertiary};
+    background-color: ${(p) => p.theme.colors.secondary};
   }
 
   ${(p) =>
     p.isBorderBottom &&
     css`
-      border-bottom: solid 1px ${() => p.theme.colors.tertiary};
+      border-bottom: solid 1px ${() => p.theme.colors.secondary};
     `}
 
   transition: background-color 0.8s;

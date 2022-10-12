@@ -6,6 +6,8 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   padding: 6rem 3rem;
+  padding-top: 10rem;
+
   gap: 3rem;
 `;
 

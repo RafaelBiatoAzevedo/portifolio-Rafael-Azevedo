@@ -1,4 +1,5 @@
 export type TMenu =
+  | 'start'
   | 'projects'
   | 'formation'
   | 'courses'

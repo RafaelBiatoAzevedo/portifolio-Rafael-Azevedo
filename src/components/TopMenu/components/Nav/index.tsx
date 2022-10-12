@@ -36,11 +36,11 @@ export const Nav: FC<TNav> = ({ button }): JSX.Element => {
           isHover
             ? colors.primary
             : button.name === menuSelected
-            ? colors.tertiary
-            : colors.secondary
+            ? colors.secondary
+            : colors.tertiary
         }
         size="1.1rem"
-        weight={fontWeight.medium}
+        weight={fontWeight.bold}
       />
     </Wrapper>
   );

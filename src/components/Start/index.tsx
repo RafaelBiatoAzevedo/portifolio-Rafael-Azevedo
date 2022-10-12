@@ -48,12 +48,12 @@ export const Start: FC = () => {
         </div>
         <div>
           <Text
-            title="Sou apaixonado por tecnologia e inovação."
+            title={<Translator path="Start.messageOne" />}
             color={colors.tertiary}
             size="2rem"
           />
           <Text
-            title="Minha satisfação é desenvolver softwares para facilitar a vida das pessoas."
+            title={<Translator path="Start.messageTwo" />}
             color={colors.tertiary}
             size="2rem"
           />

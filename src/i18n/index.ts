@@ -2,7 +2,7 @@ import { initReactI18next } from 'react-i18next';
 
 import i18n from 'i18next';
 
-import translations from './locates';
+import translations from './locales';
 
 const i18nConfig = {
   resources: translations,

@@ -8,6 +8,9 @@ export const Wrapper = styled.div`
 
   gap: 1rem;
   padding: 2rem;
+
+  position: fixed;
+  width: 100%;
 `;
 
 export const WrapperNavs = styled.div`

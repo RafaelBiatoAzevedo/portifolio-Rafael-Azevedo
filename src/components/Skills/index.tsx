@@ -1,4 +1,4 @@
-import { createElement, FC } from 'react';
+import { createElement, FC, useMemo } from 'react';
 
 import { IconType } from 'react-icons/lib';
 
@@ -13,7 +13,7 @@ interface ISKillsProps {
   title: string;
   iconOne: IconType;
   iconsTwo: IconType;
-  message: string;
+  pathMessage: string;
   skills: string[];
 }
 
@@ -21,10 +21,16 @@ export const Skills: FC<ISKillsProps> = ({
   title,
   iconOne,
   iconsTwo,
-  message,
+  pathMessage,
   skills,
 }): JSX.Element => {
   const { colors } = useTheme();
+
+  const colorOnBackgroung = useMemo(() => {
+    if (title === 'Hard Skills') return '#444444';
+    return colors.primary;
+  }, [title, colors.primary]);
+
   return (
     <Wrapper
       backgroudColor={title === 'Soft Skills' ? '#444444' : colors.primary}
@@ -35,27 +41,23 @@ export const Skills: FC<ISKillsProps> = ({
             title={title}
             size="3rem"
             weight="600"
-            color={title === 'Hard Skills' ? '#444444' : colors.primary}
+            color={colorOnBackgroung}
           />
           <div>
             {createElement(iconOne, {
-              color: title === 'Hard Skills' ? '#444444' : colors.primary,
+              color: colorOnBackgroung,
             })}
-            <Text
-              title="+"
-              size="3rem"
-              color={title === 'Hard Skills' ? '#444444' : colors.primary}
-            />
+            <Text title="+" size="3rem" color={colorOnBackgroung} />
             {createElement(iconsTwo, {
-              color: title === 'Hard Skills' ? '#444444' : colors.primary,
+              color: colorOnBackgroung,
             })}
           </div>
         </WrapperTitle>
         <div>
           <Text
-            title={message}
+            title={<Translator path={pathMessage} />}
             size="1.6rem"
-            color={title === 'Hard Skills' ? '#444444' : colors.primary}
+            color={colorOnBackgroung}
           />
         </div>
       </WrapperText>
