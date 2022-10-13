@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+import { Element as ElementScroll } from 'react-scroll';
 import { IoSettingsSharp } from 'react-icons/io5';
 import { GiBrain } from 'react-icons/gi';
 import { BsTools } from 'react-icons/bs';
@@ -18,14 +19,18 @@ export const Home: FC = (): JSX.Element => {
   return (
     <Body>
       <TopMenu />
-      <Start />
-      <Skills
-        title="Soft Skills"
-        iconOne={GiBrain}
-        iconsTwo={AiFillHeart}
-        pathMessage="SoftSkills.message"
-        skills={softSkills}
-      />
+      <ElementScroll name="start">
+        <Start />
+      </ElementScroll>
+      <ElementScroll name="skills">
+        <Skills
+          title="Soft Skills"
+          iconOne={GiBrain}
+          iconsTwo={AiFillHeart}
+          pathMessage="SoftSkills.message"
+          skills={softSkills}
+        />
+      </ElementScroll>
       <Skills
         title="Hard Skills"
         iconOne={BsTools}
@@ -33,7 +38,9 @@ export const Home: FC = (): JSX.Element => {
         pathMessage="HardSkills.message"
         skills={hardSkills}
       />
-      <Projects />
+      <ElementScroll name="projects">
+        <Projects />
+      </ElementScroll>
       <Footer />
     </Body>
   );

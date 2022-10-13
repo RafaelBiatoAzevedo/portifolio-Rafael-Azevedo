@@ -16,7 +16,7 @@ import { FaUniversity, FaGraduationCap, FaJs, FaReact } from 'react-icons/fa';
 import { BsPersonBoundingBox } from 'react-icons/bs';
 
 import { TProject } from '~/types/TProject';
-import { TNavs } from '~/types/TNavs';
+import { TNav } from '~/types/TNav';
 import { TMainContent } from '~/types/TMainContent';
 import { TExperience } from '~/types/TExperience';
 import { TCourse } from '~/types/TCourse';
@@ -77,7 +77,7 @@ export const softSkills = [
   'SoftSkills.ssEleven',
 ];
 
-export const navs: TNavs[] = [
+export const navs: TNav[] = [
   { title: 'MenuNav.navOne', name: 'start' },
   { title: 'MenuNav.navTwo', name: 'skills' },
   { title: 'MenuNav.navThree', name: 'projects' },
