@@ -26,9 +26,6 @@ export const Projects: FC = (): JSX.Element => {
         items={projects}
         renderComponent={(item) => <Project project={item} />}
       />
-      {/* {projects.map((project) => (
-        <Project key={project.title} project={project} />
-      ))} */}
     </Wrapper>
   );
 };

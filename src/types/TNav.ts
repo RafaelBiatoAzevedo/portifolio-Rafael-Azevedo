@@ -1,6 +1,6 @@
 import { TMenu } from './TMenu';
 
-export type TNavs = {
+export type TNav = {
   title: string;
   name: TMenu;
 };

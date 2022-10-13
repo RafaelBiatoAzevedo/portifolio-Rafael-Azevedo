@@ -15,6 +15,7 @@ export const Wrapper = styled.div<TWrapperProps>`
     flex-wrap: wrap;
 
     justify-content: center;
+    min-height: 30rem;
     width: 40%;
     gap: 2rem;
   }

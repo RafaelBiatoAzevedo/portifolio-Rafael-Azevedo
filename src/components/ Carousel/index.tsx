@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 
-import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 import { useTheme } from 'styled-components';
 
@@ -37,10 +37,12 @@ export const Caroucel: FC<ICaroucelProps> = ({ items, renderComponent }) => {
         onClick={() => previusIndex()}
         backgroundColor={colors.backgroundPrimary}
         isHoverBackgroundColor={colors.backgroundTopMenu}
-        borderRadius="100px"
+        borderRadius="80%"
         height="4rem"
-        width="3.5rem"
-        icon={<HiChevronLeft color={colors.onBackgroundPrimary} size="3rem" />}
+        width="4rem"
+        icon={
+          <BsChevronLeft color={colors.onBackgroundPrimary} size="2.5rem" />
+        }
       />
       <Content>
         {renderComponent(items[index])}
@@ -49,11 +51,14 @@ export const Caroucel: FC<ICaroucelProps> = ({ items, renderComponent }) => {
       </Content>
       <Button
         onClick={() => nextIndex()}
+        backgroundColor={colors.backgroundPrimary}
         isHoverBackgroundColor={colors.backgroundTopMenu}
-        borderRadius="100px"
+        borderRadius="80%"
         height="4rem"
-        width="3.5rem"
-        icon={<HiChevronRight color={colors.onBackgroundPrimary} size="3rem" />}
+        width="4rem"
+        icon={
+          <BsChevronRight color={colors.onBackgroundPrimary} size="2.5rem" />
+        }
       />
     </Wrapper>
   );
