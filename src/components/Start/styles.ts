@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
   margin-top: ${(p) => p.theme.spacing.xxl};
+  min-height: 42rem;
 
   gap: 3rem;
 `;

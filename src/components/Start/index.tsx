@@ -19,7 +19,7 @@ export const Start: FC = () => {
           <Text
             title={<Translator path="Header.salute" />}
             color={colors.onBackgroundPrimary}
-            size="4rem"
+            size="5rem"
             weight={fontWeight.medium}
           >
             ,

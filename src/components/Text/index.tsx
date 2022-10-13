@@ -3,7 +3,7 @@ import { FC } from 'react';
 import { TextStyle } from './styles';
 
 type TText = {
-  title: string | JSX.Element;
+  title?: string | JSX.Element | undefined;
   color?: string;
   size?: string;
   padddingY?: string;
@@ -31,13 +31,14 @@ export const Text: FC<TText> = ({
       weight={weight}
       mLeft={mLeft}
     >
-      {title}
+      {!!title && title}
       {children}
     </TextStyle>
   );
 };
 
 Text.defaultProps = {
+  title: undefined,
   color: undefined,
   size: undefined,
   padddingY: undefined,

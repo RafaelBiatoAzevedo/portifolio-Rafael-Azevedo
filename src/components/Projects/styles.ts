@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   background-color: ${(p) => p.theme.colors.backgroundSecondary};
   display: flex;
   flex-direction: column;
+  min-height: 42rem;
 
   gap: 4rem;
 

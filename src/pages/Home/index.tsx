@@ -27,7 +27,8 @@ export const Home: FC = (): JSX.Element => {
           title="Soft Skills"
           iconOne={GiBrain}
           iconsTwo={AiFillHeart}
-          pathMessage="SoftSkills.message"
+          pathMessageOne="SoftSkills.messageOne"
+          pathMessageTwo="SoftSkills.messageTwo"
           skills={softSkills}
         />
       </ElementScroll>
@@ -35,7 +36,8 @@ export const Home: FC = (): JSX.Element => {
         title="Hard Skills"
         iconOne={BsTools}
         iconsTwo={IoSettingsSharp}
-        pathMessage="HardSkills.message"
+        pathMessageOne="HardSkills.messageOne"
+        pathMessageTwo="HardSkills.messageTwo"
         skills={hardSkills}
       />
       <ElementScroll name="projects">
