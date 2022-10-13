@@ -38,12 +38,6 @@ export const WrapperText = styled.div`
   gap: 4rem;
 `;
 
-export const WrapperMessage = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-`;
-
 export const WrapperTitle = styled.div`
   display: flex;
   gap: 2rem;
@@ -54,14 +48,6 @@ export const WrapperTitle = styled.div`
     gap: 1rem;
     font-size: 3.5rem;
   }
-`;
-
-export const WrapperLinks = styled.div`
-  justify-self: flex-end;
-  display: flex;
-  flex-direction: row;
-
-  gap: 1rem;
 `;
 
 type TLinkProps = {
