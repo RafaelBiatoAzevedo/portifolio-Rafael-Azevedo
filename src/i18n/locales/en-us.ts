@@ -11,12 +11,10 @@ const objExport = {
       navEigth: 'Professional experiencies',
       navNine: 'Certificates',
     },
-    Header: {
+    Start: {
       salute: 'Hello',
       Im: "I'm",
       profession: 'Software developer.',
-    },
-    Start: {
       messageOne: 'I am passionate about technology and innovation.',
       messageTwo:
         "My satisfaction is to develop software to make people's lives easier.",

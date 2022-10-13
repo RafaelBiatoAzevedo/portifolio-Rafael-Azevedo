@@ -13,7 +13,7 @@ export const Link = styled.a`
   justify-content: center;
   border: 1px solid transparent;
   border-radius: 2px;
-  padding: 2px;
+  padding: 4px;
 
   &:hover {
     border: 1px solid ${(p) => p.theme.colors.tertiary};

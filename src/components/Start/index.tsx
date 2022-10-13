@@ -17,7 +17,7 @@ export const Start: FC = () => {
       <WrapperText>
         <div>
           <Text
-            title={<Translator path="Header.salute" />}
+            title={<Translator path="Start.salute" />}
             color={colors.onBackgroundPrimary}
             size="5rem"
             weight={fontWeight.medium}
@@ -25,7 +25,7 @@ export const Start: FC = () => {
             ,
           </Text>
           <Text
-            title={<Translator path="Header.Im" />}
+            title={<Translator path="Start.Im" />}
             color={colors.onBackgroundPrimary}
             size="3.5rem"
             weight={fontWeight.medium}
@@ -40,7 +40,7 @@ export const Start: FC = () => {
             ,
           </Text>
           <Text
-            title={<Translator path="Header.profession" />}
+            title={<Translator path="Start.profession" />}
             color={colors.onBackgroundPrimary}
             size="3.5rem"
             weight={fontWeight.medium}
