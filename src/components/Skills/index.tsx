@@ -8,8 +8,6 @@ import {
   Link,
   TextMessage,
   Wrapper,
-  WrapperLinks,
-  WrapperMessage,
   WrapperText,
   WrapperTitle,
 } from './styles';
