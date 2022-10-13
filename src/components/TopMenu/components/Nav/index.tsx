@@ -1,6 +1,6 @@
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
-import { Link } from 'react-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 import { useTheme } from 'styled-components';
 
@@ -20,6 +20,10 @@ export const Nav: FC<TNavProps> = ({ button }): JSX.Element => {
   const { colors, fontWeight } = useTheme();
   const { menuSelected, changeMenuSelected } = useMenu();
   const [isHover, setIsHover] = useState(false);
+
+  useEffect(() => {
+    scroll.scrollToTop();
+  }, []);
 
   const handleChangeMenu = (menu: TMenu): void => {
     changeMenuSelected(menu);

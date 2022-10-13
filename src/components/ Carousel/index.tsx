@@ -39,8 +39,10 @@ export const Caroucel: FC<ICaroucelProps> = ({ items, renderComponent }) => {
         isHoverBackgroundColor={colors.backgroundTopMenu}
         borderRadius="80%"
         height="4rem"
-        width="3.5rem"
-        icon={<BsChevronLeft color={colors.onBackgroundPrimary} size="3rem" />}
+        width="4rem"
+        icon={
+          <BsChevronLeft color={colors.onBackgroundPrimary} size="2.5rem" />
+        }
       />
       <Content>
         {renderComponent(items[index])}
@@ -53,8 +55,10 @@ export const Caroucel: FC<ICaroucelProps> = ({ items, renderComponent }) => {
         isHoverBackgroundColor={colors.backgroundTopMenu}
         borderRadius="80%"
         height="4rem"
-        width="3.5rem"
-        icon={<BsChevronRight color={colors.onBackgroundPrimary} size="3rem" />}
+        width="4rem"
+        icon={
+          <BsChevronRight color={colors.onBackgroundPrimary} size="2.5rem" />
+        }
       />
     </Wrapper>
   );
