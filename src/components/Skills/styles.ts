@@ -12,6 +12,13 @@ export const Wrapper = styled.div<TWrapperProps>`
 
   gap: 11rem;
 
+  > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+
   > div:last-child {
     display: flex;
     align-items: center;
