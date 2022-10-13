@@ -11,9 +11,14 @@ import { Button } from '../Button';
 interface ICaroucelProps {
   items: any[];
   renderComponent: (item: any) => JSX.Element;
+  numberElements: number;
 }
 
-export const Caroucel: FC<ICaroucelProps> = ({ items, renderComponent }) => {
+export const Caroucel: FC<ICaroucelProps> = ({
+  items,
+  renderComponent,
+  numberElements,
+}) => {
   const { colors } = useTheme();
   const [index, setIndex] = useState<number>(0);
 
@@ -26,7 +31,7 @@ export const Caroucel: FC<ICaroucelProps> = ({ items, renderComponent }) => {
 
   const nextIndex = (): void => {
     setIndex((prev) => {
-      if (prev + 2 < items.length - 1) return prev + 1;
+      if (prev + (numberElements - 1) < items.length - 1) return prev + 1;
       return prev;
     });
   };
@@ -45,9 +50,9 @@ export const Caroucel: FC<ICaroucelProps> = ({ items, renderComponent }) => {
         }
       />
       <Content>
-        {renderComponent(items[index])}
-        {renderComponent(items[index + 1])}
-        {renderComponent(items[index + 2])}
+        {numberElements >= 1 && renderComponent(items[index])}
+        {numberElements >= 2 && renderComponent(items[index + 1])}
+        {numberElements >= 3 && renderComponent(items[index + 2])}
       </Content>
       <Button
         onClick={() => nextIndex()}

@@ -12,6 +12,7 @@ import { Start } from '~/components/Start';
 import { Skills } from '~/components/Skills';
 import { Projects } from '~/components/Projects';
 import { Footer } from '~/components/Footer';
+import { Certificates } from '~/components/Certificates';
 
 import { Body } from './styles';
 
@@ -42,6 +43,9 @@ export const Home: FC = (): JSX.Element => {
       />
       <ElementScroll name="projects">
         <Projects />
+      </ElementScroll>
+      <ElementScroll name="certificates">
+        <Certificates />
       </ElementScroll>
       <Footer />
     </Body>

@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  background-color: ${(p) => p.theme.colors.backgroundSecondary};
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
 
-  width: 100%;
+  padding: ${(p) => p.theme.spacing.lg};
+
+  width: 45%;
 `;
 
 export const WrapperTitle = styled.div`

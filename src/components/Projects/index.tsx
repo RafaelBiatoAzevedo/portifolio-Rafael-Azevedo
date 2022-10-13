@@ -25,6 +25,7 @@ export const Projects: FC = (): JSX.Element => {
       <Caroucel
         items={projects}
         renderComponent={(item) => <Project project={item} />}
+        numberElements={3}
       />
     </Wrapper>
   );
