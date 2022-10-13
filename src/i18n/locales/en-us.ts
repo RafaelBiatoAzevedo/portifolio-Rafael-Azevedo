@@ -23,8 +23,9 @@ const objExport = {
     },
     HardSkills: {
       title: 'Hard Skills',
-      message:
-        'Technical skills acquired with a lot of commitment and study in PUC-CAMPINAS, TRYBE courses, research and day-to-day work.',
+      messageOne:
+        'Technical skills acquired with a lot of commitment and study in',
+      messageTwo: 'courses, research and day-to-day work.',
       hsOne: 'HTML5 and Semantic HTML',
       hsTwo: 'CSS3 and CSS Responsive',
       hsThree: 'Styled Components',
@@ -40,8 +41,9 @@ const objExport = {
     },
     SoftSkills: {
       title: 'Soft Skills',
-      message:
-        'Personal skills acquired throughout social and professional life, perfected in the TRYBE course and practiced daily.',
+      messageOne:
+        'Personal skills acquired throughout social and professional life, perfected in the',
+      messageTwo: 'course and practiced daily.',
       ssOne: 'Empaty',
       ssTwo: 'Patience',
       ssThree: 'Team Work',

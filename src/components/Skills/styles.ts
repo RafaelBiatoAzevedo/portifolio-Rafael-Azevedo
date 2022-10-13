@@ -8,6 +8,9 @@ export const Wrapper = styled.div<TWrapperProps>`
   display: flex;
   background-color: ${(p) => p.backgroudColor};
   padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
+  min-height: 42rem;
+
+  gap: 11rem;
 
   > div:last-child {
     display: flex;
@@ -15,7 +18,6 @@ export const Wrapper = styled.div<TWrapperProps>`
     flex-wrap: wrap;
 
     justify-content: center;
-    min-height: 30rem;
     width: 40%;
     gap: 2rem;
   }
@@ -34,6 +36,12 @@ export const WrapperText = styled.div`
   flex: 1;
 
   gap: 4rem;
+`;
+
+export const WrapperMessage = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 `;
 
 export const WrapperTitle = styled.div`
@@ -56,6 +64,23 @@ export const WrapperLinks = styled.div`
   gap: 1rem;
 `;
 
-export const Link = styled.a`
+type TLinkProps = {
+  textColor: string;
+};
+
+export const Link = styled.a<TLinkProps>`
   text-decoration: none;
+  color: ${(p) => p.textColor};
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0 10px;
+`;
+
+type TTextMessageProps = {
+  textColor: string;
+};
+
+export const TextMessage = styled.p<TTextMessageProps>`
+  color: ${(p) => p.textColor};
+  font-size: 2rem;
 `;

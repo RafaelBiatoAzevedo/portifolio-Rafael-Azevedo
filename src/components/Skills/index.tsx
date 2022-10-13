@@ -6,8 +6,10 @@ import { useTheme } from 'styled-components';
 
 import {
   Link,
+  TextMessage,
   Wrapper,
   WrapperLinks,
+  WrapperMessage,
   WrapperText,
   WrapperTitle,
 } from './styles';
@@ -19,7 +21,8 @@ interface ISKillsProps {
   title: string;
   iconOne: IconType;
   iconsTwo: IconType;
-  pathMessage: string;
+  pathMessageOne: string;
+  pathMessageTwo: string;
   skills: string[];
 }
 
@@ -27,7 +30,8 @@ export const Skills: FC<ISKillsProps> = ({
   title,
   iconOne,
   iconsTwo,
-  pathMessage,
+  pathMessageOne,
+  pathMessageTwo,
   skills,
 }): JSX.Element => {
   const { colors } = useTheme();
@@ -49,7 +53,7 @@ export const Skills: FC<ISKillsProps> = ({
         <WrapperTitle>
           <Text
             title={title}
-            size="3rem"
+            size="3.5rem"
             weight="600"
             color={onBackgroungColor}
           />
@@ -57,42 +61,33 @@ export const Skills: FC<ISKillsProps> = ({
             {createElement(iconOne, {
               color: onBackgroungColor,
             })}
-            <Text title="+" size="3rem" color={onBackgroungColor} />
+            <Text title="+" size="3.5rem" color={onBackgroungColor} />
             {createElement(iconsTwo, {
               color: onBackgroungColor,
             })}
           </div>
         </WrapperTitle>
-        <div>
-          <Text
-            title={<Translator path={pathMessage} />}
-            size="1.6rem"
-            color={onBackgroungColor}
-          />
-        </div>
-        <WrapperLinks>
+        <TextMessage textColor={onBackgroungColor}>
+          <Translator path={pathMessageOne} />
           {title === 'Hard Skills' && (
-            <Link href="https://www.puc-campinas.edu.br/" target="blank">
-              <Text
-                title="PUC-CAMPINAS"
-                color="#0e4194"
-                size="1.5rem"
-                weight="bold"
-              />
+            <Link
+              href="https://www.puc-campinas.edu.br/"
+              target="blank"
+              textColor="#0e4194"
+            >
+              PUC-CAMPINAS
             </Link>
           )}
-          {title === 'Hard Skills' && (
-            <Text
-              title="-"
-              size="1.5rem"
-              color={onBackgroungColor}
-              weight="bold"
-            />
-          )}
-          <Link href="https://www.betrybe.com/" target="blank">
-            <Text title="TRYBE" color="#1db702" weight="bold" size="1.5rem" />
+          {title === 'Hard Skills' && ','}
+          <Link
+            href="https://www.betrybe.com/"
+            target="blank"
+            textColor="#1db702"
+          >
+            TRYBE
           </Link>
-        </WrapperLinks>
+          <Translator path={pathMessageTwo} />
+        </TextMessage>
       </WrapperText>
       <div>
         {skills.map((skill) => (
