@@ -33,7 +33,7 @@ export const Certificate: FC<TCertificateData> = ({
           size="1.7rem"
           title={<Translator path={certificate.title} />}
           weight={fontWeight.medium}
-          color={colors.tertiary}
+          color={colors.onBackgroundSecondary}
         />
       </WrapperTitle>
       <WrapperContent>
@@ -69,13 +69,13 @@ export const Certificate: FC<TCertificateData> = ({
               title=""
               color={colors.secondary}
               paddingX="6px"
-              padddingY="2px"
+              padddingY="4px"
             >
               <GiCheckMark />
               <Text
                 key={content}
                 title={<Translator path={content} />}
-                color={colors.tertiary}
+                color={colors.onBackgroundSecondary}
                 size="1.3rem"
                 paddingX="6px"
               />

@@ -8,6 +8,8 @@ interface IButtonProps {
   title?: string;
   icon?: JSX.Element;
   onClick: () => void;
+  onMouseOver: () => void;
+  onMouseOut: () => void;
 
   backgroundColor?: string;
   isHoverBackgroundColor?: string;
@@ -21,6 +23,8 @@ interface IButtonProps {
 
 export const Button: FC<IButtonProps> = ({
   onClick,
+  onMouseOver,
+  onMouseOut,
   title,
   icon,
   backgroundColor = 'transparent',
@@ -33,6 +37,8 @@ export const Button: FC<IButtonProps> = ({
 }) => {
   return (
     <Wrapper
+      onMouseOver={onMouseOver}
+      onMouseOut={onMouseOut}
       onClick={onClick}
       backgroundcolor={backgroundColor}
       isHoverBackgroundColor={isHoverBackgroundColor}

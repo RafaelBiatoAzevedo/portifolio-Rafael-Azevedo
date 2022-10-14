@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  background-color: ${(p) => p.theme.colors.backgroundSecondary};
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
 
-  width: 100%;
+  padding: ${(p) => p.theme.spacing.lg};
+
+  width: 45%;
 `;
 
 export const WrapperTitle = styled.div`
@@ -18,16 +22,17 @@ export const WrapperImage = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: 100%;
 
   gap: 10px;
-  width: 25%;
+  width: 28%;
 `;
 
 export const WrapperContent = styled.div`
   align-items: center;
   display: flex;
 
-  padding: 20px;
+  padding: ${(p) => p.theme.spacing.sm};
   gap: 30px;
 
   @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
@@ -39,6 +44,8 @@ export const WrapperContent = styled.div`
 export const WrapperInfo = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 72%;
 `;
 
 export const Image = styled.img`
