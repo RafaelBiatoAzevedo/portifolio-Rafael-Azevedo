@@ -10,8 +10,6 @@ export const Wrapper = styled.div`
   padding: ${(p) => p.theme.spacing.lg};
 
   width: 48%;
-
-  transition: height 0.8s;
 `;
 
 export const WrapperTitle = styled.div`

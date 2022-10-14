@@ -78,7 +78,7 @@ export const Certificate: FC<TCertificateData> = ({
                   title={<Translator path={content} />}
                   color={colors.onBackgroundSecondary}
                   size="1.3rem"
-                  paddingX="6px"
+                  paddingX="8px"
                 />
               </Text>
             ))}

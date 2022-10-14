@@ -14,6 +14,8 @@ import {
   WrapperContent,
   WrapperInfo,
   Image,
+  WrapperList,
+  WrapperListSituation,
 } from './styles';
 
 type TCourseData = {
@@ -41,41 +43,42 @@ export const Course: FC<TCourseData> = ({ course }): JSX.Element => {
             size="1.6rem"
             weight={fontWeight.medium}
           />
-          <br />
-          {course.situations.map((situation) => (
-            <Text
-              key={situation}
-              title={<Translator path={situation} />}
-              color={colors.tertiary}
-              size="1.3rem"
-              paddingX="6px"
-            />
-          ))}
-          <br />
+          <WrapperListSituation>
+            {course.situations.map((situation) => (
+              <Text
+                key={situation}
+                title={<Translator path={situation} />}
+                color={colors.tertiary}
+                size="1.3rem"
+                paddingX="8px"
+              />
+            ))}
+          </WrapperListSituation>
           <Text
             title={<Translator path="Courses.titleTwo" />}
             color={colors.secondary}
             size="1.6rem"
             weight={fontWeight.medium}
           />
-          <br />
-          {course.contents.map((content) => (
-            <Text
-              title=""
-              color={colors.secondary}
-              paddingX="6px"
-              padddingY="2px"
-            >
-              <GiCheckMark />
+          <WrapperList>
+            {course.contents.map((content) => (
               <Text
-                key={content}
-                title={<Translator path={content} />}
-                color={colors.tertiary}
-                size="1.3rem"
-                paddingX="6px"
-              />
-            </Text>
-          ))}
+                title=""
+                color={colors.secondary}
+                paddingX="8px"
+                padddingY="2px"
+              >
+                <GiCheckMark />
+                <Text
+                  key={content}
+                  title={<Translator path={content} />}
+                  color={colors.tertiary}
+                  size="1.3rem"
+                  paddingX="6px"
+                />
+              </Text>
+            ))}
+          </WrapperList>
         </WrapperInfo>
       </WrapperContent>
     </Wrapper>

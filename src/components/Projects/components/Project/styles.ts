@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 30.5%;
 `;
 
 export const WrapperTitle = styled.div`

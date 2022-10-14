@@ -240,6 +240,7 @@ export const courses: TCourse[] = [
       'Courses.courseOne.contents.contentTwo',
       'Courses.courseOne.contents.contentThree',
       'Courses.courseOne.contents.contentFour',
+      'Courses.courseOne.contents.contentFive',
     ],
   },
   {
@@ -265,6 +266,7 @@ export const courses: TCourse[] = [
     contents: [
       'Courses.courseThree.contents.contentOne',
       'Courses.courseThree.contents.contentTwo',
+      'Courses.courseThree.contents.contentThree',
     ],
   },
   {

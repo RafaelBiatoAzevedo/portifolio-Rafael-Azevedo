@@ -128,6 +128,7 @@ const objExport = {
           contentTwo: 'Desenvolvimento Front-End',
           contentThree: 'Desenvolvimento Back-End',
           contentFour: 'Ciência da Computação',
+          contentFive: 'Soft Skills',
         },
       },
       courseTwo: {
@@ -151,6 +152,7 @@ const objExport = {
         contents: {
           contentOne: 'Instalação de distros',
           contentTwo: 'Comandos do terminal',
+          contentThree: 'Gerenciamento de usuários e grupos',
         },
       },
       courseFour: {

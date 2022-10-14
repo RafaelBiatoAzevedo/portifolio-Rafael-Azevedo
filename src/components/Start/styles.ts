@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
-  margin-top: ${(p) => p.theme.spacing.xxl};
+  margin-top: ${(p) => p.theme.spacing.xl};
   min-height: 42rem;
 
   gap: 3rem;

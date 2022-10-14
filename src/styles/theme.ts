@@ -39,7 +39,7 @@ export const themeDark = {
     lm: '24px',
     lg: '32px',
     xl: '48px',
-    xxl: '64px',
+    xxl: '96px',
   },
 
   fontWeight: {
@@ -67,16 +67,16 @@ export const themeLight = {
     onSecondary: '',
 
     tertiary: '#595959',
-    onTertiary: '',
+    onTertiary: '#181818',
 
     backgroundTopMenu: '#000',
     onBackgroundTopMenu: '#595959',
 
-    backgroundPrimary: '',
-    onBackgroundPrimary: '',
+    backgroundPrimary: '#181818',
+    onBackgroundPrimary: '#444444',
 
     backgroundSecondary: '#444444',
-    onBackgroundSecondary: '',
+    onBackgroundSecondary: '#181818',
 
     html: '#f14e2b',
     css: '#3100f4',
@@ -99,7 +99,7 @@ export const themeLight = {
     lm: '24px',
     lg: '32px',
     xl: '48px',
-    xxl: '64px',
+    xxl: '96px',
   },
 
   fontWeight: {

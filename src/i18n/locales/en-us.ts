@@ -128,6 +128,7 @@ const objExport = {
           contentTwo: 'Front-End developmenmt',
           contentThree: 'Back-End developmenmt',
           contentFour: 'Computer science',
+          contentFive: 'Soft Skills',
         },
       },
       courseTwo: {
@@ -151,6 +152,7 @@ const objExport = {
         contents: {
           contentOne: 'Distros installations',
           contentTwo: 'Commands terminal',
+          contentThree: 'User and group management',
         },
       },
       courseFour: {
@@ -172,7 +174,7 @@ const objExport = {
           situationTwo: 'Concluded in 2006',
         },
         contents: {
-          contentOne: 'Wrate',
+          contentOne: 'Write',
           contentTwo: 'Read',
           contentThree: 'Speak',
           contentFour: 'Listen',
