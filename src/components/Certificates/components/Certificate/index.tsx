@@ -16,6 +16,7 @@ import {
   WrapperInfo,
   Image,
   Link,
+  WrapperList,
 } from './styles';
 
 type TCertificateData = {
@@ -63,23 +64,25 @@ export const Certificate: FC<TCertificateData> = ({
             size="1.6rem"
             weight={fontWeight.medium}
           />
-          {certificate.contents.map((content) => (
-            <Text
-              title=""
-              color={colors.secondary}
-              paddingX="6px"
-              padddingY="4px"
-            >
-              <GiCheckMark />
+          <WrapperList>
+            {certificate.contents.map((content) => (
               <Text
-                key={content}
-                title={<Translator path={content} />}
-                color={colors.onBackgroundSecondary}
-                size="1.3rem"
+                title=""
+                color={colors.secondary}
                 paddingX="6px"
-              />
-            </Text>
-          ))}
+                padddingY="4px"
+              >
+                <GiCheckMark />
+                <Text
+                  key={content}
+                  title={<Translator path={content} />}
+                  color={colors.onBackgroundSecondary}
+                  size="1.3rem"
+                  paddingX="6px"
+                />
+              </Text>
+            ))}
+          </WrapperList>
         </WrapperInfo>
       </WrapperContent>
     </Wrapper>

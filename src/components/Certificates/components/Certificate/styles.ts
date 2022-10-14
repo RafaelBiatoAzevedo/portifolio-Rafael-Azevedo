@@ -49,8 +49,15 @@ export const WrapperInfo = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-between;
   width: 72%;
+`;
+
+export const WrapperList = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: ${(p) => p.theme.spacing.sm};
 `;
 
 export const Image = styled.img`
