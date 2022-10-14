@@ -19,13 +19,14 @@ export const Certificates: FC = (): JSX.Element => {
       <Text
         title={<Translator path="Certificates.title" />}
         size="3rem"
-        color={colors.onBackgroundSecondary}
+        color={colors.onBackgroundPrimary}
         weight="bold"
       />
       <Caroucel
         items={certificates}
         renderComponent={(item) => <Certificate certificate={item} />}
         numberElements={2}
+        backgroundButton="secondary"
       />
     </Wrapper>
   );

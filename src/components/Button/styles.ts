@@ -27,4 +27,6 @@ export const Wrapper = styled.button<TWrapperProps>`
   &:hover {
     background-color: ${(p) => p.isHoverBackgroundColor};
   }
+
+  transition: background-color 0.8s;
 `;

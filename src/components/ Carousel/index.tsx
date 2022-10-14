@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 
-import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 import { useTheme } from 'styled-components';
 
@@ -12,15 +12,21 @@ interface ICaroucelProps {
   items: any[];
   renderComponent: (item: any) => JSX.Element;
   numberElements: number;
+  backgroundButton: 'primary' | 'secondary';
 }
 
 export const Caroucel: FC<ICaroucelProps> = ({
   items,
   renderComponent,
   numberElements,
+  backgroundButton,
 }) => {
   const { colors } = useTheme();
   const [index, setIndex] = useState<number>(0);
+  const [isMouseOverButtonLeft, setisMouseOverButtonLeft] =
+    useState<boolean>(false);
+  const [isMouseOverButtonRight, setisMouseOverButtonRight] =
+    useState<boolean>(false);
 
   const previusIndex = (): void => {
     setIndex((prev) => {
@@ -40,13 +46,29 @@ export const Caroucel: FC<ICaroucelProps> = ({
     <Wrapper>
       <Button
         onClick={() => previusIndex()}
-        backgroundColor={colors.backgroundPrimary}
-        isHoverBackgroundColor={colors.backgroundTopMenu}
+        onMouseOver={() => setisMouseOverButtonLeft(true)}
+        onMouseOut={() => setisMouseOverButtonLeft(false)}
+        isHoverBackgroundColor={
+          backgroundButton === 'primary'
+            ? colors.backgroundPrimary
+            : colors.backgroundSecondary
+        }
         borderRadius="80%"
         height="4rem"
         width="4rem"
         icon={
-          <BsChevronLeft color={colors.onBackgroundPrimary} size="2.5rem" />
+          <FaChevronLeft
+            color={
+              backgroundButton === 'primary'
+                ? isMouseOverButtonLeft
+                  ? colors.onBackgroundPrimary
+                  : colors.backgroundPrimary
+                : isMouseOverButtonLeft
+                ? colors.onBackgroundSecondary
+                : colors.backgroundSecondary
+            }
+            size="2.5rem"
+          />
         }
       />
       <Content>
@@ -56,13 +78,29 @@ export const Caroucel: FC<ICaroucelProps> = ({
       </Content>
       <Button
         onClick={() => nextIndex()}
-        backgroundColor={colors.backgroundPrimary}
-        isHoverBackgroundColor={colors.backgroundTopMenu}
+        onMouseOver={() => setisMouseOverButtonRight(true)}
+        onMouseOut={() => setisMouseOverButtonRight(false)}
+        isHoverBackgroundColor={
+          backgroundButton === 'primary'
+            ? colors.backgroundPrimary
+            : colors.backgroundSecondary
+        }
         borderRadius="80%"
         height="4rem"
         width="4rem"
         icon={
-          <BsChevronRight color={colors.onBackgroundPrimary} size="2.5rem" />
+          <FaChevronRight
+            color={
+              backgroundButton === 'primary'
+                ? isMouseOverButtonRight
+                  ? colors.onBackgroundPrimary
+                  : colors.backgroundPrimary
+                : isMouseOverButtonRight
+                ? colors.onBackgroundSecondary
+                : colors.backgroundSecondary
+            }
+            size="2.5rem"
+          />
         }
       />
     </Wrapper>

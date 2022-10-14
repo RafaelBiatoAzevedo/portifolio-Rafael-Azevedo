@@ -22,16 +22,17 @@ export const WrapperImage = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: 100%;
 
   gap: 10px;
-  width: 25%;
+  width: 28%;
 `;
 
 export const WrapperContent = styled.div`
   align-items: center;
   display: flex;
 
-  padding: 20px;
+  padding: ${(p) => p.theme.spacing.sm};
   gap: 30px;
 
   @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
@@ -43,6 +44,8 @@ export const WrapperContent = styled.div`
 export const WrapperInfo = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 72%;
 `;
 
 export const Image = styled.img`
