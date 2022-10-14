@@ -5,10 +5,13 @@ export const Wrapper = styled.div`
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  min-height: 38.5rem;
 
   padding: ${(p) => p.theme.spacing.lg};
 
-  width: 45%;
+  width: 48%;
+
+  transition: height 0.8s;
 `;
 
 export const WrapperTitle = styled.div`
@@ -31,6 +34,7 @@ export const WrapperImage = styled.div`
 export const WrapperContent = styled.div`
   align-items: center;
   display: flex;
+  flex: 1;
 
   padding: ${(p) => p.theme.spacing.sm};
   gap: 30px;
@@ -45,6 +49,7 @@ export const WrapperInfo = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  justify-content: space-between;
   width: 72%;
 `;
 

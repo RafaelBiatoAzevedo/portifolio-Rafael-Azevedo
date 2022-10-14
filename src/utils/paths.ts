@@ -389,6 +389,7 @@ export const certificates: TCertificate[] = [
       'Certificates.certificateFive.contentOne',
       'Certificates.certificateFive.contentTwo',
       'Certificates.certificateFive.contentThree',
+      'Certificates.certificateFive.contentFour',
       'Certificates.certificateFive.contentFive',
     ],
   },
@@ -425,7 +426,6 @@ export const certificates: TCertificate[] = [
       'Certificates.certificateThree.contentNine',
       'Certificates.certificateThree.contentTen',
       'Certificates.certificateThree.contentEleven',
-      'Certificates.certificateThree.contentTwelve',
     ],
   },
   {

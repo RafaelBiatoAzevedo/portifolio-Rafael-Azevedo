@@ -19,6 +19,7 @@ export const WrapperTitle = styled.div`
 export const WrapperContent = styled.div`
   align-items: center;
   display: flex;
+  height: 100%;
   justify-content: space-between;
 
   padding: ${(p) => p.theme.spacing.sm};
@@ -33,13 +34,18 @@ export const WrapperContent = styled.div`
 export const WrapperInfo = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  flex: 1;
+  padding: 0px ${(p) => p.theme.spacing.sm};
+  gap: 2rem;
 `;
 
 export const WrapperTechonologies = styled.div`
   align-items: center;
   display: flex;
 
-  padding-left: 6px;
+  padding: 2px 8px;
   gap: 10px;
 `;
 

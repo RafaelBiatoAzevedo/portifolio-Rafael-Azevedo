@@ -41,70 +41,74 @@ export const Project: FC<TProjectData> = ({ project }): JSX.Element => {
           />
         </Link>
         <WrapperInfo>
-          <Text
-            title={<Translator path="Projects.titleOne" />}
-            color={colors.secondary}
-            size="1.6rem"
-            weight={fontWeight.medium}
-          />
-          <br />
-          <Text
-            title={<Translator path={project.type} />}
-            color={colors.tertiary}
-            size="1.3rem"
-            paddingX="6px"
-          />
-          <br />
-          <Text
-            title={<Translator path="Projects.titleTwo" />}
-            color={colors.secondary}
-            size="1.6rem"
-            weight={fontWeight.medium}
-          />
-          <br />
-          <Text
-            title={<Translator path={project.status} />}
-            color={colors.tertiary}
-            size="1.3rem"
-            paddingX="6px"
-          />
-          <br />
-          <Text
-            title={<Translator path="Projects.titleThree" />}
-            color={colors.secondary}
-            size="1.6rem"
-            weight={fontWeight.medium}
-          />
-          <br />
-          {project.datas.map((data) => (
+          <div>
             <Text
-              key={data}
-              title={<Translator path={data} />}
+              title={<Translator path="Projects.titleOne" />}
+              color={colors.secondary}
+              size="1.2rem"
+              weight={fontWeight.medium}
+            />
+            <Text
+              title={<Translator path={project.type} />}
               color={colors.tertiary}
               size="1.3rem"
-              paddingX="6px"
+              padddingY="2px"
+              paddingX="8px"
             />
-          ))}
-          <br />
-          <Text
-            title={<Translator path="Projects.titleFour" />}
-            color={colors.secondary}
-            size="1.6rem"
-            weight={fontWeight.medium}
-          />
-          <br />
-          <WrapperTechonologies>
-            {project.technologies.map((techonology) => (
+          </div>
+          <div>
+            <Text
+              title={<Translator path="Projects.titleTwo" />}
+              color={colors.secondary}
+              size="1.2rem"
+              weight={fontWeight.medium}
+            />
+            <Text
+              title={<Translator path={project.status} />}
+              color={colors.tertiary}
+              size="1.3rem"
+              padddingY="2px"
+              paddingX="8px"
+            />
+          </div>
+          <div>
+            <Text
+              title={<Translator path="Projects.titleThree" />}
+              color={colors.secondary}
+              size="1.2rem"
+              weight={fontWeight.medium}
+            />
+            {project.datas.map((data) => (
               <Text
-                key={techonology.name}
-                title=""
-                color={techonology.color}
-                size="1.5rem"
-              >
-                {createElement(techonology.icon)}
-              </Text>
+                key={data}
+                title={<Translator path={data} />}
+                color={colors.tertiary}
+                size="1.3rem"
+                padddingY="2px"
+                paddingX="8px"
+              />
             ))}
-          </WrapperTechonologies>
+          </div>
+          <div>
+            <Text
+              title={<Translator path="Projects.titleFour" />}
+              color={colors.secondary}
+              size="1.2rem"
+              weight={fontWeight.medium}
+            />
+            <WrapperTechonologies>
+              {project.technologies.map((techonology) => (
+                <Text
+                  key={techonology.name}
+                  title=""
+                  color={techonology.color}
+                  size="1.5rem"
+                >
+                  {createElement(techonology.icon)}
+                </Text>
+              ))}
+            </WrapperTechonologies>
+          </div>
         </WrapperInfo>
       </WrapperContent>
     </Wrapper>
