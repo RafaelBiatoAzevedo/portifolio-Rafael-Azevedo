@@ -63,7 +63,6 @@ export const Certificate: FC<TCertificateData> = ({
             size="1.6rem"
             weight={fontWeight.medium}
           />
-          <br />
           {certificate.contents.map((content) => (
             <Text
               title=""
