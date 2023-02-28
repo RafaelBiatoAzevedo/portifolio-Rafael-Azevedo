@@ -1,9 +1,10 @@
 import { FC } from 'react';
 
+import { Carousel } from 'react-responsive-carousel';
+
 import { useTheme } from 'styled-components';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 
 import { projects } from '~/utils/paths';
 
