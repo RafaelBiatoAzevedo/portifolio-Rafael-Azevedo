@@ -1,15 +1,19 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  align-items: center;
   background-color: ${(p) => p.theme.colors.backgroundSecondary};
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   min-height: 38.5rem;
+  margin-bottom: 3rem;
 
   padding: ${(p) => p.theme.spacing.lg};
 
-  width: 48%;
+  width: 67%;
+
+  gap: 2rem;
 
   transition: height 0.8s;
 `;
@@ -21,22 +25,32 @@ export const WrapperTitle = styled.div`
   padding: 5px;
 `;
 
+export const WrapperLinks = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  gap: 2rem;
+`;
+
 export const WrapperImage = styled.div`
   align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   height: 100%;
 
   gap: 10px;
-  width: 28%;
+  width: 35%;
 `;
 
 export const WrapperContent = styled.div`
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
   display: flex;
   flex: 1;
 
-  padding: ${(p) => p.theme.spacing.sm};
   gap: 30px;
 
   @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
@@ -48,9 +62,7 @@ export const WrapperContent = styled.div`
 export const WrapperInfo = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-  width: 72%;
+  gap: 0.5rem;
 `;
 
 export const Image = styled.img`

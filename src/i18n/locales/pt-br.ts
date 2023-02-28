@@ -56,7 +56,7 @@ const objExport = {
     },
     Projects: {
       view: 'Visitar Site',
-      title: 'Projetos',
+      title: 'Projetos no curso da TRYBE',
       titleOne: 'Tipo',
       titleTwo: 'Status',
       titleThree: 'Dados',

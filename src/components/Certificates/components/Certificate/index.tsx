@@ -1,6 +1,8 @@
 import { FC } from 'react';
 
 import { GiCheckMark } from 'react-icons/gi';
+import { BsFileEarmarkPdfFill } from 'react-icons/bs';
+import { AiFillSafetyCertificate } from 'react-icons/ai';
 
 import { useTheme } from 'styled-components';
 
@@ -16,6 +18,7 @@ import {
   WrapperInfo,
   Image,
   Link,
+  WrapperLinks,
 } from './styles';
 
 type TCertificateData = {
@@ -30,31 +33,23 @@ export const Certificate: FC<TCertificateData> = ({
     <Wrapper>
       <WrapperTitle>
         <Text
-          size="1.7rem"
+          size="1.8rem"
           title={<Translator path={certificate.title} />}
-          weight={fontWeight.medium}
+          weight={fontWeight.bold}
           color={colors.onBackgroundSecondary}
         />
       </WrapperTitle>
       <WrapperContent>
         <WrapperImage>
           <Image src={certificate.icon} alt="Certificate" />
-          <Link href={certificate.linkPdf} target="_blank">
-            <Text
-              color={colors.secondary}
-              title={<Translator path="Certificates.view" />}
-              weight={fontWeight.medium}
-              size="1.1rem"
-            />
-          </Link>
-          <Link href={certificate.linkCredentials} target="_blank">
-            <Text
-              color={colors.secondary}
-              title={<Translator path="Certificates.credentials" />}
-              weight={fontWeight.medium}
-              size="1.1rem"
-            />
-          </Link>
+          <WrapperLinks>
+            <Link href={certificate.linkPdf} target="_blank">
+              <BsFileEarmarkPdfFill size="2.5rem" color={colors.secondary} />
+            </Link>
+            <Link href={certificate.linkCredentials} target="_blank">
+              <AiFillSafetyCertificate size="2.5rem" color={colors.secondary} />
+            </Link>
+          </WrapperLinks>
         </WrapperImage>
         <WrapperInfo>
           <Text
