@@ -1,12 +1,20 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  align-items: center;
   background-color: ${(p) => p.theme.colors.backgroundPrimary};
   padding: ${(p) => p.theme.spacing.lg};
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  margin-bottom: 3rem;
+
+  padding: ${(p) => p.theme.spacing.lg};
+
+  width: 60%;
+
+  gap: 2rem;
+  transition: height 0.8s;
 `;
 
 export const WrapperTitle = styled.div`
@@ -17,12 +25,11 @@ export const WrapperTitle = styled.div`
 `;
 
 export const WrapperContent = styled.div`
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
   display: flex;
-  height: 100%;
-  justify-content: space-between;
+  flex: 1;
 
-  padding: ${(p) => p.theme.spacing.sm};
   gap: 30px;
 
   @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
@@ -34,10 +41,6 @@ export const WrapperContent = styled.div`
 export const WrapperInfo = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  flex: 1;
-  padding: 0px ${(p) => p.theme.spacing.sm};
   gap: 2rem;
 `;
 
@@ -45,8 +48,8 @@ export const WrapperTechonologies = styled.div`
   align-items: center;
   display: flex;
 
-  padding: 2px 8px;
-  gap: 10px;
+  padding: 4px 8px;
+  gap: 1.5rem;
 `;
 
 export const Link = styled.a`

@@ -26,7 +26,7 @@ export const Project: FC<TProjectData> = ({ project }): JSX.Element => {
     <Wrapper>
       <WrapperTitle>
         <Text
-          size="1.7rem"
+          size="1.8rem"
           title={<Translator path={project.title} />}
           weight={fontWeight.medium}
           color={colors.tertiary}
@@ -104,7 +104,7 @@ export const Project: FC<TProjectData> = ({ project }): JSX.Element => {
                   color={techonology.color}
                   size="1.5rem"
                 >
-                  {createElement(techonology.icon)}
+                  {createElement(techonology.icon, { size: '2.5rem' })}
                 </Text>
               ))}
             </WrapperTechonologies>

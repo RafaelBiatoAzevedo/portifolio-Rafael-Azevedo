@@ -5,12 +5,10 @@ export const Wrapper = styled.div`
   background-color: ${(p) => p.theme.colors.backgroundPrimary};
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   min-height: 42rem;
 
-  padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm}
-    ${(p) => p.theme.spacing.lg} ${(p) => p.theme.spacing.lm};
+  padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
   gap: 4rem;
 
   @media (max-width: ${(p) => p.theme.resolutions.celphone}) {

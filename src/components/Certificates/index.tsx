@@ -13,7 +13,6 @@ import { Wrapper } from './styles';
 
 import { Translator } from '../Translator';
 import { Text } from '../Text';
-// import { Caroucel } from '../ Carousel';
 
 export const Certificates: FC = (): JSX.Element => {
   const { colors } = useTheme();
@@ -25,12 +24,6 @@ export const Certificates: FC = (): JSX.Element => {
         color={colors.onBackgroundPrimary}
         weight="bold"
       />
-      {/* <Caroucel
-        items={certificates}
-        renderComponent={(item) => <Certificate certificate={item} />}
-        numberElements={2}
-        backgroundButton="secondary"
-      /> */}
       <Carousel centerMode showStatus={false}>
         {certificates.map((certificate) => (
           <Certificate certificate={certificate} />
