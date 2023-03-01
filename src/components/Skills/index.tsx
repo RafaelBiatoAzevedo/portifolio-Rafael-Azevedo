@@ -47,6 +47,7 @@ export const Skills: FC<ISKillsProps> = ({
           ? colors.onBackgroundPrimary
           : colors.onBackgroundSecondary
       }
+      isSoftSkills={title === 'Soft Skills'}
     >
       <div>
         <WrapperText>
@@ -95,6 +96,9 @@ export const Skills: FC<ISKillsProps> = ({
         {skills.map((skill) => (
           <div>
             <Text
+              color={
+                title === 'Soft Skills' ? colors.onPrimary : colors.onTertiary
+              }
               title={<Translator path={skill} />}
               size="1.6rem"
               weight="900"

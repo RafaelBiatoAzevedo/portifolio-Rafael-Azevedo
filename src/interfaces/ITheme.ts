@@ -21,10 +21,15 @@ export type TColors = {
   css: string;
   js: string;
   ts: string;
+  java: string;
+  python: string;
   react: string;
   redux: string;
   node: string;
   styled: string;
+  vue: string;
+  mongo: string;
+  mysql: string;
 
   moon: string;
   sun: string;

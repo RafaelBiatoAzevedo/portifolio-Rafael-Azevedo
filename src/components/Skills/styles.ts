@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 type TWrapperProps = {
   backgroudColor: string;
+  isSoftSkills: boolean;
 };
 
 export const Wrapper = styled.div<TWrapperProps>`
@@ -31,7 +32,8 @@ export const Wrapper = styled.div<TWrapperProps>`
 
   > div:last-child > div {
     border-radius: 2rem;
-    background-color: ${(p) => p.theme.colors.tertiary};
+    background-color: ${(p) =>
+      p.isSoftSkills ? p.theme.colors.primary : p.theme.colors.tertiary};
     padding: 0.8rem 1.6rem;
   }
 `;

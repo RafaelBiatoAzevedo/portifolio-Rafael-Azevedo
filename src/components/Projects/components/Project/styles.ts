@@ -3,13 +3,13 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   align-items: center;
   background-color: ${(p) => p.theme.colors.backgroundPrimary};
-  padding: ${(p) => p.theme.spacing.lg};
   border-radius: 1rem;
+  min-height: 33rem;
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
 
-  padding: ${(p) => p.theme.spacing.lg};
+  padding: ${(p) => p.theme.spacing.lg} 0px;
 
   width: 60%;
 
@@ -24,18 +24,28 @@ export const WrapperTitle = styled.div`
   padding: 5px;
 `;
 
+export const WrapperImage = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  width: 26%;
+  height: 26%;
+`;
+
 export const WrapperContent = styled.div`
   align-items: flex-start;
   justify-content: center;
   display: flex;
   flex: 1;
 
-  gap: 30px;
-
+  gap: 2rem;
+  /* 
   @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
     padding: 10px;
     gap: 15px;
-  }
+  } */
 `;
 
 export const WrapperInfo = styled.div`
@@ -75,5 +85,5 @@ export const Link = styled.a`
 
 export const Image = styled.img`
   border-radius: 4px;
-  width: 100%;
+  resize: contain;
 `;

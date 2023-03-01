@@ -6,12 +6,12 @@ export const Wrapper = styled.div`
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  min-height: 38.5rem;
+  min-height: 40rem;
   margin-bottom: 3rem;
 
-  padding: ${(p) => p.theme.spacing.lg};
+  padding: ${(p) => p.theme.spacing.lg} 0px;
 
-  width: 67%;
+  width: 75%;
 
   gap: 2rem;
 
@@ -51,12 +51,12 @@ export const WrapperContent = styled.div`
   display: flex;
   flex: 1;
 
-  gap: 30px;
+  gap: 1rem;
 
-  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+  /* @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
     padding: 10px;
     gap: 15px;
-  }
+  } */
 `;
 
 export const WrapperInfo = styled.div`

@@ -14,6 +14,7 @@ import {
   Link,
   Image,
   WrapperTechonologies,
+  WrapperImage,
 } from './styles';
 
 type TProjectData = {
@@ -33,13 +34,15 @@ export const Project: FC<TProjectData> = ({ project }): JSX.Element => {
         />
       </WrapperTitle>
       <WrapperContent>
-        <Link href={project.link} target="_blank">
+        <WrapperImage>
           <Image src={project.icon} alt="project" />
+        </WrapperImage>
+        {/* <Link href={project.link} target="_blank">
           <Text
             color={colors.secondary}
             title={<Translator path="Projects.view" />}
           />
-        </Link>
+        </Link> */}
         <WrapperInfo>
           <div>
             <Text

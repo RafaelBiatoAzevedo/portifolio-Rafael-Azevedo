@@ -7,6 +7,11 @@ import {
   SiStyledcomponents,
   SiNativescript,
   SiTypescript,
+  SiVuetify,
+  SiMongodb,
+  SiMysql,
+  SiPython,
+  SiJava,
 } from 'react-icons/si';
 import { FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
 
@@ -31,6 +36,16 @@ export const LinksTechnologies: FC = (): JSX.Element => {
         </Text>
       </Link>
       <Link href="https://www.javascript.com/" target="_blank">
+        <Text title="" color={colors.java} size="3rem">
+          <SiJava />
+        </Text>
+      </Link>
+      <Link href="https://www.javascript.com/" target="_blank">
+        <Text title="" color={colors.python} size="3rem">
+          <SiPython />
+        </Text>
+      </Link>
+      <Link href="https://www.javascript.com/" target="_blank">
         <Text title="" color={colors.js} size="3rem">
           <FaJs />
         </Text>
@@ -45,14 +60,19 @@ export const LinksTechnologies: FC = (): JSX.Element => {
           <FaReact />
         </Text>
       </Link>
-      <Link href="https://redux.js.org/" target="_blank">
-        <Text title="" color={colors.redux} size="3rem">
-          <SiRedux />
+      <Link href="https://vuejs.org/guide/introduction.html" target="_blank">
+        <Text title="" color={colors.vue} size="3rem">
+          <SiVuetify />
         </Text>
       </Link>
       <Link href="https://reactnative.dev/" target="_blank">
         <Text title="" color={colors.react} size="3rem">
           <SiNativescript />
+        </Text>
+      </Link>
+      <Link href="https://redux.js.org/" target="_blank">
+        <Text title="" color={colors.redux} size="3rem">
+          <SiRedux />
         </Text>
       </Link>
       <Link href="https://nodejs.org/en/" target="_blank">
@@ -63,6 +83,16 @@ export const LinksTechnologies: FC = (): JSX.Element => {
       <Link href="https://styled-components.com/" target="_blank">
         <Text title="" color={colors.styled} size="3rem">
           <SiStyledcomponents />
+        </Text>
+      </Link>
+      <Link href="https://www.mongodb.com/" target="_blank">
+        <Text title="" color={colors.mongo} size="3rem">
+          <SiMongodb />
+        </Text>
+      </Link>
+      <Link href="https://www.mysql.com/" target="_blank">
+        <Text title="" color={colors.mysql} size="3rem">
+          <SiMysql />
         </Text>
       </Link>
     </Wrapper>
