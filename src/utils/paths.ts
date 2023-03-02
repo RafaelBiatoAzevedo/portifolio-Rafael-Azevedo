@@ -140,7 +140,8 @@ export const mainContent: TMainContent = {
 export const projects: TProject[] = [
   {
     icon: worldStarWrasIcon,
-    link: 'https://worldstarwars.netlify.app/',
+    linkHomepage: 'https://worldstarwars.netlify.app/',
+    linkGihub: 'https://github.com/RafaelBiatoAzevedo/world-starwars',
     title: 'Projects.projectOne.title',
     type: 'Projects.projectOne.type',
     status: 'Projects.projectOne.status',
@@ -164,7 +165,8 @@ export const projects: TProject[] = [
   },
   {
     icon: rafaExpressIcon,
-    link: 'https://rafaelbiatoazevedo.github.io/Site-Rafa-Express/',
+    linkHomepage: 'https://rafaelbiatoazevedo.github.io/Site-Rafa-Express/',
+    linkGihub: '',
     title: 'Projects.projectTwo.title',
     type: 'Projects.projectTwo.type',
     status: 'Projects.projectTwo.status',
@@ -182,7 +184,8 @@ export const projects: TProject[] = [
   },
   {
     icon: brothersIcon,
-    link: 'https://brothersreparosgeral.netlify.app/',
+    linkHomepage: 'https://brothersreparosgeral.netlify.app/',
+    linkGihub: 'https://github.com/RafaelBiatoAzevedo/brothers',
     title: 'Projects.projectThree.title',
     type: 'Projects.projectThree.type',
     status: 'Projects.projectThree.status',
@@ -195,7 +198,8 @@ export const projects: TProject[] = [
   },
   {
     icon: triviaIcon,
-    link: 'https://playtriviagame.netlify.app/',
+    linkHomepage: 'https://playtriviagame.netlify.app/',
+    linkGihub: 'https://github.com/RafaelBiatoAzevedo/trivia-game',
     title: 'Projects.projectFour.title',
     type: 'Projects.projectFour.type',
     status: 'Projects.projectFour.status',
@@ -213,7 +217,8 @@ export const projects: TProject[] = [
   },
   {
     icon: movieIcon,
-    link: 'https://rafaelbiatoazevedo.github.io/movie-cards-library/',
+    linkHomepage: 'https://rafaelbiatoazevedo.github.io/movie-cards-library/',
+    linkGihub: 'https://github.com/RafaelBiatoAzevedo/moviesApp',
     title: 'Projects.projectFive.title',
     type: 'Projects.projectFive.type',
     status: 'Projects.projectFive.status',

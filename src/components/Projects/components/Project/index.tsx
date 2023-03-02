@@ -1,5 +1,8 @@
 import { createElement, FC } from 'react';
 
+import { SiGithub } from 'react-icons/si';
+import { MdPreview } from 'react-icons/md';
+
 import { useTheme } from 'styled-components';
 
 import { TProject } from '~/types/TProject';
@@ -15,6 +18,7 @@ import {
   Image,
   WrapperTechonologies,
   WrapperImage,
+  WrapperLinks,
 } from './styles';
 
 type TProjectData = {
@@ -36,13 +40,15 @@ export const Project: FC<TProjectData> = ({ project }): JSX.Element => {
       <WrapperContent>
         <WrapperImage>
           <Image src={project.icon} alt="project" />
+          <WrapperLinks>
+            <Link href={project.linkHomepage} target="_blank">
+              <MdPreview size="2.5rem" color={colors.secondary} />
+            </Link>
+            <Link href={project.linkGihub} target="_blank">
+              <SiGithub size="2rem" color={colors.secondary} />
+            </Link>
+          </WrapperLinks>
         </WrapperImage>
-        {/* <Link href={project.link} target="_blank">
-          <Text
-            color={colors.secondary}
-            title={<Translator path="Projects.view" />}
-          />
-        </Link> */}
         <WrapperInfo>
           <div>
             <Text

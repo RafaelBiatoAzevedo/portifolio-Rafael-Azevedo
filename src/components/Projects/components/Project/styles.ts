@@ -41,11 +41,12 @@ export const WrapperContent = styled.div`
   flex: 1;
 
   gap: 2rem;
-  /* 
-  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
-    padding: 10px;
-    gap: 15px;
-  } */
+`;
+
+export const WrapperLinks = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: center;
 `;
 
 export const WrapperInfo = styled.div`
@@ -65,16 +66,13 @@ export const WrapperTechonologies = styled.div`
 export const Link = styled.a`
   align-items: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   text-decoration: none;
   text-align: center;
 
-  gap: 8px;
-  width: 35%;
-
   border: 1px solid transparent;
-  border-radius: 4px;
-  padding-bottom: 4px;
+  border-radius: 3px;
+  padding: 6px;
 
   &:hover {
     border: 1px solid ${(p) => p.theme.colors.tertiary};

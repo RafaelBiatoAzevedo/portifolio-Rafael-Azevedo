@@ -8,7 +8,8 @@ type TTechnology = {
 
 export type TProject = {
   icon: any;
-  link: string;
+  linkHomepage: string;
+  linkGihub: string;
   title: string;
   type: string;
   status: string;
