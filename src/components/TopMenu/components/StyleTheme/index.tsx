@@ -11,11 +11,11 @@ import { Wrapper, Button, WrapperIcon } from './styles';
 
 export const StyleTheme: FC = (): JSX.Element => {
   const { colors } = useTheme();
-  const { theme, changeTheme } = useStyleTheme();
+  const { theme } = useStyleTheme();
 
-  const handleChangeTheme = (): void => {
-    changeTheme();
-  };
+  // const handleChangeTheme = (): void => {
+  //   changeTheme();
+  // };
 
   return (
     <Wrapper>
