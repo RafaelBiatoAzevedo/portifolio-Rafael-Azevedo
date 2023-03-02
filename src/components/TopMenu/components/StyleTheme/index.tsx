@@ -18,7 +18,7 @@ export const StyleTheme: FC = (): JSX.Element => {
   };
 
   return (
-    <Wrapper onClick={handleChangeTheme}>
+    <Wrapper>
       <Button isOrder={theme === 'dark'} />
       <WrapperIcon>
         <Text

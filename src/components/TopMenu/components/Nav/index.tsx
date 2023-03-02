@@ -30,7 +30,14 @@ export const Nav: FC<TNavProps> = ({ button }): JSX.Element => {
   };
 
   return (
-    <Link className={button.name} to={button.name} spy smooth duration={1000}>
+    <Link
+      className={button.name}
+      to={button.name}
+      offset={-100}
+      spy
+      smooth
+      duration={1000}
+    >
       <Wrapper
         onClick={() => handleChangeMenu(button.name)}
         isBorderBottom={button.name === menuSelected}
