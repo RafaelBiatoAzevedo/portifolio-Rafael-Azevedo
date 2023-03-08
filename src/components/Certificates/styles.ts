@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
   flex-direction: column;
 
   min-height: 42rem;
-
   padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
   gap: 4rem;
 

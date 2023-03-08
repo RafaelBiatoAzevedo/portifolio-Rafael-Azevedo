@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 import { useTheme } from 'styled-components';
 
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import { projects } from '~/utils/paths';
 

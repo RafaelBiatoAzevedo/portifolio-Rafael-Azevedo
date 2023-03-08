@@ -8,7 +8,7 @@ export const Wrapper = styled.footer`
   border-top: ${(p) => p.theme.colors.tertiary} solid 1px;
   background-color: ${(p) => p.theme.colors.primary};
   gap: 20px;
-  padding: 3rem 30px;
+  padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
   text-align: center;
 
   @media (max-width: ${(p) => p.theme.resolutions.celphone}) {

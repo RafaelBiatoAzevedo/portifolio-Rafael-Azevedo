@@ -40,7 +40,7 @@ export const LinksTechnologies: FC = (): JSX.Element => {
           <SiJava />
         </Text>
       </Link>
-      <Link href="https://www.javascript.com/" target="_blank">
+      <Link href="https://www.python.org/" target="_blank">
         <Text title="" color={colors.python} size="3rem">
           <SiPython />
         </Text>
