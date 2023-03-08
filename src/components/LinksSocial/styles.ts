@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
-  gap: 3rem;
+  gap: 1.5rem;
 `;
 
 export const Link = styled.a`

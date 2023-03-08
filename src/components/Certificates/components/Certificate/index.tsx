@@ -36,7 +36,7 @@ export const Certificate: FC<TCertificateData> = ({
           size="1.8rem"
           title={<Translator path={certificate.title} />}
           weight={fontWeight.bold}
-          color={colors.onBackgroundSecondary}
+          color={colors.onBackgroundPrimary}
         />
       </WrapperTitle>
       <WrapperContent>
@@ -69,7 +69,7 @@ export const Certificate: FC<TCertificateData> = ({
               <Text
                 key={content}
                 title={<Translator path={content} />}
-                color={colors.onBackgroundSecondary}
+                color={colors.onBackgroundPrimary}
                 size="1.3rem"
                 paddingX="6px"
               />

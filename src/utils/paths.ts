@@ -81,12 +81,11 @@ export const navs: TNav[] = [
   { title: 'MenuNav.navOne', name: 'start' },
   { title: 'MenuNav.navTwo', name: 'skills' },
   { title: 'MenuNav.navThree', name: 'projects' },
-  { title: 'MenuNav.navFour', name: 'courses' },
   { title: 'MenuNav.navFive', name: 'formation' },
-  { title: 'MenuNav.navSix', name: 'aboutMe' },
-  { title: 'MenuNav.navSeven', name: 'contactMe' },
-  { title: 'MenuNav.navEigth', name: 'experiences' },
+  { title: 'MenuNav.navFour', name: 'courses' },
   { title: 'MenuNav.navNine', name: 'certificates' },
+  { title: 'MenuNav.navEigth', name: 'experiences' },
+  { title: 'MenuNav.navSeven', name: 'contactMe' },
 ];
 
 export const mainContent: TMainContent = {

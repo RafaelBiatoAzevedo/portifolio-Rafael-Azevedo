@@ -6,6 +6,7 @@ import { Wrapper, WrapperTop } from './styles';
 
 import { Translator } from '../Translator';
 import { Text } from '../Text';
+import { LinksSocial } from '../LinksSocial';
 
 export const Footer: FC = (): JSX.Element => {
   const { colors, fontWeight } = useTheme();
@@ -24,6 +25,7 @@ export const Footer: FC = (): JSX.Element => {
           color={colors.tertiary}
           size="1.4rem"
         />
+        <LinksSocial />
       </WrapperTop>
       <Text
         title="AD - AZEVEDO DIGITAL / CNPJ: 39.324.590/0001-43 / Incrição Municipal: 324439 / Rua Cleonice Ap. Cruz Thielle, 350 - Jd Alvorada - Mogi-Guaçu - SP"

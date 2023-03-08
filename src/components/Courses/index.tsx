@@ -6,9 +6,9 @@ import { useTheme } from 'styled-components';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import { certificates } from '~/utils/paths';
+import { courses } from '~/utils/paths';
 
-import { Certificate } from '../Certificates/components/Certificate';
+import { Course } from './components/Course';
 
 import { Wrapper } from './styles';
 
@@ -20,14 +20,14 @@ export const Courses: FC = (): JSX.Element => {
   return (
     <Wrapper>
       <Text
-        title={<Translator path="Certificates.title" />}
+        title={<Translator path="Courses.title" />}
         size="3rem"
         color={colors.onBackgroundPrimary}
         weight="bold"
       />
       <Carousel centerMode showStatus={false}>
-        {certificates.map((certificate) => (
-          <Certificate certificate={certificate} />
+        {courses.map((course) => (
+          <Course course={course} />
         ))}
       </Carousel>
     </Wrapper>

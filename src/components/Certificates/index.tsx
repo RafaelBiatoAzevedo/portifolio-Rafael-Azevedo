@@ -22,7 +22,7 @@ export const Certificates: FC = (): JSX.Element => {
       <Text
         title={<Translator path="Certificates.title" />}
         size="3rem"
-        color={colors.onBackgroundPrimary}
+        color={colors.onBackgroundSecondary}
         weight="bold"
       />
       <Carousel centerMode showStatus={false}>

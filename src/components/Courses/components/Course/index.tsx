@@ -14,6 +14,7 @@ import {
   WrapperContent,
   WrapperInfo,
   Image,
+  WrapperImage,
 } from './styles';
 
 type TCourseData = {
@@ -33,7 +34,9 @@ export const Course: FC<TCourseData> = ({ course }): JSX.Element => {
         />
       </WrapperTitle>
       <WrapperContent>
-        <Image src={course.icon} alt="Course" />
+        <WrapperImage>
+          <Image src={course.icon} alt="Course" />
+        </WrapperImage>
         <WrapperInfo>
           <Text
             title={<Translator path="Courses.titleOne" />}

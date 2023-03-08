@@ -1,30 +1,23 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  align-items: center;
   display: flex;
   flex-direction: column;
+  background-color: ${(p) => p.theme.colors.backgroundPrimary};
+  padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
+  padding-bottom: 0px;
 
-  padding: 20px 0 20px 60px;
+  gap: 1rem;
 
-  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
-    padding: 10px;
-  }
-`;
-
-export const WrapperFormation = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  width: 70%;
-
-  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
-    width: 100%;
-  }
+  width: 100%;
 `;
 
 export const WrapperTitle = styled.div`
+  align-items: center;
+  justify-content: center;
   display: flex;
-  padding: 5px;
+  width: 100%;
 `;
 
 export const WrapperContent = styled.div`
@@ -32,13 +25,14 @@ export const WrapperContent = styled.div`
   display: flex;
   justify-content: center;
 
-  padding: 20px;
-  gap: 30px;
+  gap: 1rem;
 `;
 
 export const WrapperInfo = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
 `;
 
 export const Image = styled.img`

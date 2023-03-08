@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   align-items: center;
-  background-color: ${(p) => p.theme.colors.backgroundSecondary};
+  background-color: ${(p) => p.theme.colors.backgroundPrimary};
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
