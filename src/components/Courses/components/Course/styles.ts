@@ -54,7 +54,7 @@ export const WrapperLinks = styled.div`
 export const WrapperInfo = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 `;
 
 export const WrapperTechonologies = styled.div`

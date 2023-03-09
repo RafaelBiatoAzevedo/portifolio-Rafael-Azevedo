@@ -30,7 +30,7 @@ export const Course: FC<TCourseData> = ({ course }): JSX.Element => {
           size="1.7rem"
           title={<Translator path={course.title} />}
           weight={fontWeight.medium}
-          color={colors.tertiary}
+          color={colors.onBackgroundSecondary}
         />
       </WrapperTitle>
       <WrapperContent>
@@ -44,24 +44,21 @@ export const Course: FC<TCourseData> = ({ course }): JSX.Element => {
             size="1.6rem"
             weight={fontWeight.medium}
           />
-          <br />
           {course.situations.map((situation) => (
             <Text
               key={situation}
               title={<Translator path={situation} />}
-              color={colors.tertiary}
+              color={colors.onBackgroundSecondary}
               size="1.3rem"
               paddingX="6px"
             />
           ))}
-          <br />
           <Text
             title={<Translator path="Courses.titleTwo" />}
             color={colors.secondary}
             size="1.6rem"
             weight={fontWeight.medium}
           />
-          <br />
           {course.contents.map((content) => (
             <Text
               title=""
@@ -73,7 +70,7 @@ export const Course: FC<TCourseData> = ({ course }): JSX.Element => {
               <Text
                 key={content}
                 title={<Translator path={content} />}
-                color={colors.tertiary}
+                color={colors.onBackgroundSecondary}
                 size="1.3rem"
                 paddingX="6px"
               />
