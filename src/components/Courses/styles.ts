@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
+  padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm}
+    ${(p) => p.theme.spacing.lm} ${(p) => p.theme.spacing.lm};
   gap: 20px;
 `;
