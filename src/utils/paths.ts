@@ -148,13 +148,12 @@ export const projects: TProject[] = [
     technologies: [
       { name: 'HTML 5', icon: SiHtml5, color: themeCurrency.colors.html },
       { name: 'CSS 3', icon: SiCss3, color: themeCurrency.colors.css },
-      { name: 'javaScript', icon: FaJs, color: themeCurrency.colors.js },
-      { name: 'react', icon: FaReact, color: themeCurrency.colors.react },
       {
         name: 'typeScript',
         icon: SiTypescript,
         color: themeCurrency.colors.ts,
       },
+      { name: 'react', icon: FaReact, color: themeCurrency.colors.react },
       {
         name: 'styled-components',
         icon: SiStyledcomponents,
