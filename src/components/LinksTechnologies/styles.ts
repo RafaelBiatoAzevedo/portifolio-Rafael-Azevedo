@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 
   width: 100%;
+
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const Link = styled.a`

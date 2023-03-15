@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
   gap: 1rem;
 
   @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
-    padding: 10px;
+    padding: ${(p) => p.theme.spacing.md} ${(p) => p.theme.spacing.md}
+      ${(p) => p.theme.spacing.xxs} ${(p) => p.theme.spacing.md};
   }
 `;

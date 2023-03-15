@@ -15,6 +15,11 @@ export const Wrapper = styled.div`
 
   gap: 2rem;
   transition: height 0.8s;
+
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    padding: ${(p) => p.theme.spacing.sm} 0px;
+    width: 40%;
+  }
 `;
 
 export const WrapperTitle = styled.div`

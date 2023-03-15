@@ -31,6 +31,7 @@ export const Wrapper = styled.div<TWrapperProps>`
   }
 
   > div:last-child > div {
+    text-align: center;
     border-radius: 2rem;
     background-color: ${(p) =>
       p.isSoftSkills ? p.theme.colors.primary : p.theme.colors.tertiary};
@@ -72,7 +73,8 @@ export const Link = styled.a<TLinkProps>`
   color: ${(p) => p.textColor};
   font-weight: bold;
   font-size: 1.5rem;
-  margin: 0 10px;
+  margin: 0 1rem;
+  border: solid red;
 `;
 
 type TTextMessageProps = {
