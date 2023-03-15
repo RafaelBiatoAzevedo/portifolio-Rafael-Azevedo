@@ -36,6 +36,10 @@ export const Wrapper = styled.div<TWrapperProps>`
       p.isSoftSkills ? p.theme.colors.primary : p.theme.colors.tertiary};
     padding: 0.8rem 1.6rem;
   }
+
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    padding: ${(p) => p.theme.spacing.xl} ${(p) => p.theme.spacing.sm};
+  }
 `;
 
 export const WrapperText = styled.div`

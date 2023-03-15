@@ -5,8 +5,6 @@ export const Wrapper = styled.div`
   align-items: center;
   display: none;
 
-  width: 70%;
-
   @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
     display: flex;
   }

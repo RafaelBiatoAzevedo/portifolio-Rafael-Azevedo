@@ -11,8 +11,8 @@ export const Wrapper = styled.footer`
   padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
   text-align: center;
 
-  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
-    padding: 3rem 10px;
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    padding: ${(p) => p.theme.spacing.sm};
   }
 `;
 

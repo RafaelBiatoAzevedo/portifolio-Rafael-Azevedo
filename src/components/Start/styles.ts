@@ -10,6 +10,11 @@ export const Wrapper = styled.div`
   min-height: 42rem;
 
   gap: 3rem;
+
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    margin-top: ${(p) => p.theme.spacing.md};
+    padding: ${(p) => p.theme.spacing.xl} ${(p) => p.theme.spacing.sm};
+  }
 `;
 
 export const WrapperText = styled.div`
@@ -30,5 +35,11 @@ export const WrapperImage = styled.div`
   > img {
     border-radius: 100%;
     width: 22rem;
+  }
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    > img {
+      width: 15rem;
+    }
   }
 `;

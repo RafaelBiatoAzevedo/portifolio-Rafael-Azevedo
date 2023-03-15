@@ -31,4 +31,9 @@ export const Image = styled.img<TImage>`
     -webkit-box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
     box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
   }
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    height: 18px;
+    width: 32px;
+  }
 `;

@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   display: flex;
   gap: 1.5rem;
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    gap: 0.5rem;
+  }
 `;
 
 export const Link = styled.a`

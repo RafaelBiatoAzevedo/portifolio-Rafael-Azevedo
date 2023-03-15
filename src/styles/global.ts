@@ -28,9 +28,9 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
     html {
-      font-size: 6px;
+      font-size: 4px;
     }
   }
 `;
