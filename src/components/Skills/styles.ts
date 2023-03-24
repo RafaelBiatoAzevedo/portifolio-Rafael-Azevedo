@@ -74,7 +74,6 @@ export const Link = styled.a<TLinkProps>`
   font-weight: bold;
   font-size: 1.5rem;
   margin: 0 1rem;
-  border: solid red;
 `;
 
 type TTextMessageProps = {
