@@ -9,9 +9,11 @@ import { ISkill } from '~/interfaces/ISkill';
 import { LinkTech } from './components/LinkTech';
 
 import {
+  GridTechs,
   Link,
   TextMessage,
   Wrapper,
+  WrapperSoftSkills,
   WrapperText,
   WrapperTitle,
 } from './styles';
@@ -94,12 +96,10 @@ export const Skills: FC<ISKillsProps> = ({
             <Translator path={pathMessageTwo} />
           </TextMessage>
         </WrapperText>
-        {title === 'Hard Skills' && <LinksTechnologies />}
       </div>
-      <div>
-        {skills.map((skill) => {
-          if (title === 'Hard Skills') return <LinkTech skill={skill} />;
-          return (
+      {title === 'Soft Skills' ? (
+        <WrapperSoftSkills>
+          {skills.map((skill) => (
             <div>
               <Text
                 color={colors.onTertiary}
@@ -108,9 +108,15 @@ export const Skills: FC<ISKillsProps> = ({
                 weight="900"
               />
             </div>
-          );
-        })}
-      </div>
+          ))}
+        </WrapperSoftSkills>
+      ) : (
+        <GridTechs>
+          {skills.map((skill) => (
+            <LinkTech skill={skill} />
+          ))}
+        </GridTechs>
+      )}
     </Wrapper>
   );
 };

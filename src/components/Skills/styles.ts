@@ -6,37 +6,13 @@ type TWrapperProps = {
 };
 
 export const Wrapper = styled.div<TWrapperProps>`
+  align-items: center;
   display: flex;
   background-color: ${(p) => p.backgroudColor};
   padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
   min-height: 42rem;
 
   gap: 11rem;
-
-  > div:first-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-  }
-
-  > div:last-child {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-
-    justify-content: center;
-    width: 41%;
-    gap: 2rem;
-  }
-
-  > div:last-child > div {
-    text-align: center;
-    border-radius: 2rem;
-    background-color: ${(p) =>
-      p.isSoftSkills ? p.theme.colors.tertiary : p.theme.colors.primary};
-    padding: 0.8rem 1.6rem;
-  }
 
   @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
     padding: ${(p) => p.theme.spacing.xl} ${(p) => p.theme.spacing.sm};
@@ -83,4 +59,28 @@ type TTextMessageProps = {
 export const TextMessage = styled.p<TTextMessageProps>`
   color: ${(p) => p.textColor};
   font-size: 2rem;
+`;
+
+export const GridTechs = styled.div`
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  width: 70%;
+  border: solid red;
+`;
+
+export const WrapperSoftSkills = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  width: 70%;
+  gap: 2.5rem;
+
+  > div {
+    text-align: center;
+    border-radius: 2rem;
+    background-color: ${(p) => p.theme.colors.tertiary};
+    padding: 0.8rem 1.6rem;
+  }
 `;
