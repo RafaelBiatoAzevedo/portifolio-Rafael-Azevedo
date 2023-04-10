@@ -27,21 +27,21 @@ export const Home: FC = (): JSX.Element => {
       </ElementScroll>
       <ElementScroll name="skills">
         <Skills
-          title="Soft Skills"
-          iconOne={GiBrain}
-          iconsTwo={AiFillHeart}
-          pathMessageOne="SoftSkills.messageOne"
-          pathMessageTwo="SoftSkills.messageTwo"
-          skills={softSkills}
+          title="Hard Skills"
+          iconOne={BsTools}
+          iconsTwo={IoSettingsSharp}
+          pathMessageOne="HardSkills.messageOne"
+          pathMessageTwo="HardSkills.messageTwo"
+          skills={hardSkills}
         />
       </ElementScroll>
       <Skills
-        title="Hard Skills"
-        iconOne={BsTools}
-        iconsTwo={IoSettingsSharp}
-        pathMessageOne="HardSkills.messageOne"
-        pathMessageTwo="HardSkills.messageTwo"
-        skills={hardSkills}
+        title="Soft Skills"
+        iconOne={GiBrain}
+        iconsTwo={AiFillHeart}
+        pathMessageOne="SoftSkills.messageOne"
+        pathMessageTwo="SoftSkills.messageTwo"
+        skills={softSkills}
       />
       <ElementScroll name="projects">
         <Projects />

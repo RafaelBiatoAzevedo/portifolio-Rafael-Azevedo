@@ -34,7 +34,7 @@ export const Wrapper = styled.div<TWrapperProps>`
     text-align: center;
     border-radius: 2rem;
     background-color: ${(p) =>
-      p.isSoftSkills ? p.theme.colors.primary : p.theme.colors.tertiary};
+      p.isSoftSkills ? p.theme.colors.tertiary : p.theme.colors.primary};
     padding: 0.8rem 1.6rem;
   }
 

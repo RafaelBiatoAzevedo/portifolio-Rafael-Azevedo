@@ -4,6 +4,8 @@ import { IconType } from 'react-icons/lib';
 
 import { useTheme } from 'styled-components';
 
+import { LinkTech } from './components/LinkTech';
+
 import {
   Link,
   TextMessage,
@@ -22,7 +24,7 @@ interface ISKillsProps {
   iconsTwo: IconType;
   pathMessageOne: string;
   pathMessageTwo: string;
-  skills: string[];
+  skills: { name: string; icon: IconType }[];
 }
 
 export const Skills: FC<ISKillsProps> = ({
@@ -36,14 +38,14 @@ export const Skills: FC<ISKillsProps> = ({
   const { colors } = useTheme();
 
   const onBackgroungColor = useMemo(() => {
-    if (title === 'Soft Skills') return colors.onBackgroundSecondary;
+    if (title === 'Hard Skills') return colors.onBackgroundSecondary;
     return colors.onBackgroundPrimary;
   }, [title, colors]);
 
   return (
     <Wrapper
       backgroudColor={
-        title === 'Soft Skills'
+        title === 'Hard Skills'
           ? colors.onBackgroundPrimary
           : colors.onBackgroundSecondary
       }
@@ -93,18 +95,20 @@ export const Skills: FC<ISKillsProps> = ({
         {title === 'Hard Skills' && <LinksTechnologies />}
       </div>
       <div>
-        {skills.map((skill) => (
-          <div>
-            <Text
-              color={
-                title === 'Soft Skills' ? colors.onPrimary : colors.onTertiary
-              }
-              title={<Translator path={skill} />}
-              size="1.6rem"
-              weight="900"
-            />
-          </div>
-        ))}
+        {skills.map((skill) => {
+          if (title === 'Hard Skills')
+            return <LinkTech skill={skill.name} icon={skill.icon} />;
+          return (
+            <div>
+              <Text
+                color={colors.onTertiary}
+                title={<Translator path={skill.name} />}
+                size="1.6rem"
+                weight="900"
+              />
+            </div>
+          );
+        })}
       </div>
     </Wrapper>
   );

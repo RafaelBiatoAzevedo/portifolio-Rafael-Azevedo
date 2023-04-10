@@ -5,14 +5,32 @@ import {
   SiCss3,
   SiRedux,
   SiStyledcomponents,
+  SiNativescript,
   SiTypescript,
+  SiVuetify,
+  SiMongodb,
+  SiMysql,
+  SiPython,
+  SiJava,
+  SiCplusplus,
+  SiGit,
+  SiGithub,
+  SiJest,
+  SiMocha,
+  SiRtl,
 } from 'react-icons/si';
 import { RiContactsFill } from 'react-icons/ri';
 import { MdOutlineWork, MdComputer } from 'react-icons/md';
 import { HiOutlineCode } from 'react-icons/hi';
 import { GiPapers } from 'react-icons/gi';
 import { FcManager } from 'react-icons/fc';
-import { FaUniversity, FaGraduationCap, FaJs, FaReact } from 'react-icons/fa';
+import {
+  FaUniversity,
+  FaGraduationCap,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+} from 'react-icons/fa';
 import { BsPersonBoundingBox } from 'react-icons/bs';
 
 import { TProject } from '~/types/TProject';
@@ -49,32 +67,149 @@ import computerScienceIcon from '~/assets/images/certificates/computerScience.pn
 import backEndIcon from '~/assets/images/certificates/BackEnd.png';
 
 export const hardSkills = [
-  'HardSkills.hsOne',
-  'HardSkills.hsTwo',
-  'HardSkills.hsThree',
-  'HardSkills.hsFour',
-  'HardSkills.hsFive',
-  'HardSkills.hsSix',
-  'HardSkills.hsSeven',
-  'HardSkills.hsEight',
-  'HardSkills.hsNine',
-  'HardSkills.hsTen',
-  'HardSkills.hsEleven',
-  'HardSkills.hsTwelve',
+  {
+    name: 'HardSkills.hsOne',
+    icon: SiHtml5,
+  },
+  {
+    name: 'HardSkills.hsTwo',
+    icon: SiCss3,
+  },
+  {
+    name: 'HardSkills.hsThree',
+    icon: SiStyledcomponents,
+  },
+  {
+    name: 'HardSkills.hsFour',
+    icon: SiCplusplus,
+  },
+  {
+    name: 'HardSkills.hsFive',
+    icon: SiJava,
+  },
+  {
+    name: 'HardSkills.hsSix',
+    icon: SiPython,
+  },
+  {
+    name: 'HardSkills.hsSeven',
+    icon: FaJs,
+  },
+  {
+    name: 'HardSkills.hsEight',
+    icon: SiTypescript,
+  },
+  {
+    name: 'HardSkills.hsNine',
+    icon: SiVuetify,
+  },
+  {
+    name: 'HardSkills.hsTen',
+    icon: FaReact,
+  },
+  {
+    name: 'HardSkills.Eleven',
+    icon: SiNativescript,
+  },
+  {
+    name: 'HardSkills.hsTwelve',
+    icon: SiRedux,
+  },
+  {
+    name: 'HardSkills.hsThirteen',
+    icon: '',
+  },
+  {
+    name: 'HardSkills.hsFourteen',
+    icon: FaNodeJs,
+  },
+  {
+    name: 'HardSkills.hsFitteen',
+    icon: SiMongodb,
+  },
+  {
+    name: 'HardSkills.hsSixteen',
+    icon: SiMysql,
+  },
+  {
+    name: 'HardSkills.hsSeventeen',
+    icon: SiGit,
+  },
+  {
+    name: 'HardSkills.hsEightteen',
+    icon: SiGithub,
+  },
+  {
+    name: 'HardSkills.hsNineteen',
+    icon: SiJest,
+  },
+  {
+    name: 'HardSkills.hsTwentyteen',
+    icon: SiMocha,
+  },
+  {
+    name: 'HardSkills.hsTwentyOne',
+    icon: SiRtl,
+  },
+  {
+    name: 'HardSkills.hsTwentyTwo',
+    icon: '',
+  },
+  {
+    name: 'HardSkills.hsTwentyThree',
+    icon: '',
+  },
 ];
 
 export const softSkills = [
-  'SoftSkills.ssOne',
-  'SoftSkills.ssTwo',
-  'SoftSkills.ssThree',
-  'SoftSkills.ssFour',
-  'SoftSkills.ssFive',
-  'SoftSkills.ssSix',
-  'SoftSkills.ssSeven',
-  'SoftSkills.ssEight',
-  'SoftSkills.ssNine',
-  'SoftSkills.ssTen',
-  'SoftSkills.ssEleven',
+  {
+    name: 'HardSkills.ssOne',
+    icon: '',
+  },
+  {
+    name: 'HardSkills.ssTwo',
+    icon: '',
+  },
+  {
+    name: 'HardSkills.ssThree',
+    icon: '',
+  },
+  {
+    name: 'HardSkills.ssFour',
+    icon: '',
+  },
+  {
+    name: 'HardSkills.ssFive',
+    icon: '',
+  },
+  {
+    name: 'HardSkills.ssSix',
+    icon: '',
+  },
+  {
+    name: 'HardSkills.ssSix',
+    icon: '',
+  },
+  {
+    name: 'HardSkills.ssSeven',
+    icon: '',
+  },
+  {
+    name: 'HardSkills.ssEight',
+    icon: '',
+  },
+  {
+    name: 'HardSkills.ssNine',
+    icon: '',
+  },
+  {
+    name: 'HardSkills.ssTen',
+    icon: '',
+  },
+  {
+    name: 'HardSkills.ssEleven',
+    icon: '',
+  },
 ];
 
 export const navs: TNav[] = [
