@@ -4,6 +4,8 @@ import { IconType } from 'react-icons/lib';
 
 import { useTheme } from 'styled-components';
 
+import { ISkill } from '~/interfaces/ISkill';
+
 import { LinkTech } from './components/LinkTech';
 
 import {
@@ -24,7 +26,7 @@ interface ISKillsProps {
   iconsTwo: IconType;
   pathMessageOne: string;
   pathMessageTwo: string;
-  skills: { name: string; icon: IconType }[];
+  skills: ISkill[];
 }
 
 export const Skills: FC<ISKillsProps> = ({
@@ -96,8 +98,7 @@ export const Skills: FC<ISKillsProps> = ({
       </div>
       <div>
         {skills.map((skill) => {
-          if (title === 'Hard Skills')
-            return <LinkTech skill={skill.name} icon={skill.icon} />;
+          if (title === 'Hard Skills') return <LinkTech skill={skill} />;
           return (
             <div>
               <Text

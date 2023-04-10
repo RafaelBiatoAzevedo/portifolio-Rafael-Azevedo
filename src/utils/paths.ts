@@ -40,6 +40,8 @@ import { TExperience } from '~/types/TExperience';
 import { TCourse } from '~/types/TCourse';
 import { TCertificate } from '~/types/TCertificate';
 import { themeDark as themeCurrency } from '~/styles/theme';
+import { themeDark } from '~/styles/theme';
+import { ISkill } from '~/interfaces/ISkill';
 import { Projects } from '~/components/Projects';
 import { Formation } from '~/components/Formation';
 import { Experiences } from '~/components/Experiences';
@@ -66,149 +68,219 @@ import frontEndIcon from '~/assets/images/certificates/FrontEnd.png';
 import computerScienceIcon from '~/assets/images/certificates/computerScience.png';
 import backEndIcon from '~/assets/images/certificates/BackEnd.png';
 
-export const hardSkills = [
+export const hardSkills: ISkill[] = [
   {
     name: 'HardSkills.hsOne',
     icon: SiHtml5,
+    href: 'https://www.w3schools.com/html/',
+    colorIcon: themeDark.colors.html,
   },
   {
     name: 'HardSkills.hsTwo',
     icon: SiCss3,
+    href: 'https://www.w3schools.com/css/',
+    colorIcon: themeDark.colors.css,
   },
   {
     name: 'HardSkills.hsThree',
     icon: SiStyledcomponents,
+    href: 'https://styled-components.com/',
+    colorIcon: themeDark.colors.styled,
   },
   {
     name: 'HardSkills.hsFour',
     icon: SiCplusplus,
+    href: 'https://devdocs.io/cpp/',
+    colorIcon: '',
   },
   {
     name: 'HardSkills.hsFive',
     icon: SiJava,
+    href: 'https://dev.java/learn/',
+    colorIcon: themeDark.colors.java,
   },
   {
     name: 'HardSkills.hsSix',
     icon: SiPython,
+    href: 'https://www.python.org/',
+    colorIcon: themeDark.colors.python,
   },
   {
     name: 'HardSkills.hsSeven',
     icon: FaJs,
+    href: 'https://www.javascript.com/',
+    colorIcon: themeCurrency.colors.js,
   },
   {
     name: 'HardSkills.hsEight',
     icon: SiTypescript,
+    href: 'https://www.typescriptlang.org/',
+    colorIcon: themeDark.colors.ts,
   },
   {
     name: 'HardSkills.hsNine',
     icon: SiVuetify,
+    href: 'https://vuejs.org/guide/introduction.html',
+    colorIcon: themeDark.colors.vue,
   },
   {
     name: 'HardSkills.hsTen',
     icon: FaReact,
+    href: 'https://pt-br.reactjs.org/',
+    colorIcon: themeDark.colors.react,
   },
   {
     name: 'HardSkills.Eleven',
     icon: SiNativescript,
+    href: 'https://reactnative.dev/',
+    colorIcon: themeDark.colors.react,
   },
   {
     name: 'HardSkills.hsTwelve',
     icon: SiRedux,
+    href: 'https://redux.js.org/',
+    colorIcon: themeDark.colors.redux,
   },
   {
     name: 'HardSkills.hsThirteen',
-    icon: '',
+    icon: undefined,
+    href: 'https://legacy.reactjs.org/docs/context.html',
+    colorIcon: '',
   },
   {
     name: 'HardSkills.hsFourteen',
     icon: FaNodeJs,
+    href: 'https://nodejs.org/en/',
+    colorIcon: themeDark.colors.node,
   },
   {
     name: 'HardSkills.hsFitteen',
     icon: SiMongodb,
+    href: 'https://www.mongodb.com/',
+    colorIcon: themeDark.colors.mongo,
   },
   {
     name: 'HardSkills.hsSixteen',
     icon: SiMysql,
+    href: 'https://www.mysql.com/',
+    colorIcon: themeDark.colors.mysql,
   },
   {
     name: 'HardSkills.hsSeventeen',
     icon: SiGit,
+    href: 'https://git-scm.com/doc',
+    colorIcon: '',
   },
   {
     name: 'HardSkills.hsEightteen',
     icon: SiGithub,
+    href: 'https://github.com/',
+    colorIcon: '',
   },
   {
     name: 'HardSkills.hsNineteen',
     icon: SiJest,
+    href: 'https://jestjs.io/pt-BR/docs/getting-started',
+    colorIcon: '',
   },
   {
     name: 'HardSkills.hsTwentyteen',
     icon: SiMocha,
+    href: 'https://mochajs.org/',
+    colorIcon: '',
   },
   {
     name: 'HardSkills.hsTwentyOne',
     icon: SiRtl,
+    href: 'https://testing-library.com/docs/react-testing-library/intro/',
+    colorIcon: '',
   },
   {
     name: 'HardSkills.hsTwentyTwo',
-    icon: '',
+    icon: undefined,
+    href: 'https://coodesh.com/blog/candidates/metodologias/tdd-e-seu-significado-por-que-ele-ajuda-a-aumentar-a-sua-produtividade/',
+    colorIcon: '',
   },
   {
     name: 'HardSkills.hsTwentyThree',
-    icon: '',
+    icon: undefined,
+    href: 'https://www.metodoagil.com/metodos-ageis/',
+    colorIcon: '',
   },
 ];
 
-export const softSkills = [
+export const softSkills: ISkill[] = [
   {
     name: 'HardSkills.ssOne',
-    icon: '',
+    icon: undefined,
+    href: undefined,
+    colorIcon: undefined,
   },
   {
     name: 'HardSkills.ssTwo',
-    icon: '',
+    icon: undefined,
+    href: undefined,
+    colorIcon: undefined,
   },
   {
     name: 'HardSkills.ssThree',
-    icon: '',
+    icon: undefined,
+    href: undefined,
+    colorIcon: undefined,
   },
   {
     name: 'HardSkills.ssFour',
-    icon: '',
+    icon: undefined,
+    href: undefined,
+    colorIcon: undefined,
   },
   {
     name: 'HardSkills.ssFive',
-    icon: '',
+    icon: undefined,
+    href: undefined,
+    colorIcon: undefined,
   },
   {
     name: 'HardSkills.ssSix',
-    icon: '',
+    icon: undefined,
+    href: undefined,
+    colorIcon: undefined,
   },
   {
     name: 'HardSkills.ssSix',
-    icon: '',
+    icon: undefined,
+    href: undefined,
+    colorIcon: undefined,
   },
   {
     name: 'HardSkills.ssSeven',
-    icon: '',
+    icon: undefined,
+    href: undefined,
+    colorIcon: undefined,
   },
   {
     name: 'HardSkills.ssEight',
-    icon: '',
+    icon: undefined,
+    href: undefined,
+    colorIcon: undefined,
   },
   {
     name: 'HardSkills.ssNine',
-    icon: '',
+    icon: undefined,
+    href: undefined,
+    colorIcon: undefined,
   },
   {
     name: 'HardSkills.ssTen',
-    icon: '',
+    icon: undefined,
+    href: undefined,
+    colorIcon: undefined,
   },
   {
     name: 'HardSkills.ssEleven',
-    icon: '',
+    icon: undefined,
+    href: undefined,
+    colorIcon: undefined,
   },
 ];
 
