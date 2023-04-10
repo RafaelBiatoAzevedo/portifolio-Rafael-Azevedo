@@ -31,6 +31,11 @@ export const themeDark = {
     vue: '#41B883',
     mongo: '#55a54d',
     mysql: '#3e6e93',
+    'C++': '#0076f7',
+    git: '#e84d31',
+    gitHub: '#ffffff',
+    jest: '#bc1224',
+    mocha: '#896446',
 
     moon: '#d4dee1',
     sun: '#f49e12 ',
@@ -96,6 +101,11 @@ export const themeLight = {
     vue: '#41B883',
     mongo: '#55a54d',
     mysql: '#3e6e93',
+    'C++': '#0076f7',
+    git: '#e84d31',
+    gitHub: '#ffffff',
+    jest: '#bc1224',
+    mocha: '#896446',
 
     moon: '#d4dee1',
     sun: '#f49e12 ',

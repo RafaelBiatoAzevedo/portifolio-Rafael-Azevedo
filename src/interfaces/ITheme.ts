@@ -30,6 +30,11 @@ export type TColors = {
   vue: string;
   mongo: string;
   mysql: string;
+  'C++': string;
+  git: string;
+  gitHub: string;
+  jest: string;
+  mocha: string;
 
   moon: string;
   sun: string;

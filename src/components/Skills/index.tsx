@@ -20,7 +20,6 @@ import {
 
 import { Translator } from '../Translator';
 import { Text } from '../Text';
-import { LinksTechnologies } from '../LinksTechnologies';
 
 interface ISKillsProps {
   title: string;
@@ -55,48 +54,46 @@ export const Skills: FC<ISKillsProps> = ({
       }
       isSoftSkills={title === 'Soft Skills'}
     >
-      <div>
-        <WrapperText>
-          <WrapperTitle>
-            <Text
-              title={title}
-              size="3.5rem"
-              weight="600"
-              color={onBackgroungColor}
-            />
-            <div>
-              {createElement(iconOne, {
-                color: onBackgroungColor,
-              })}
-              <Text title="+" size="3.5rem" color={onBackgroungColor} />
-              {createElement(iconsTwo, {
-                color: onBackgroungColor,
-              })}
-            </div>
-          </WrapperTitle>
-          <TextMessage textColor={onBackgroungColor}>
-            <Translator path={pathMessageOne} />
-            {title === 'Hard Skills' && (
-              <Link
-                href="https://www.puc-campinas.edu.br/"
-                target="blank"
-                textColor="#0e4194"
-              >
-                PUC-CAMPINAS
-              </Link>
-            )}
-            {title === 'Hard Skills' && ','}
+      <WrapperText>
+        <WrapperTitle>
+          <Text
+            title={title}
+            size="3.5rem"
+            weight="600"
+            color={onBackgroungColor}
+          />
+          <div>
+            {createElement(iconOne, {
+              color: onBackgroungColor,
+            })}
+            <Text title="+" size="3.5rem" color={onBackgroungColor} />
+            {createElement(iconsTwo, {
+              color: onBackgroungColor,
+            })}
+          </div>
+        </WrapperTitle>
+        <TextMessage textColor={onBackgroungColor}>
+          <Translator path={pathMessageOne} />
+          {title === 'Hard Skills' && (
             <Link
-              href="https://www.betrybe.com/"
+              href="https://www.puc-campinas.edu.br/"
               target="blank"
-              textColor="#1db702"
+              textColor="#0e4194"
             >
-              TRYBE
+              PUC-CAMPINAS
             </Link>
-            <Translator path={pathMessageTwo} />
-          </TextMessage>
-        </WrapperText>
-      </div>
+          )}
+          {title === 'Hard Skills' && ','}
+          <Link
+            href="https://www.betrybe.com/"
+            target="blank"
+            textColor="#1db702"
+          >
+            TRYBE
+          </Link>
+          <Translator path={pathMessageTwo} />
+        </TextMessage>
+      </WrapperText>
       {title === 'Soft Skills' ? (
         <WrapperSoftSkills>
           {skills.map((skill) => (

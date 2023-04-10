@@ -62,10 +62,11 @@ export const TextMessage = styled.p<TTextMessageProps>`
 `;
 
 export const GridTechs = styled.div`
-  display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-  width: 70%;
-  border: solid red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 40%;
+  gap: 1rem;
 `;
 
 export const WrapperSoftSkills = styled.div`
@@ -74,7 +75,7 @@ export const WrapperSoftSkills = styled.div`
   flex-wrap: wrap;
 
   justify-content: center;
-  width: 70%;
+  max-width: 40%;
   gap: 2.5rem;
 
   > div {

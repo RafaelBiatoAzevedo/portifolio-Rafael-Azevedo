@@ -24,8 +24,8 @@ const objExport = {
       messageOne:
         'Habilidades técnicas adquiridas com muito empemnho e estudo nos cursos da',
       messageTwo: 'pesquisas e no trabalho do dia a dia.',
-      hsOne: 'HTML5 \n HTML semântico',
-      hsTwo: 'CSS3 \n CSS Responsivo',
+      hsOne: 'HTML 5',
+      hsTwo: 'CSS 3',
       hsThree: 'Styled Components',
       hsFour: 'C++',
       hsFive: 'Java',

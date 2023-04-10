@@ -130,7 +130,7 @@ export const hardSkills: ISkill[] = [
     colorIcon: themeDark.colors.react,
   },
   {
-    name: 'HardSkills.Eleven',
+    name: 'HardSkills.hsEleven',
     icon: SiNativescript,
     href: 'https://reactnative.dev/',
     colorIcon: themeDark.colors.react,
@@ -154,7 +154,7 @@ export const hardSkills: ISkill[] = [
     colorIcon: themeDark.colors.node,
   },
   {
-    name: 'HardSkills.hsFitteen',
+    name: 'HardSkills.hsFifteen',
     icon: SiMongodb,
     href: 'https://www.mongodb.com/',
     colorIcon: themeDark.colors.mongo,
@@ -169,25 +169,25 @@ export const hardSkills: ISkill[] = [
     name: 'HardSkills.hsSeventeen',
     icon: SiGit,
     href: 'https://git-scm.com/doc',
-    colorIcon: '',
+    colorIcon: themeCurrency.colors.git,
   },
   {
     name: 'HardSkills.hsEightteen',
     icon: SiGithub,
     href: 'https://github.com/',
-    colorIcon: '',
+    colorIcon: themeDark.colors.gitHub,
   },
   {
     name: 'HardSkills.hsNineteen',
     icon: SiJest,
     href: 'https://jestjs.io/pt-BR/docs/getting-started',
-    colorIcon: '',
+    colorIcon: themeDark.colors.jest,
   },
   {
-    name: 'HardSkills.hsTwentyteen',
+    name: 'HardSkills.hsTwenty',
     icon: SiMocha,
     href: 'https://mochajs.org/',
-    colorIcon: '',
+    colorIcon: themeDark.colors.mocha,
   },
   {
     name: 'HardSkills.hsTwentyOne',
