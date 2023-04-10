@@ -139,6 +139,7 @@ const objExport = {
           contentTwo: 'Front-End developmenmt',
           contentThree: 'Back-End developmenmt',
           contentFour: 'Computer science',
+          contentFive: 'Soft Skills',
         },
       },
       courseTwo: {
