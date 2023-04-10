@@ -20,19 +20,25 @@ export const WrapperTitle = styled.div`
   width: 100%;
 `;
 
+export const WrapperSubtitle = styled.div`
+  align-items: center;
+  display: flex;
+  width: 100%;
+`;
+
 export const WrapperContent = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
 
-  gap: 1rem;
+  gap: 1.5rem;
 `;
 
 export const WrapperInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-self: stretch;
+  gap: 1rem;
 `;
 
 export const Image = styled.img`

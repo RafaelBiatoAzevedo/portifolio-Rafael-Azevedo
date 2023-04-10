@@ -10,6 +10,7 @@ import {
   WrapperContent,
   WrapperInfo,
   Image,
+  WrapperSubtitle,
 } from './styles';
 
 import { Translator } from '../Translator';
@@ -30,32 +31,32 @@ export const Formation: FC = (): JSX.Element => {
       <WrapperContent>
         <Image src={pucIcon} alt="logoPucCampinas" />
         <WrapperInfo>
-          <WrapperTitle>
+          <WrapperSubtitle>
             <Text
               size="1.7rem"
               title={<Translator path="Formation.titleOne" />}
               weight={fontWeight.medium}
               color={colors.tertiary}
             />
-          </WrapperTitle>
+          </WrapperSubtitle>
           <div>
             <Text
               title={<Translator path="Formation.titleTwo" />}
               color={colors.secondary}
-              size="1.5rem"
+              size="1.3rem"
               weight={fontWeight.medium}
             />
             <Text
               title={<Translator path="Formation.situation.situationOne" />}
               color={colors.tertiary}
-              size="1.3rem"
-              paddingX="6px"
+              size="1.2rem"
+              paddingX="8px"
             />
             <Text
               title={<Translator path="Formation.situation.situationTwo" />}
               color={colors.tertiary}
-              size="1.3rem"
-              paddingX="6px"
+              size="1.2rem"
+              paddingX="8px"
             />
           </div>
         </WrapperInfo>
