@@ -13,6 +13,7 @@ export const Wrapper = styled.a`
   text-align: center;
 
   width: 10rem;
+  height: 9rem;
 
   gap: 1rem;
   padding: ${(p) => p.theme.spacing.md};

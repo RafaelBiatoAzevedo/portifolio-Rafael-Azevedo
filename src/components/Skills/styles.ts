@@ -66,7 +66,7 @@ export const GridTechs = styled.div`
   justify-content: flex-end;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 45%;
+  max-width: 43%;
   gap: 1rem;
 `;
 
