@@ -12,7 +12,6 @@ export const Footer: FC = (): JSX.Element => {
   const { colors, fontWeight } = useTheme();
   return (
     <Wrapper>
-      <div id="footer" />
       <WrapperTop>
         <Text
           title="AZEVEDO DIGITAL"

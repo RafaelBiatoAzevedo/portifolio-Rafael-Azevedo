@@ -7,17 +7,25 @@ export const Wrapper = styled.footer`
   justify-content: center;
   border-top: ${(p) => p.theme.colors.tertiary} solid 1px;
   background-color: ${(p) => p.theme.colors.primary};
-  gap: 20px;
-  padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
+  gap: 2rem;
+  padding: ${(p) => p.theme.spacing.xxl};
   text-align: center;
 
+  @media (max-width: ${(p) => p.theme.resolutions.medium}) {
+    padding: ${(p) => p.theme.spacing.xl};
+  }
+
+  @media (max-width: ${(p) => p.theme.resolutions.small}) {
+    padding: ${(p) => p.theme.spacing.lg};
+  }
+
   @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
-    padding: ${(p) => p.theme.spacing.sm};
+    padding: ${(p) => p.theme.spacing.lm};
   }
 `;
 
 export const WrapperTop = styled.div`
   display: flex;
 
-  gap: 20px;
+  gap: 2rem;
 `;
