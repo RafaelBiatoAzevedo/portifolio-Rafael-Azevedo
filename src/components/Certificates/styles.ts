@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 
   padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm}
     ${(p) => p.theme.spacing.lm} ${(p) => p.theme.spacing.lm};
-  gap: 1rem;
+  gap: 3rem;
 
   @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
     padding: 10px;

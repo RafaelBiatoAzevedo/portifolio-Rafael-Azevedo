@@ -17,7 +17,7 @@ export const LinkTech: FC<ILinkTech> = ({ skill }): JSX.Element => {
   return (
     <Wrapper href={skill.href} target="Blank">
       {!!skill.icon &&
-        createElement(skill.icon, { size: '3rem', color: skill.colorIcon })}
+        createElement(skill.icon, { size: '2.5rem', color: skill.colorIcon })}
       <Text
         title={<Translator path={skill.name} />}
         color={colors.onBackgroundPrimary}

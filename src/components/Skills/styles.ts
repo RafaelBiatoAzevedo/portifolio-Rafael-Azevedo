@@ -63,9 +63,10 @@ export const TextMessage = styled.p<TTextMessageProps>`
 
 export const GridTechs = styled.div`
   display: flex;
+  justify-content: flex-end;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 40%;
+  max-width: 45%;
   gap: 1rem;
 `;
 

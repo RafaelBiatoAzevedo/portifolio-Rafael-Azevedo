@@ -18,6 +18,8 @@ import {
   SiJest,
   SiMocha,
   SiRtl,
+  SiExpress,
+  SiBitbucket,
 } from 'react-icons/si';
 import { RiContactsFill } from 'react-icons/ri';
 import { MdOutlineWork, MdComputer } from 'react-icons/md';
@@ -91,7 +93,7 @@ export const hardSkills: ISkill[] = [
     name: 'HardSkills.hsFour',
     icon: SiCplusplus,
     href: 'https://devdocs.io/cpp/',
-    colorIcon: '',
+    colorIcon: themeDark.colors['C++'],
   },
   {
     name: 'HardSkills.hsFive',
@@ -143,9 +145,9 @@ export const hardSkills: ISkill[] = [
   },
   {
     name: 'HardSkills.hsThirteen',
-    icon: undefined,
+    icon: FaReact,
     href: 'https://legacy.reactjs.org/docs/context.html',
-    colorIcon: '',
+    colorIcon: themeDark.colors.react,
   },
   {
     name: 'HardSkills.hsFourteen',
@@ -155,54 +157,66 @@ export const hardSkills: ISkill[] = [
   },
   {
     name: 'HardSkills.hsFifteen',
+    icon: SiExpress,
+    href: 'https://expressjs.com/',
+    colorIcon: themeDark.colors.node,
+  },
+  {
+    name: 'HardSkills.hsSixteen',
     icon: SiMongodb,
     href: 'https://www.mongodb.com/',
     colorIcon: themeDark.colors.mongo,
   },
   {
-    name: 'HardSkills.hsSixteen',
+    name: 'HardSkills.hsSeventeen',
     icon: SiMysql,
     href: 'https://www.mysql.com/',
     colorIcon: themeDark.colors.mysql,
   },
   {
-    name: 'HardSkills.hsSeventeen',
+    name: 'HardSkills.hsEightteen',
     icon: SiGit,
     href: 'https://git-scm.com/doc',
     colorIcon: themeCurrency.colors.git,
   },
   {
-    name: 'HardSkills.hsEightteen',
+    name: 'HardSkills.hsNineteen',
     icon: SiGithub,
     href: 'https://github.com/',
     colorIcon: themeDark.colors.gitHub,
   },
   {
-    name: 'HardSkills.hsNineteen',
+    name: 'HardSkills.hsTwenty',
+    icon: SiBitbucket,
+    href: 'https://bitbucket.org/',
+    colorIcon: themeDark.colors.react,
+  },
+  {
+    name: 'HardSkills.hsTwentyOne',
     icon: SiJest,
     href: 'https://jestjs.io/pt-BR/docs/getting-started',
     colorIcon: themeDark.colors.jest,
   },
   {
-    name: 'HardSkills.hsTwenty',
+    name: 'HardSkills.hsTwentyTwo',
     icon: SiMocha,
     href: 'https://mochajs.org/',
     colorIcon: themeDark.colors.mocha,
   },
   {
-    name: 'HardSkills.hsTwentyOne',
+    name: 'HardSkills.hsTwentyThree',
     icon: SiRtl,
     href: 'https://testing-library.com/docs/react-testing-library/intro/',
     colorIcon: '',
   },
   {
-    name: 'HardSkills.hsTwentyTwo',
+    name: 'HardSkills.hsTwentyFour',
     icon: undefined,
     href: 'https://coodesh.com/blog/candidates/metodologias/tdd-e-seu-significado-por-que-ele-ajuda-a-aumentar-a-sua-produtividade/',
     colorIcon: '',
   },
   {
-    name: 'HardSkills.hsTwentyThree',
+    name: 'HardSkills.hsTwentyFive',
     icon: undefined,
     href: 'https://www.metodoagil.com/metodos-ageis/',
     colorIcon: '',

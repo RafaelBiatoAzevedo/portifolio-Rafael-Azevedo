@@ -8,5 +8,6 @@ export const Wrapper = styled.div`
 
   padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm}
     ${(p) => p.theme.spacing.lm} ${(p) => p.theme.spacing.lm};
-  gap: 20px;
+
+  gap: 3rem;
 `;

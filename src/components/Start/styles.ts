@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
   margin-top: ${(p) => p.theme.spacing.xxl};
-  min-height: 42rem;
+  min-height: 50rem;
 
   gap: 3rem;
 
@@ -29,6 +29,7 @@ export const WrapperText = styled.div`
 export const WrapperImage = styled.div`
   align-items: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 2rem;
 

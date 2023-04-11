@@ -12,7 +12,7 @@ export const Wrapper = styled.a`
   border: 1px solid ${(p) => p.theme.colors.backgroundPrimary};
   text-align: center;
 
-  width: 11.5rem;
+  width: 10rem;
 
   gap: 1rem;
   padding: ${(p) => p.theme.spacing.md};
