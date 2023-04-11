@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 40rem;
-  margin-bottom: 3rem;
+  margin-bottom: 50px;
 
   padding: ${(p) => p.theme.spacing.lg} 0px;
 
@@ -15,7 +15,13 @@ export const Wrapper = styled.div`
 
   gap: 2rem;
 
-  transition: height 0.8s;
+  @media (max-width: ${(p) => p.theme.resolutions.medium}) {
+    min-height: 45rem;
+  }
+
+  @media (max-width: ${(p) => p.theme.resolutions.small}) {
+    min-height: 51rem;
+  }
 `;
 
 export const WrapperTitle = styled.div`

@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   min-height: 33rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
+  margin-bottom: 50px;
 
   padding: ${(p) => p.theme.spacing.lg} 0px;
 
@@ -16,9 +16,12 @@ export const Wrapper = styled.div`
   gap: 2rem;
   transition: height 0.8s;
 
-  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
-    padding: ${(p) => p.theme.spacing.sm} 0px;
-    width: 40%;
+  @media (max-width: ${(p) => p.theme.resolutions.medium}) {
+    min-height: 38rem;
+  }
+
+  @media (max-width: ${(p) => p.theme.resolutions.small}) {
+    min-height: 40rem;
   }
 `;
 
