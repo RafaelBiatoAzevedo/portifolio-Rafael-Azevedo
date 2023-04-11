@@ -189,7 +189,7 @@ export const hardSkills: ISkill[] = [
     name: 'HardSkills.hsTwenty',
     icon: SiBitbucket,
     href: 'https://bitbucket.org/',
-    colorIcon: themeDark.colors.react,
+    colorIcon: themeDark.colors.css,
   },
   {
     name: 'HardSkills.hsTwentyOne',
