@@ -22,6 +22,10 @@ export const Wrapper = styled.footer`
   @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
     padding: ${(p) => p.theme.spacing.lm};
   }
+
+  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
+    padding: ${(p) => p.theme.spacing.md};
+  }
 `;
 
 export const WrapperTop = styled.div`
