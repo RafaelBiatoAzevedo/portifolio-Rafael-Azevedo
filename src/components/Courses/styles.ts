@@ -6,12 +6,12 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
+  gap: 3rem;
+
   padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm}
     ${(p) => p.theme.spacing.lm} ${(p) => p.theme.spacing.lm};
 
-  gap: 3rem;
-
   @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
-    padding: ${(p) => p.theme.spacing.sm} ${(p) => p.theme.spacing.lm};
+    padding: 0px ${(p) => p.theme.spacing.lm} 0px ${(p) => p.theme.spacing.lm};
   }
 `;

@@ -14,7 +14,6 @@ export const Wrapper = styled.div`
   width: 60%;
 
   gap: 2rem;
-  transition: height 0.8s;
 
   @media (max-width: ${(p) => p.theme.resolutions.medium}) {
     min-height: 38rem;
