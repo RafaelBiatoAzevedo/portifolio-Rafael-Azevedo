@@ -33,3 +33,11 @@ export const WrapperTop = styled.div`
 
   gap: 2rem;
 `;
+
+export const WarpperBottom = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+`;

@@ -10,4 +10,8 @@ export const Wrapper = styled.div`
     ${(p) => p.theme.spacing.lm} ${(p) => p.theme.spacing.lm};
 
   gap: 3rem;
+
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    padding: ${(p) => p.theme.spacing.sm} ${(p) => p.theme.spacing.lm};
+  }
 `;

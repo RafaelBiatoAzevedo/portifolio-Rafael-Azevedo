@@ -9,6 +9,7 @@ import { ISkill } from '~/interfaces/ISkill';
 import { LinkTech } from './components/LinkTech';
 
 import {
+  CartSoftSkill,
   GridTechs,
   Link,
   TextMessage,
@@ -97,14 +98,14 @@ export const Skills: FC<ISKillsProps> = ({
       {title === 'Soft Skills' ? (
         <WrapperSoftSkills>
           {skills.map((skill) => (
-            <div>
+            <CartSoftSkill>
               <Text
                 color={colors.onTertiary}
                 title={<Translator path={skill.name} />}
                 size="1.6rem"
                 weight="900"
               />
-            </div>
+            </CartSoftSkill>
           ))}
         </WrapperSoftSkills>
       ) : (

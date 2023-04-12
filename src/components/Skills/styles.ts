@@ -10,12 +10,11 @@ export const Wrapper = styled.div<TWrapperProps>`
   display: flex;
   background-color: ${(p) => p.backgroudColor};
   padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
-  min-height: 42rem;
 
-  gap: 11rem;
+  gap: 10rem;
 
   @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
-    padding: ${(p) => p.theme.spacing.xl} ${(p) => p.theme.spacing.sm};
+    padding: ${(p) => p.theme.spacing.xl} ${(p) => p.theme.spacing.lm};
   }
 `;
 
@@ -75,14 +74,21 @@ export const WrapperSoftSkills = styled.div`
   align-items: center;
   flex-wrap: wrap;
 
-  justify-content: center;
+  justify-content: flex-end;
   max-width: 40%;
-  gap: 2.5rem;
+  gap: 2rem;
+`;
 
-  > div {
-    text-align: center;
-    border-radius: 2rem;
-    background-color: ${(p) => p.theme.colors.tertiary};
-    padding: 0.8rem 1.6rem;
+export const CartSoftSkill = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 24rem;
+  height: 5rem;
+  border-radius: 3rem;
+  background-color: ${(p) => p.theme.colors.tertiary};
+
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    width: 28rem;
   }
 `;

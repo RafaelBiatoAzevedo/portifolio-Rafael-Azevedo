@@ -11,6 +11,10 @@ export const Wrapper = styled.div`
   gap: 1rem;
 
   width: 100%;
+
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    padding: ${(p) => p.theme.spacing.xl} ${(p) => p.theme.spacing.lm};
+  }
 `;
 
 export const WrapperTitle = styled.div`

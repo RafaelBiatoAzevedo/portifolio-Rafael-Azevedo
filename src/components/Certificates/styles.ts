@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
     ${(p) => p.theme.spacing.lm} ${(p) => p.theme.spacing.lm};
   gap: 3rem;
 
-  @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
-    padding: 10px;
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    padding: ${(p) => p.theme.spacing.xl} ${(p) => p.theme.spacing.lm};
   }
 `;

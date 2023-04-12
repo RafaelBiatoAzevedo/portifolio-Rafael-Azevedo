@@ -13,7 +13,6 @@ export const Wrapper = styled.div`
 
   @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
     margin-top: ${(p) => p.theme.spacing.md};
-    padding: ${(p) => p.theme.spacing.xl} ${(p) => p.theme.spacing.sm};
   }
 `;
 

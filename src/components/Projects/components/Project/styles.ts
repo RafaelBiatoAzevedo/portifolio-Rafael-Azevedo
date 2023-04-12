@@ -23,6 +23,10 @@ export const Wrapper = styled.div`
   @media (max-width: ${(p) => p.theme.resolutions.small}) {
     min-height: 40rem;
   }
+
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    min-height: 56rem;
+  }
 `;
 
 export const WrapperTitle = styled.div`
