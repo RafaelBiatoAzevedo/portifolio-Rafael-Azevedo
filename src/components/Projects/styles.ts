@@ -16,7 +16,3 @@ export const Wrapper = styled.div`
       ${(p) => p.theme.spacing.lm};
   }
 `;
-
-export const BorderTest = styled.div`
-  border: solid red;
-`;

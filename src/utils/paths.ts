@@ -260,12 +260,7 @@ export const softSkills: ISkill[] = [
     href: undefined,
     colorIcon: undefined,
   },
-  {
-    name: 'SoftSkills.ssSix',
-    icon: undefined,
-    href: undefined,
-    colorIcon: undefined,
-  },
+
   {
     name: 'SoftSkills.ssSeven',
     icon: undefined,
