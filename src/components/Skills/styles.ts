@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 type TWrapperProps = {
   backgroudColor: string;
@@ -41,6 +41,7 @@ export const WrapperTitle = styled.div`
 
 type TLinkProps = {
   textColor: string;
+  withoutMarginRight?: boolean;
 };
 
 export const Link = styled.a<TLinkProps>`
@@ -49,6 +50,12 @@ export const Link = styled.a<TLinkProps>`
   font-weight: bold;
   font-size: 1.5rem;
   margin: 0 1rem;
+
+  ${(p) =>
+    p.withoutMarginRight &&
+    css`
+      margin-right: 0px;
+    `}
 `;
 
 type TTextMessageProps = {

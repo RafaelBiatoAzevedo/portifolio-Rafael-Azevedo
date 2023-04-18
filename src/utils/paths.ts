@@ -17,7 +17,6 @@ import {
   SiGithub,
   SiJest,
   SiMocha,
-  SiRtl,
   SiExpress,
   SiBitbucket,
 } from 'react-icons/si';
@@ -205,7 +204,7 @@ export const hardSkills: ISkill[] = [
   },
   {
     name: 'HardSkills.hsTwentyThree',
-    icon: SiRtl,
+    icon: undefined,
     href: 'https://testing-library.com/docs/react-testing-library/intro/',
     colorIcon: '',
   },

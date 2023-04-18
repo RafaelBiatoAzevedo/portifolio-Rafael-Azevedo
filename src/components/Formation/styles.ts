@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   padding: ${(p) => p.theme.spacing.xxl} ${(p) => p.theme.spacing.lm};
   padding-bottom: 0px;
 
-  gap: 1rem;
+  gap: 2rem;
 
   width: 100%;
 

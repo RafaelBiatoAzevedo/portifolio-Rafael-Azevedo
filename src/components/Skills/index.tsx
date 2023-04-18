@@ -79,7 +79,8 @@ export const Skills: FC<ISKillsProps> = ({
             <Link
               href="https://www.puc-campinas.edu.br/"
               target="blank"
-              textColor="#0e4194"
+              textColor="#3100f4"
+              withoutMarginRight
             >
               PUC-CAMPINAS
             </Link>
