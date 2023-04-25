@@ -9,6 +9,7 @@ import { Wrapper, WrapperText, WrapperImage } from './styles';
 
 import { Translator } from '../Translator';
 import { Text } from '../Text';
+import { Button } from '../Button';
 
 export const Start: FC = () => {
   const { colors, fontWeight } = useTheme();
@@ -58,6 +59,15 @@ export const Start: FC = () => {
             size="2rem"
           />
         </div>
+        <Button
+          title="ABOUTE ME"
+          fontColor={colors.secondary}
+          fontSize="1.4rem"
+          fontWeight="bold"
+          onClick={() => console.log('teste')}
+          onMouseOver={() => console.log('teste')}
+          onMouseOut={() => console.log('teste')}
+        />
       </WrapperText>
       <WrapperImage>
         <img src={picture} alt="rafael" />

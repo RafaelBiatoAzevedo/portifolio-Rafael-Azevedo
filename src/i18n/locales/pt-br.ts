@@ -67,6 +67,9 @@ const objExport = {
       ssTen: 'Pensamento crítico',
       ssEleven: 'Inteligência emocional',
     },
+    ProjectsProfessional: {
+      title: 'Projetos profissionais',
+    },
     Projects: {
       view: 'Visitar Site',
       title: 'Projetos no curso da TRYBE',

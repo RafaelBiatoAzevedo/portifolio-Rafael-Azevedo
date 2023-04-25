@@ -11,6 +11,9 @@ interface IButtonProps {
   onMouseOver: () => void;
   onMouseOut: () => void;
 
+  fontColor?: string;
+  fontSize?: string;
+  fontWeight?: 'regular' | 'medium' | 'bold';
   backgroundColor?: string;
   isHoverBackgroundColor?: string;
   borderRadius?: string;
@@ -30,6 +33,9 @@ export const Button: FC<IButtonProps> = ({
   backgroundColor = 'transparent',
   isHoverBackgroundColor = 'transparent',
   borderRadius = '2px',
+  fontColor = '#000',
+  fontSize = '1rem',
+  fontWeight = 'regular',
   width = 'auto',
   height = 'auto',
   paddingX = '2px',
@@ -48,7 +54,14 @@ export const Button: FC<IButtonProps> = ({
       paddingY={paddingY}
       borderRadius={borderRadius}
     >
-      {!!title && <Text title={title} />}
+      {!!title && (
+        <Text
+          color={fontColor}
+          size={fontSize}
+          weight={fontWeight}
+          title={title}
+        />
+      )}
       {!!icon && icon}
     </Wrapper>
   );
@@ -57,6 +70,9 @@ export const Button: FC<IButtonProps> = ({
 Button.defaultProps = {
   title: undefined,
   icon: undefined,
+  fontColor: undefined,
+  fontSize: undefined,
+  fontWeight: undefined,
   borderRadius: '2px',
   backgroundColor: 'transparent',
   isHoverBackgroundColor: 'trnsparent',
