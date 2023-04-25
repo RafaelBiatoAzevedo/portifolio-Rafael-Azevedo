@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 
   padding: ${(p) => p.theme.spacing.lg} 0px;
 
-  width: 75%;
+  width: 80%;
 
   gap: 2rem;
 
@@ -57,11 +57,9 @@ export const WrapperImage = styled.div`
 
 export const WrapperContent = styled.div`
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-evenly;
   display: flex;
   flex: 1;
-
-  gap: 1rem;
 
   /* @media (max-width: ${(p) => p.theme.resolutions.celphone}) {
     padding: 10px;

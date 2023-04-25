@@ -4,14 +4,14 @@ export const Wrapper = styled.div`
   align-items: center;
   background-color: ${(p) => p.theme.colors.backgroundSecondary};
   border-radius: 1rem;
-  min-height: 33rem;
+  min-height: 34rem;
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
 
   padding: ${(p) => p.theme.spacing.lg} 0px;
 
-  width: 60%;
+  width: 70%;
 
   gap: 2rem;
 
@@ -49,11 +49,9 @@ export const WrapperImage = styled.div`
 
 export const WrapperContent = styled.div`
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-evenly;
   display: flex;
   flex: 1;
-
-  gap: 2rem;
 `;
 
 export const WrapperLinks = styled.div`

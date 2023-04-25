@@ -122,7 +122,7 @@ const objExport = {
       titleOne: 'Análise de Sistemas',
       titleTwo: 'Situação',
       situation: {
-        situationOne: 'Cursado até 7° semestre',
+        situationOne: 'Cursado até 8° semestre',
         situationTwo: 'Trancado desde 2009',
       },
     },
