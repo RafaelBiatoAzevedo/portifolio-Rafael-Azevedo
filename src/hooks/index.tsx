@@ -1,5 +1,7 @@
 import { FC } from 'react';
 
+import { BrowserRouter } from 'react-router-dom';
+
 import { ThemeProvider } from 'styled-components';
 
 import { themeDark, themeLight } from '../styles/theme';
@@ -13,9 +15,11 @@ export const AppProvider: FC = ({ children }): JSX.Element => {
 
   return (
     <ThemeProvider theme={theme === 'light' ? themeLight : themeDark}>
-      <LanguageProvider>
-        <MenuProvider>{children}</MenuProvider>
-      </LanguageProvider>
+      <BrowserRouter>
+        <LanguageProvider>
+          <MenuProvider>{children}</MenuProvider>
+        </LanguageProvider>
+      </BrowserRouter>
     </ThemeProvider>
   );
 };

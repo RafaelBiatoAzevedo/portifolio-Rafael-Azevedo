@@ -1,18 +1,19 @@
 import { FC } from 'react';
 
-import { Carousel } from 'react-responsive-carousel';
-
 import { useTheme } from 'styled-components';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import { projects } from '~/utils/paths';
+// import { Carousel } from 'react-responsive-carousel';
 
-import { Project } from './components/Project';
+// import { projects } from '~/utils/paths';
+
+// import { Project } from './components/Project';
+
+// import { Translator } from '../Translator';
 
 import { Wrapper } from './styles';
 
-import { Translator } from '../Translator';
 import { Text } from '../Text';
 
 export const Projects: FC = (): JSX.Element => {
@@ -20,16 +21,16 @@ export const Projects: FC = (): JSX.Element => {
   return (
     <Wrapper>
       <Text
-        title={<Translator path="Projects.title" />}
+        title="Projects"
         size="3rem"
         color={colors.onBackgroundSecondary}
         weight="bold"
       />
-      <Carousel centerMode showStatus={false}>
+      {/* <Carousel centerMode showStatus={false}>
         {projects.map((project) => (
           <Project project={project} />
         ))}
-      </Carousel>
+      </Carousel> */}
     </Wrapper>
   );
 };

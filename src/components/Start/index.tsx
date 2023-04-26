@@ -13,6 +13,7 @@ import { Button } from '../Button';
 
 export const Start: FC = () => {
   const { colors, fontWeight } = useTheme();
+
   return (
     <Wrapper>
       <WrapperText>
@@ -60,13 +61,17 @@ export const Start: FC = () => {
           />
         </div>
         <Button
-          title="ABOUTE ME"
-          fontColor={colors.secondary}
+          title={<Translator path="Start.buttonTitle" />}
+          fontColor={colors.onBackgroundSecondary}
           fontSize="1.4rem"
           fontWeight="bold"
-          onClick={() => console.log('teste')}
-          onMouseOver={() => console.log('teste')}
-          onMouseOut={() => console.log('teste')}
+          borderRadius="2rem"
+          paddingX="1.5rem"
+          paddingY="0.5rem"
+          backgroundColor={colors.secondary}
+          onClick={() => {
+            console.log('teste');
+          }}
         />
       </WrapperText>
       <WrapperImage>

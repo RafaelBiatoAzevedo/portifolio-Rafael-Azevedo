@@ -72,8 +72,12 @@ export const GridTechs = styled.div`
   justify-content: flex-end;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 43%;
+  max-width: 42%;
   gap: 1rem;
+
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    max-width: 40%;
+  }
 `;
 
 export const WrapperSoftSkills = styled.div`
@@ -95,7 +99,7 @@ export const CartSoftSkill = styled.div`
   border-radius: 3rem;
   background-color: ${(p) => p.theme.colors.tertiary};
 
-  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+  @media (max-width: ${(p) => p.theme.resolutions.small}) {
     width: 28rem;
   }
 `;

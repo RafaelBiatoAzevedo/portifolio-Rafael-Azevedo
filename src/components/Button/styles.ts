@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 type TWrapperProps = {
   backgroundcolor: string;
-  isHoverBackgroundColor: string;
   borderRadius: string;
   width: string;
   height: string;
@@ -13,7 +12,7 @@ type TWrapperProps = {
 export const Wrapper = styled.button<TWrapperProps>`
   align-items: center;
   justify-content: center;
-  border: none;
+  border: 1px solid ${(p) => p.backgroundcolor};
 
   background-color: ${(p) => p.backgroundcolor};
   border-radius: ${(p) => p.borderRadius};
@@ -25,8 +24,8 @@ export const Wrapper = styled.button<TWrapperProps>`
   padding: ${(p) => p.paddingY} ${(p) => p.paddingX};
 
   &:hover {
-    background-color: ${(p) => p.isHoverBackgroundColor};
+    border: 1px solid ${(p) => p.theme.colors.tertiary};
+    -webkit-box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
+    box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
   }
-
-  transition: background-color 0.8s;
 `;

@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  min-height: 40rem;
+  min-height: 40.5rem;
   margin-bottom: 50px;
 
   padding: ${(p) => p.theme.spacing.lg} 0px;

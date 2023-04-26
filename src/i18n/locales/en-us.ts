@@ -18,6 +18,7 @@ const objExport = {
       messageOne: 'I am passionate about technology and innovation.',
       messageTwo:
         "My satisfaction is to develop software to make people's lives easier.",
+      buttonTitle: 'ABOUT ME',
     },
     HardSkills: {
       title: 'Hard Skills',

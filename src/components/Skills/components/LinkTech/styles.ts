@@ -16,11 +16,16 @@ export const Wrapper = styled.a`
   height: 9rem;
 
   gap: 1rem;
-  padding: ${(p) => p.theme.spacing.md};
+  padding: ${(p) => p.theme.spacing.xxs};
 
   &:hover {
     border: 1px solid ${(p) => p.theme.colors.tertiary};
     -webkit-box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
     box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
+  }
+
+  @media (max-width: ${(p) => p.theme.resolutions.tablet}) {
+    width: 12rem;
+    height: 10rem;
   }
 `;

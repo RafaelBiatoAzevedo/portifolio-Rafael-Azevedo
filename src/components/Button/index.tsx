@@ -5,17 +5,14 @@ import { Wrapper } from './styles';
 import { Text } from '../Text';
 
 interface IButtonProps {
-  title?: string;
+  title?: string | JSX.Element;
   icon?: JSX.Element;
   onClick: () => void;
-  onMouseOver: () => void;
-  onMouseOut: () => void;
 
   fontColor?: string;
   fontSize?: string;
   fontWeight?: 'regular' | 'medium' | 'bold';
   backgroundColor?: string;
-  isHoverBackgroundColor?: string;
   borderRadius?: string;
 
   width?: string;
@@ -26,12 +23,9 @@ interface IButtonProps {
 
 export const Button: FC<IButtonProps> = ({
   onClick,
-  onMouseOver,
-  onMouseOut,
   title,
   icon,
   backgroundColor = 'transparent',
-  isHoverBackgroundColor = 'transparent',
   borderRadius = '2px',
   fontColor = '#000',
   fontSize = '1rem',
@@ -43,11 +37,8 @@ export const Button: FC<IButtonProps> = ({
 }) => {
   return (
     <Wrapper
-      onMouseOver={onMouseOver}
-      onMouseOut={onMouseOut}
       onClick={onClick}
       backgroundcolor={backgroundColor}
-      isHoverBackgroundColor={isHoverBackgroundColor}
       width={width}
       height={height}
       paddingX={paddingX}
@@ -75,7 +66,6 @@ Button.defaultProps = {
   fontWeight: undefined,
   borderRadius: '2px',
   backgroundColor: 'transparent',
-  isHoverBackgroundColor: 'trnsparent',
   width: 'auto',
   height: 'auto',
   paddingX: '2px',
