@@ -58,7 +58,6 @@ export const Home: FC = (): JSX.Element => {
       <ElementScroll name="contactMe">
         <Footer />
       </ElementScroll>
-      <ElementScroll name="experiences" />
     </Body>
   );
 };
