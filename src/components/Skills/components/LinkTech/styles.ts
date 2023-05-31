@@ -22,6 +22,10 @@ export const Wrapper = styled.a`
     border: 1px solid ${(p) => p.theme.colors.tertiary};
     -webkit-box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
     box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
+
+    &:hover {
+      transform: scale(1.15);
+    }
   }
 
   @media (max-width: ${(p) => p.theme.resolutions.tablet}) {

@@ -13,10 +13,10 @@ export const Routes: FC = () => {
       <TopMenu />
       <RoutesDom>
         <Route path="/" Component={Home} />
+        <Route path="/home" Component={Home} />
+        <Route path="/aboute-me" Component={Home} />
+        <Route path="/projects" Component={Home} />
       </RoutesDom>
-      <ElementScroll name="contactMe">
-        <Footer />
-      </ElementScroll>
     </>
   );
 };

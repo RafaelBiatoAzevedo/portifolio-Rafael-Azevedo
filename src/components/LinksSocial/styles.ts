@@ -18,8 +18,6 @@ export const Link = styled.a`
   padding: 0.4rem;
 
   &:hover {
-    border: 1px solid ${(p) => p.theme.colors.tertiary};
-    -webkit-box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
-    box-shadow: -1px 3px 8px 1px ${(p) => p.theme.colors.tertiary};
+    transform: scale(1.3);
   }
 `;

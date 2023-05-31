@@ -1,4 +1,6 @@
-import { FC } from 'react';
+import { FC, useCallback } from 'react';
+
+import { useNavigate } from 'react-router-dom';
 
 import { useTheme } from 'styled-components';
 
@@ -13,6 +15,9 @@ import { Button } from '../Button';
 
 export const Start: FC = () => {
   const { colors, fontWeight } = useTheme();
+  const navigate = useNavigate();
+
+  const handleNavigate = useCallback(() => navigate('/aboute-me'), [navigate]);
 
   return (
     <Wrapper>
@@ -69,9 +74,7 @@ export const Start: FC = () => {
           paddingX="1.5rem"
           paddingY="0.5rem"
           backgroundColor={colors.secondary}
-          onClick={() => {
-            console.log('teste');
-          }}
+          onClick={() => handleNavigate}
         />
       </WrapperText>
       <WrapperImage>

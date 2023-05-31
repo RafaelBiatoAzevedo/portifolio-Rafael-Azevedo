@@ -21,7 +21,7 @@ export const Projects: FC = (): JSX.Element => {
   return (
     <Wrapper>
       <Text
-        title="Projects"
+        title="Projets comming soon"
         size="3rem"
         color={colors.onBackgroundSecondary}
         weight="bold"
