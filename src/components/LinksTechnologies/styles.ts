@@ -15,7 +15,7 @@ export const Link = styled.a`
   align-items: center;
   display: flex;
   justify-content: center;
-  border: 1px solid red;
+  border: 1px solid;
   border-radius: 2px;
   padding: 4px;
 
