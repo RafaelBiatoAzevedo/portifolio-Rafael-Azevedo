@@ -187,7 +187,7 @@ const objExport = {
           situationTwo: 'Concluded in 2006',
         },
         contents: {
-          contentOne: 'Wrate',
+          contentOne: 'Write',
           contentTwo: 'Read',
           contentThree: 'Speak',
           contentFour: 'Listen',
