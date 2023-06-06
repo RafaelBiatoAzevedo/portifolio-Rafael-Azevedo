@@ -16,11 +16,11 @@ import { Footer } from '~/components/Footer';
 import { Courses } from '~/components/Courses';
 import { Certificates } from '~/components/Certificates';
 
-import { Body } from './styles';
+import { Wrapper } from './styles';
 
 export const Home: FC = (): JSX.Element => {
   return (
-    <Body>
+    <Wrapper>
       <TopMenu />
       <ElementScroll name="start">
         <Start />
@@ -58,6 +58,6 @@ export const Home: FC = (): JSX.Element => {
       <ElementScroll name="contactMe">
         <Footer />
       </ElementScroll>
-    </Body>
+    </Wrapper>
   );
 };
